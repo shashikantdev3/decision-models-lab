@@ -88,9 +88,11 @@ export async function callToolOnce<T>(
     const missing = call
       ? required.filter((k) => (call.input as Record<string, unknown>)?.[k] === undefined)
       : required;
-    // Without a forced tool call a model can skip the tool or leave fields out. Ask again, at most twice.
+    // Without a forced tool call a model can skip the tool or leave fields out. Models that think before
+    // answering can also run out of tokens mid-answer. Ask again, at most twice, with more room if it ran out.
     if ((!call || missing.length) && incompleteRetries < 2) {
       incompleteRetries++;
+      if (json.stop_reason === "max_tokens") body.max_tokens = Math.min(Number(body.max_tokens) * 2, 4096);
       continue;
     }
     if (!call)

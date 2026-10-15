@@ -1,0 +1,6385 @@
+{
+ "schema": 1,
+ "kind": "wording",
+ "model": {
+  "key": "jev",
+  "id": "typesafe/jev-1.14",
+  "label": "TypeSafe Jev 1.14",
+  "kind": "decision"
+ },
+ "provenance": {
+  "date": "2026-10-15",
+  "createdAt": "2026-10-15T19:05:41.502Z",
+  "gitCommit": "62728dc+uncommitted",
+  "region": "India (Noida)",
+  "questionSet": "v1+rewordings.v1",
+  "dataset": {
+   "version": "v1",
+   "sha256": "17766faa2e6346beab2ad7d4399ac92d38ce181aa9d5f9dbfde4fc1d78e2f2e4",
+   "count": 48,
+   "labelStatus": "labels machine-made, cross-checked, disagreements reviewed by the owner"
+  },
+  "runs": 1,
+  "mock": false
+ },
+ "items": [
+  {
+   "ticketId": "T-001",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0.14,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.86,
+     "account": 0
+    },
+    {
+     "payments": 0.17,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.83,
+     "account": 0
+    },
+    {
+     "payments": 0.16,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.84,
+     "account": 0
+    },
+    {
+     "payments": 0.03,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.97,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-001",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Low",
+    "Low",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.42,
+     "Normal": 0.58,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.65,
+     "Normal": 0.35,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.86,
+     "Normal": 0.14,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.42,
+     "Normal": 0.57,
+     "High": 0.01,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-001",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.57,
+     "false": 0.43000000000000005
+    }
+   ]
+  },
+  {
+   "ticketId": "T-001",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.12,
+     "false": 0.88
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    }
+   ]
+  },
+  {
+   "ticketId": "T-002",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "auth",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.11,
+     "infra": 0,
+     "data": 0,
+     "account": 0.89
+    },
+    {
+     "payments": 0,
+     "auth": 0.27,
+     "infra": 0,
+     "data": 0,
+     "account": 0.73
+    },
+    {
+     "payments": 0,
+     "auth": 0.54,
+     "infra": 0,
+     "data": 0,
+     "account": 0.46
+    },
+    {
+     "payments": 0,
+     "auth": 0.06,
+     "infra": 0,
+     "data": 0,
+     "account": 0.94
+    }
+   ]
+  },
+  {
+   "ticketId": "T-002",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Normal",
+    "Normal",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.04,
+     "Normal": 0.94,
+     "High": 0.02,
+     "Critical": 0
+    },
+    {
+     "Low": 0.02,
+     "Normal": 0.75,
+     "High": 0.23,
+     "Critical": 0
+    },
+    {
+     "Low": 0.25,
+     "Normal": 0.74,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.77,
+     "High": 0.22,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-002",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.13,
+     "false": 0.87
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.16,
+     "false": 0.84
+    },
+    {
+     "true": 0.65,
+     "false": 0.35
+    }
+   ]
+  },
+  {
+   "ticketId": "T-002",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.67,
+     "false": 0.32999999999999996
+    },
+    {
+     "true": 0.64,
+     "false": 0.36
+    },
+    {
+     "true": 0.38,
+     "false": 0.62
+    }
+   ]
+  },
+  {
+   "ticketId": "T-003",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "infra",
+    "infra",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.62,
+     "infra": 0.38,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.49,
+     "infra": 0.51,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.46,
+     "infra": 0.54,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.76,
+     "infra": 0.24,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-003",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.42,
+     "Critical": 0.58
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.34,
+     "Critical": 0.66
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.41,
+     "Critical": 0.59
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.32,
+     "Critical": 0.68
+    }
+   ]
+  },
+  {
+   "ticketId": "T-003",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.47,
+     "false": 0.53
+    },
+    {
+     "true": 0.36,
+     "false": 0.64
+    },
+    {
+     "true": 0.43,
+     "false": 0.5700000000000001
+    },
+    {
+     "true": 0.47,
+     "false": 0.53
+    }
+   ]
+  },
+  {
+   "ticketId": "T-003",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-004",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.01,
+     "data": 0.99,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.01,
+     "data": 0.99,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-004",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.02,
+     "High": 0.38,
+     "Critical": 0.6
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.07,
+     "Critical": 0.93
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-004",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.84,
+     "false": 0.16000000000000003
+    },
+    {
+     "true": 0.48,
+     "false": 0.52
+    },
+    {
+     "true": 0.83,
+     "false": 0.17000000000000004
+    },
+    {
+     "true": 0.4,
+     "false": 0.6
+    }
+   ]
+  },
+  {
+   "ticketId": "T-004",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-005",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    },
+    {
+     "payments": 0.01,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.99
+    },
+    {
+     "payments": 0.02,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.98
+    },
+    {
+     "payments": 0.01,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-005",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Low",
+    "Low",
+    "Low"
+   ],
+   "dists": [
+    {
+     "Low": 1,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.98,
+     "Normal": 0.02,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.97,
+     "Normal": 0.03,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.93,
+     "Normal": 0.07,
+     "High": 0,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-005",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.5,
+     "false": 0.5
+    }
+   ]
+  },
+  {
+   "ticketId": "T-005",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.16,
+     "false": 0.84
+    },
+    {
+     "true": 0.14,
+     "false": 0.86
+    },
+    {
+     "true": 0.16,
+     "false": 0.84
+    }
+   ]
+  },
+  {
+   "ticketId": "T-006",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.99,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.01
+    },
+    {
+     "payments": 0.99,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.01
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-006",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "High",
+    "Normal",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.5,
+     "High": 0.5,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.08,
+     "High": 0.79,
+     "Critical": 0.13
+    },
+    {
+     "Low": 0.06,
+     "Normal": 0.6900000000000001,
+     "High": 0.25,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.06,
+     "High": 0.75,
+     "Critical": 0.19
+    }
+   ]
+  },
+  {
+   "ticketId": "T-006",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.81,
+     "false": 0.18999999999999995
+    },
+    {
+     "true": 0.46,
+     "false": 0.54
+    },
+    {
+     "true": 0.29,
+     "false": 0.71
+    },
+    {
+     "true": 0.57,
+     "false": 0.43000000000000005
+    }
+   ]
+  },
+  {
+   "ticketId": "T-006",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.12,
+     "false": 0.88
+    }
+   ]
+  },
+  {
+   "ticketId": "T-007",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.99,
+     "infra": 0,
+     "data": 0,
+     "account": 0.01
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-007",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "Critical",
+    "High",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.05,
+     "High": 0.95,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.23,
+     "Critical": 0.77
+    },
+    {
+     "Low": 0.02,
+     "Normal": 0.23,
+     "High": 0.74,
+     "Critical": 0.01
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.31,
+     "Critical": 0.69
+    }
+   ]
+  },
+  {
+   "ticketId": "T-007",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.9,
+     "false": 0.09999999999999998
+    },
+    {
+     "true": 0.26,
+     "false": 0.74
+    },
+    {
+     "true": 0.89,
+     "false": 0.10999999999999999
+    },
+    {
+     "true": 0.44,
+     "false": 0.56
+    }
+   ]
+  },
+  {
+   "ticketId": "T-007",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.96,
+     "false": 0.040000000000000036
+    },
+    {
+     "true": 0.92,
+     "false": 0.07999999999999996
+    }
+   ]
+  },
+  {
+   "ticketId": "T-008",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.96,
+     "data": 0.04,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-008",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.05,
+     "Critical": 0.94
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.02,
+     "Critical": 0.98
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-008",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.9,
+     "false": 0.09999999999999998
+    },
+    {
+     "true": 0.58,
+     "false": 0.42000000000000004
+    },
+    {
+     "true": 0.88,
+     "false": 0.12
+    },
+    {
+     "true": 0.4,
+     "false": 0.6
+    }
+   ]
+  },
+  {
+   "ticketId": "T-008",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.97,
+     "false": 0.030000000000000027
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    }
+   ]
+  },
+  {
+   "ticketId": "T-009",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-009",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Low",
+    "Low",
+    "Low"
+   ],
+   "dists": [
+    {
+     "Low": 0.99,
+     "Normal": 0.01,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.75,
+     "Normal": 0.25,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.82,
+     "Normal": 0.18,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.51,
+     "Normal": 0.49,
+     "High": 0,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-009",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.52,
+     "false": 0.48
+    }
+   ]
+  },
+  {
+   "ticketId": "T-009",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-010",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    },
+    {
+     "payments": 0,
+     "auth": 0.03,
+     "infra": 0,
+     "data": 0,
+     "account": 0.97
+    },
+    {
+     "payments": 0,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0,
+     "account": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-010",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "High",
+    "Normal",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0.11,
+     "Normal": 0.8,
+     "High": 0.09,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.24,
+     "High": 0.74,
+     "Critical": 0.02
+    },
+    {
+     "Low": 0.09000000000000001,
+     "Normal": 0.6900000000000001,
+     "High": 0.22000000000000003,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.27,
+     "High": 0.71,
+     "Critical": 0.02
+    }
+   ]
+  },
+  {
+   "ticketId": "T-010",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.47,
+     "false": 0.53
+    }
+   ]
+  },
+  {
+   "ticketId": "T-010",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-011",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.99,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0.87,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0,
+     "account": 0.12
+    },
+    {
+     "payments": 0.95,
+     "auth": 0.02,
+     "infra": 0,
+     "data": 0,
+     "account": 0.03
+    },
+    {
+     "payments": 0.66,
+     "auth": 0.03,
+     "infra": 0,
+     "data": 0,
+     "account": 0.31
+    }
+   ]
+  },
+  {
+   "ticketId": "T-011",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "Critical",
+    "High",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.04,
+     "High": 0.94,
+     "Critical": 0.02
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.25,
+     "Critical": 0.75
+    },
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.76,
+     "Critical": 0.23
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.26,
+     "Critical": 0.74
+    }
+   ]
+  },
+  {
+   "ticketId": "T-011",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.86,
+     "false": 0.14
+    },
+    {
+     "true": 0.44,
+     "false": 0.56
+    },
+    {
+     "true": 0.62,
+     "false": 0.38
+    },
+    {
+     "true": 0.45,
+     "false": 0.55
+    }
+   ]
+  },
+  {
+   "ticketId": "T-011",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.97,
+     "false": 0.030000000000000027
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    }
+   ]
+  },
+  {
+   "ticketId": "T-012",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-012",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    }
+   ]
+  },
+  {
+   "ticketId": "T-012",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.91,
+     "false": 0.08999999999999997
+    },
+    {
+     "true": 0.55,
+     "false": 0.44999999999999996
+    },
+    {
+     "true": 0.8,
+     "false": 0.19999999999999996
+    },
+    {
+     "true": 0.44,
+     "false": 0.56
+    }
+   ]
+  },
+  {
+   "ticketId": "T-012",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-013",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.59,
+     "data": 0.41,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.47,
+     "data": 0.53,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.2,
+     "data": 0.8,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.12,
+     "data": 0.88,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-013",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Low",
+    "Low",
+    "Low"
+   ],
+   "dists": [
+    {
+     "Low": 0.75,
+     "Normal": 0.25,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.9,
+     "Normal": 0.1,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.88,
+     "Normal": 0.12,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.9,
+     "Normal": 0.1,
+     "High": 0,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-013",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.56,
+     "false": 0.43999999999999995
+    }
+   ]
+  },
+  {
+   "ticketId": "T-013",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.96,
+     "false": 0.040000000000000036
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    }
+   ]
+  },
+  {
+   "ticketId": "T-014",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-014",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Low",
+    "Normal",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.02,
+     "Normal": 0.95,
+     "High": 0.03,
+     "Critical": 0
+    },
+    {
+     "Low": 0.53,
+     "Normal": 0.41,
+     "High": 0.06,
+     "Critical": 0
+    },
+    {
+     "Low": 0.37,
+     "Normal": 0.61,
+     "High": 0.02,
+     "Critical": 0
+    },
+    {
+     "Low": 0.19,
+     "Normal": 0.65,
+     "High": 0.16,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-014",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.57,
+     "false": 0.43000000000000005
+    }
+   ]
+  },
+  {
+   "ticketId": "T-014",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.96,
+     "false": 0.040000000000000036
+    },
+    {
+     "true": 0.96,
+     "false": 0.040000000000000036
+    },
+    {
+     "true": 0.89,
+     "false": 0.10999999999999999
+    },
+    {
+     "true": 0.94,
+     "false": 0.06000000000000005
+    }
+   ]
+  },
+  {
+   "ticketId": "T-015",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0.08,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.01,
+     "account": 0.91
+    },
+    {
+     "payments": 0.02,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.98
+    },
+    {
+     "payments": 0.34,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.66
+    },
+    {
+     "payments": 0.03,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.97
+    }
+   ]
+  },
+  {
+   "ticketId": "T-015",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "Critical",
+    "High",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0.02,
+     "Normal": 0.24,
+     "High": 0.5599999999999999,
+     "Critical": 0.18
+    },
+    {
+     "Low": 0,
+     "Normal": 0.02,
+     "High": 0.46,
+     "Critical": 0.52
+    },
+    {
+     "Low": 0.02,
+     "Normal": 0.17,
+     "High": 0.76,
+     "Critical": 0.05
+    },
+    {
+     "Low": 0,
+     "Normal": 0.04,
+     "High": 0.56,
+     "Critical": 0.4
+    }
+   ]
+  },
+  {
+   "ticketId": "T-015",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.18,
+     "false": 0.8200000000000001
+    },
+    {
+     "true": 0.19,
+     "false": 0.81
+    },
+    {
+     "true": 0.16,
+     "false": 0.84
+    },
+    {
+     "true": 0.54,
+     "false": 0.45999999999999996
+    }
+   ]
+  },
+  {
+   "ticketId": "T-015",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-016",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.94,
+     "auth": 0.01,
+     "infra": 0.01,
+     "data": 0,
+     "account": 0.04
+    },
+    {
+     "payments": 0.75,
+     "auth": 0.02,
+     "infra": 0.05,
+     "data": 0,
+     "account": 0.18
+    },
+    {
+     "payments": 0.98,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.02
+    },
+    {
+     "payments": 0.96,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.04
+    }
+   ]
+  },
+  {
+   "ticketId": "T-016",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.02,
+     "Critical": 0.98
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.04,
+     "Critical": 0.96
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-016",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    },
+    {
+     "true": 0.78,
+     "false": 0.21999999999999997
+    },
+    {
+     "true": 0.9,
+     "false": 0.09999999999999998
+    },
+    {
+     "true": 0.42,
+     "false": 0.5800000000000001
+    }
+   ]
+  },
+  {
+   "ticketId": "T-016",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.95,
+     "false": 0.050000000000000044
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    }
+   ]
+  },
+  {
+   "ticketId": "T-017",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.9400000000000001,
+     "infra": 0,
+     "data": 0,
+     "account": 0.06
+    },
+    {
+     "payments": 0,
+     "auth": 0.9400000000000001,
+     "infra": 0,
+     "data": 0,
+     "account": 0.06
+    }
+   ]
+  },
+  {
+   "ticketId": "T-017",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Low",
+    "Low",
+    "Low"
+   ],
+   "dists": [
+    {
+     "Low": 0.34,
+     "Normal": 0.44,
+     "High": 0.22,
+     "Critical": 0
+    },
+    {
+     "Low": 0.51,
+     "Normal": 0.44,
+     "High": 0.05,
+     "Critical": 0
+    },
+    {
+     "Low": 0.52,
+     "Normal": 0.45,
+     "High": 0.03,
+     "Critical": 0
+    },
+    {
+     "Low": 0.49,
+     "Normal": 0.47,
+     "High": 0.04,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-017",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.51,
+     "false": 0.49
+    }
+   ]
+  },
+  {
+   "ticketId": "T-017",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    },
+    {
+     "true": 0.92,
+     "false": 0.07999999999999996
+    },
+    {
+     "true": 0.9,
+     "false": 0.09999999999999998
+    }
+   ]
+  },
+  {
+   "ticketId": "T-018",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-018",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Normal",
+    "Normal",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.06,
+     "Normal": 0.89,
+     "High": 0.05,
+     "Critical": 0
+    },
+    {
+     "Low": 0.060000000000000005,
+     "Normal": 0.8300000000000001,
+     "High": 0.11000000000000001,
+     "Critical": 0
+    },
+    {
+     "Low": 0.37,
+     "Normal": 0.61,
+     "High": 0.02,
+     "Critical": 0
+    },
+    {
+     "Low": 0.03,
+     "Normal": 0.77,
+     "High": 0.2,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-018",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.56,
+     "false": 0.43999999999999995
+    }
+   ]
+  },
+  {
+   "ticketId": "T-018",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-019",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0.99,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.03,
+     "infra": 0,
+     "data": 0.97,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.03,
+     "infra": 0,
+     "data": 0.97,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-019",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "High",
+    "High",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0.01,
+     "Normal": 0.04,
+     "High": 0.79,
+     "Critical": 0.16
+    },
+    {
+     "Low": 0.03,
+     "Normal": 0.09,
+     "High": 0.69,
+     "Critical": 0.19
+    },
+    {
+     "Low": 0.08,
+     "Normal": 0.18,
+     "High": 0.68,
+     "Critical": 0.06
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.06,
+     "High": 0.67,
+     "Critical": 0.26
+    }
+   ]
+  },
+  {
+   "ticketId": "T-019",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.53,
+     "false": 0.47
+    }
+   ]
+  },
+  {
+   "ticketId": "T-019",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.13,
+     "false": 0.87
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-020",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    },
+    {
+     "payments": 0,
+     "auth": 0.05,
+     "infra": 0,
+     "data": 0,
+     "account": 0.95
+    },
+    {
+     "payments": 0,
+     "auth": 0.06,
+     "infra": 0,
+     "data": 0,
+     "account": 0.94
+    }
+   ]
+  },
+  {
+   "ticketId": "T-020",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.69,
+     "Critical": 0.3
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.13,
+     "Critical": 0.87
+    },
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.32,
+     "Critical": 0.67
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.12,
+     "Critical": 0.88
+    }
+   ]
+  },
+  {
+   "ticketId": "T-020",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.85,
+     "false": 0.15000000000000002
+    },
+    {
+     "true": 0.57,
+     "false": 0.43000000000000005
+    },
+    {
+     "true": 0.86,
+     "false": 0.14
+    },
+    {
+     "true": 0.44,
+     "false": 0.56
+    }
+   ]
+  },
+  {
+   "ticketId": "T-020",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    }
+   ]
+  },
+  {
+   "ticketId": "T-021",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.83,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.01,
+     "account": 0.16
+    },
+    {
+     "payments": 0.98,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.02
+    },
+    {
+     "payments": 0.87,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.13
+    },
+    {
+     "payments": 0.6900000000000001,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.31
+    }
+   ]
+  },
+  {
+   "ticketId": "T-021",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Low",
+    "Low",
+    "Low"
+   ],
+   "dists": [
+    {
+     "Low": 0.98,
+     "Normal": 0.02,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.93,
+     "Normal": 0.06,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.89,
+     "Normal": 0.11,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.77,
+     "Normal": 0.21,
+     "High": 0.02,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-021",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.52,
+     "false": 0.48
+    }
+   ]
+  },
+  {
+   "ticketId": "T-021",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.24,
+     "false": 0.76
+    },
+    {
+     "true": 0.71,
+     "false": 0.29000000000000004
+    },
+    {
+     "true": 0.51,
+     "false": 0.49
+    }
+   ]
+  },
+  {
+   "ticketId": "T-022",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.98,
+     "infra": 0.02,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.95,
+     "infra": 0.04,
+     "data": 0,
+     "account": 0.01
+    },
+    {
+     "payments": 0,
+     "auth": 0.96,
+     "infra": 0,
+     "data": 0,
+     "account": 0.04
+    },
+    {
+     "payments": 0,
+     "auth": 0.98,
+     "infra": 0.01,
+     "data": 0,
+     "account": 0.01
+    }
+   ]
+  },
+  {
+   "ticketId": "T-022",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Normal",
+    "Normal",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.89,
+     "High": 0.11,
+     "Critical": 0
+    },
+    {
+     "Low": 0.06,
+     "Normal": 0.72,
+     "High": 0.22,
+     "Critical": 0
+    },
+    {
+     "Low": 0.24,
+     "Normal": 0.73,
+     "High": 0.03,
+     "Critical": 0
+    },
+    {
+     "Low": 0.03,
+     "Normal": 0.74,
+     "High": 0.23,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-022",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.66,
+     "false": 0.33999999999999997
+    }
+   ]
+  },
+  {
+   "ticketId": "T-022",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    },
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    },
+    {
+     "true": 0.87,
+     "false": 0.13
+    }
+   ]
+  },
+  {
+   "ticketId": "T-023",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.81,
+     "data": 0.19,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.66,
+     "data": 0.34,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-023",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "High",
+    "High",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.35,
+     "High": 0.65,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.04,
+     "High": 0.89,
+     "Critical": 0.07
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.17,
+     "High": 0.8099999999999999,
+     "Critical": 0.01
+    },
+    {
+     "Low": 0,
+     "Normal": 0.02,
+     "High": 0.89,
+     "Critical": 0.09
+    }
+   ]
+  },
+  {
+   "ticketId": "T-023",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.63,
+     "false": 0.37
+    }
+   ]
+  },
+  {
+   "ticketId": "T-023",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    }
+   ]
+  },
+  {
+   "ticketId": "T-024",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.01,
+     "data": 0.99,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.1,
+     "data": 0.9,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.01,
+     "data": 0.99,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.01,
+     "data": 0.99,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-024",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.05,
+     "Critical": 0.95
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    }
+   ]
+  },
+  {
+   "ticketId": "T-024",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.94,
+     "false": 0.06000000000000005
+    },
+    {
+     "true": 0.64,
+     "false": 0.36
+    },
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    },
+    {
+     "true": 0.4,
+     "false": 0.6
+    }
+   ]
+  },
+  {
+   "ticketId": "T-024",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-025",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    },
+    {
+     "payments": 0,
+     "auth": 0.02,
+     "infra": 0,
+     "data": 0,
+     "account": 0.98
+    },
+    {
+     "payments": 0,
+     "auth": 0.06,
+     "infra": 0,
+     "data": 0,
+     "account": 0.94
+    },
+    {
+     "payments": 0,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0,
+     "account": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-025",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Low",
+    "Low",
+    "Low"
+   ],
+   "dists": [
+    {
+     "Low": 1,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.74,
+     "Normal": 0.26,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.66,
+     "Normal": 0.34,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.6,
+     "Normal": 0.4,
+     "High": 0,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-025",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.46,
+     "false": 0.54
+    }
+   ]
+  },
+  {
+   "ticketId": "T-025",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.02,
+     "false": 0.98
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    }
+   ]
+  },
+  {
+   "ticketId": "T-026",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-026",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Normal",
+    "Normal",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0.03,
+     "Normal": 0.96,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.63,
+     "High": 0.36,
+     "Critical": 0
+    },
+    {
+     "Low": 0.48,
+     "Normal": 0.52,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.29,
+     "High": 0.7,
+     "Critical": 0.01
+    }
+   ]
+  },
+  {
+   "ticketId": "T-026",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.44,
+     "false": 0.56
+    }
+   ]
+  },
+  {
+   "ticketId": "T-026",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.13,
+     "false": 0.87
+    },
+    {
+     "true": 0.15,
+     "false": 0.85
+    }
+   ]
+  },
+  {
+   "ticketId": "T-027",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.99,
+     "infra": 0,
+     "data": 0,
+     "account": 0.01
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-027",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "Critical",
+    "High",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.87,
+     "Critical": 0.13
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.17,
+     "Critical": 0.83
+    },
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.84,
+     "Critical": 0.15
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.45,
+     "Critical": 0.55
+    }
+   ]
+  },
+  {
+   "ticketId": "T-027",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.52,
+     "false": 0.48
+    }
+   ]
+  },
+  {
+   "ticketId": "T-027",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.95,
+     "false": 0.050000000000000044
+    },
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    }
+   ]
+  },
+  {
+   "ticketId": "T-028",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-028",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    }
+   ]
+  },
+  {
+   "ticketId": "T-028",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.92,
+     "false": 0.07999999999999996
+    },
+    {
+     "true": 0.75,
+     "false": 0.25
+    },
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    },
+    {
+     "true": 0.37,
+     "false": 0.63
+    }
+   ]
+  },
+  {
+   "ticketId": "T-028",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    }
+   ]
+  },
+  {
+   "ticketId": "T-029",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-029",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Normal",
+    "Low",
+    "Low"
+   ],
+   "dists": [
+    {
+     "Low": 0.95,
+     "Normal": 0.05,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.44,
+     "Normal": 0.55,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.81,
+     "Normal": 0.19,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.66,
+     "Normal": 0.34,
+     "High": 0,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-029",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.13,
+     "false": 0.87
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.48,
+     "false": 0.52
+    }
+   ]
+  },
+  {
+   "ticketId": "T-029",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-030",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0.01,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.99
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    },
+    {
+     "payments": 0.06,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0,
+     "account": 0.93
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 1
+    }
+   ]
+  },
+  {
+   "ticketId": "T-030",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "High",
+    "High",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.11,
+     "High": 0.88,
+     "Critical": 0.01
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.59,
+     "Critical": 0.41
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.17,
+     "High": 0.8099999999999999,
+     "Critical": 0.01
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.6,
+     "Critical": 0.4
+    }
+   ]
+  },
+  {
+   "ticketId": "T-030",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.81,
+     "false": 0.18999999999999995
+    },
+    {
+     "true": 0.3,
+     "false": 0.7
+    },
+    {
+     "true": 0.36,
+     "false": 0.64
+    },
+    {
+     "true": 0.51,
+     "false": 0.49
+    }
+   ]
+  },
+  {
+   "ticketId": "T-030",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.12,
+     "false": 0.88
+    },
+    {
+     "true": 0.13,
+     "false": 0.87
+    }
+   ]
+  },
+  {
+   "ticketId": "T-031",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.98,
+     "auth": 0,
+     "infra": 0.02,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0.9,
+     "auth": 0,
+     "infra": 0.1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-031",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "High",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.14,
+     "Critical": 0.86
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.09,
+     "Critical": 0.91
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.57,
+     "Critical": 0.43
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.05,
+     "Critical": 0.95
+    }
+   ]
+  },
+  {
+   "ticketId": "T-031",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.78,
+     "false": 0.21999999999999997
+    },
+    {
+     "true": 0.49,
+     "false": 0.51
+    },
+    {
+     "true": 0.45,
+     "false": 0.55
+    },
+    {
+     "true": 0.48,
+     "false": 0.52
+    }
+   ]
+  },
+  {
+   "ticketId": "T-031",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    }
+   ]
+  },
+  {
+   "ticketId": "T-032",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-032",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.02,
+     "Critical": 0.98
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.02,
+     "Critical": 0.98
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.03,
+     "Critical": 0.97
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-032",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    },
+    {
+     "true": 0.76,
+     "false": 0.24
+    },
+    {
+     "true": 0.89,
+     "false": 0.10999999999999999
+    },
+    {
+     "true": 0.37,
+     "false": 0.63
+    }
+   ]
+  },
+  {
+   "ticketId": "T-032",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.97,
+     "false": 0.030000000000000027
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    }
+   ]
+  },
+  {
+   "ticketId": "T-033",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-033",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Normal",
+    "Low",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.97,
+     "Normal": 0.03,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.35,
+     "Normal": 0.64,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.61,
+     "Normal": 0.39,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.25,
+     "Normal": 0.71,
+     "High": 0.04,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-033",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.47,
+     "false": 0.53
+    }
+   ]
+  },
+  {
+   "ticketId": "T-033",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    }
+   ]
+  },
+  {
+   "ticketId": "T-034",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-034",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "High",
+    "Normal",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0.17,
+     "Normal": 0.73,
+     "High": 0.1,
+     "Critical": 0
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.46,
+     "High": 0.53,
+     "Critical": 0
+    },
+    {
+     "Low": 0.22000000000000003,
+     "Normal": 0.7000000000000001,
+     "High": 0.08000000000000002,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.35,
+     "High": 0.65,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-034",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.12,
+     "false": 0.88
+    },
+    {
+     "true": 0.5,
+     "false": 0.5
+    }
+   ]
+  },
+  {
+   "ticketId": "T-034",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.03,
+     "false": 0.97
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-035",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "account",
+    "payments",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0.52,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.48
+    },
+    {
+     "payments": 0.06,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.94
+    },
+    {
+     "payments": 0.8200000000000001,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.18
+    },
+    {
+     "payments": 0.1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.9
+    }
+   ]
+  },
+  {
+   "ticketId": "T-035",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "Critical",
+    "High",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.03,
+     "High": 0.72,
+     "Critical": 0.25
+    },
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.43,
+     "Critical": 0.5599999999999999
+    },
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.62,
+     "Critical": 0.37
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.35,
+     "Critical": 0.65
+    }
+   ]
+  },
+  {
+   "ticketId": "T-035",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.88,
+     "false": 0.12
+    },
+    {
+     "true": 0.25,
+     "false": 0.75
+    },
+    {
+     "true": 0.75,
+     "false": 0.25
+    },
+    {
+     "true": 0.49,
+     "false": 0.51
+    }
+   ]
+  },
+  {
+   "ticketId": "T-035",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.96,
+     "false": 0.040000000000000036
+    },
+    {
+     "true": 0.97,
+     "false": 0.030000000000000027
+    }
+   ]
+  },
+  {
+   "ticketId": "T-036",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.97,
+     "auth": 0,
+     "infra": 0.03,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0.89,
+     "auth": 0,
+     "infra": 0.11,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-036",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.26,
+     "Critical": 0.74
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    }
+   ]
+  },
+  {
+   "ticketId": "T-036",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.9,
+     "false": 0.09999999999999998
+    },
+    {
+     "true": 0.62,
+     "false": 0.38
+    },
+    {
+     "true": 0.84,
+     "false": 0.16000000000000003
+    },
+    {
+     "true": 0.42,
+     "false": 0.5800000000000001
+    }
+   ]
+  },
+  {
+   "ticketId": "T-036",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.16,
+     "false": 0.84
+    }
+   ]
+  },
+  {
+   "ticketId": "T-037",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.95,
+     "infra": 0,
+     "data": 0,
+     "account": 0.05
+    },
+    {
+     "payments": 0,
+     "auth": 0.89,
+     "infra": 0,
+     "data": 0,
+     "account": 0.11
+    },
+    {
+     "payments": 0,
+     "auth": 0.98,
+     "infra": 0,
+     "data": 0,
+     "account": 0.02
+    }
+   ]
+  },
+  {
+   "ticketId": "T-037",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Normal",
+    "Normal",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.98,
+     "Normal": 0.02,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.47,
+     "Normal": 0.52,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.47,
+     "Normal": 0.53,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.29,
+     "Normal": 0.7,
+     "High": 0.01,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-037",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.12,
+     "false": 0.88
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.5,
+     "false": 0.5
+    }
+   ]
+  },
+  {
+   "ticketId": "T-037",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.02,
+     "false": 0.98
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    }
+   ]
+  },
+  {
+   "ticketId": "T-038",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-038",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "High",
+    "High",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.44,
+     "High": 0.56,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.03,
+     "High": 0.86,
+     "Critical": 0.11
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.32,
+     "High": 0.67,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.06,
+     "High": 0.87,
+     "Critical": 0.07
+    }
+   ]
+  },
+  {
+   "ticketId": "T-038",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.78,
+     "false": 0.21999999999999997
+    },
+    {
+     "true": 0.34,
+     "false": 0.6599999999999999
+    },
+    {
+     "true": 0.52,
+     "false": 0.48
+    },
+    {
+     "true": 0.52,
+     "false": 0.48
+    }
+   ]
+  },
+  {
+   "ticketId": "T-038",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-039",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.15,
+     "data": 0.85,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.04,
+     "data": 0.96,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.03,
+     "data": 0.97,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.01,
+     "data": 0.99,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-039",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "Critical",
+    "High",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.1,
+     "High": 0.88,
+     "Critical": 0.02
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.42,
+     "Critical": 0.58
+    },
+    {
+     "Low": 0.01,
+     "Normal": 0.08,
+     "High": 0.87,
+     "Critical": 0.04
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.45,
+     "Critical": 0.55
+    }
+   ]
+  },
+  {
+   "ticketId": "T-039",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.72,
+     "false": 0.28
+    },
+    {
+     "true": 0.32,
+     "false": 0.6799999999999999
+    },
+    {
+     "true": 0.33,
+     "false": 0.6699999999999999
+    },
+    {
+     "true": 0.55,
+     "false": 0.44999999999999996
+    }
+   ]
+  },
+  {
+   "ticketId": "T-039",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-040",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.03,
+     "infra": 0,
+     "data": 0,
+     "account": 0.97
+    },
+    {
+     "payments": 0,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0,
+     "account": 0.99
+    },
+    {
+     "payments": 0,
+     "auth": 0.31,
+     "infra": 0,
+     "data": 0,
+     "account": 0.69
+    },
+    {
+     "payments": 0,
+     "auth": 0.33,
+     "infra": 0,
+     "data": 0,
+     "account": 0.67
+    }
+   ]
+  },
+  {
+   "ticketId": "T-040",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.22,
+     "Critical": 0.78
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.06,
+     "Critical": 0.94
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-040",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.85,
+     "false": 0.15000000000000002
+    },
+    {
+     "true": 0.26,
+     "false": 0.74
+    },
+    {
+     "true": 0.67,
+     "false": 0.32999999999999996
+    },
+    {
+     "true": 0.48,
+     "false": 0.52
+    }
+   ]
+  },
+  {
+   "ticketId": "T-040",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.95,
+     "false": 0.050000000000000044
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    }
+   ]
+  },
+  {
+   "ticketId": "T-041",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.97,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.03,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 1,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0.98,
+     "auth": 0,
+     "infra": 0,
+     "data": 0.02,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-041",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Normal",
+    "Low",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.96,
+     "Normal": 0.04,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.48,
+     "Normal": 0.52,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.76,
+     "Normal": 0.24,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.35,
+     "Normal": 0.64,
+     "High": 0.01,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-041",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.07,
+     "false": 0.9299999999999999
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.47,
+     "false": 0.53
+    }
+   ]
+  },
+  {
+   "ticketId": "T-041",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-042",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.95,
+     "infra": 0,
+     "data": 0,
+     "account": 0.05
+    },
+    {
+     "payments": 0,
+     "auth": 0.92,
+     "infra": 0,
+     "data": 0,
+     "account": 0.08
+    },
+    {
+     "payments": 0,
+     "auth": 0.89,
+     "infra": 0,
+     "data": 0,
+     "account": 0.11
+    },
+    {
+     "payments": 0,
+     "auth": 0.61,
+     "infra": 0,
+     "data": 0,
+     "account": 0.39
+    }
+   ]
+  },
+  {
+   "ticketId": "T-042",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "High",
+    "High",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.12,
+     "High": 0.88,
+     "Critical": 0
+    },
+    {
+     "Low": 0,
+     "Normal": 0.03,
+     "High": 0.72,
+     "Critical": 0.25
+    },
+    {
+     "Low": 0,
+     "Normal": 0.18,
+     "High": 0.81,
+     "Critical": 0.01
+    },
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.64,
+     "Critical": 0.35
+    }
+   ]
+  },
+  {
+   "ticketId": "T-042",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.85,
+     "false": 0.15000000000000002
+    },
+    {
+     "true": 0.21,
+     "false": 0.79
+    },
+    {
+     "true": 0.66,
+     "false": 0.33999999999999997
+    },
+    {
+     "true": 0.46,
+     "false": 0.54
+    }
+   ]
+  },
+  {
+   "ticketId": "T-042",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    },
+    {
+     "true": 0.95,
+     "false": 0.050000000000000044
+    },
+    {
+     "true": 0.86,
+     "false": 0.14
+    }
+   ]
+  },
+  {
+   "ticketId": "T-043",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 1,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-043",
+   "questionId": "urgency",
+   "tops": [
+    "High",
+    "High",
+    "High",
+    "High"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0.12,
+     "High": 0.82,
+     "Critical": 0.06
+    },
+    {
+     "Low": 0,
+     "Normal": 0.02,
+     "High": 0.86,
+     "Critical": 0.12
+    },
+    {
+     "Low": 0,
+     "Normal": 0.1,
+     "High": 0.89,
+     "Critical": 0.01
+    },
+    {
+     "Low": 0,
+     "Normal": 0.01,
+     "High": 0.86,
+     "Critical": 0.13
+    }
+   ]
+  },
+  {
+   "ticketId": "T-043",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.65,
+     "false": 0.35
+    }
+   ]
+  },
+  {
+   "ticketId": "T-043",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.95,
+     "false": 0.050000000000000044
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    }
+   ]
+  },
+  {
+   "ticketId": "T-044",
+   "questionId": "team",
+   "tops": [
+    "data",
+    "data",
+    "data",
+    "data"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.01,
+     "infra": 0,
+     "data": 0.99,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.05,
+     "infra": 0,
+     "data": 0.95,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0,
+     "data": 1,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-044",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.04,
+     "Critical": 0.96
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.06,
+     "Critical": 0.94
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-044",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "false",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.54,
+     "false": 0.45999999999999996
+    },
+    {
+     "true": 0.29,
+     "false": 0.71
+    },
+    {
+     "true": 0.65,
+     "false": 0.35
+    },
+    {
+     "true": 0.5,
+     "false": 0.5
+    }
+   ]
+  },
+  {
+   "ticketId": "T-044",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.95,
+     "false": 0.050000000000000044
+    },
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    },
+    {
+     "true": 0.9,
+     "false": 0.09999999999999998
+    },
+    {
+     "true": 0.77,
+     "false": 0.22999999999999998
+    }
+   ]
+  },
+  {
+   "ticketId": "T-045",
+   "questionId": "team",
+   "tops": [
+    "account",
+    "account",
+    "account",
+    "account"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0.02,
+     "infra": 0,
+     "data": 0,
+     "account": 0.98
+    },
+    {
+     "payments": 0,
+     "auth": 0.05,
+     "infra": 0,
+     "data": 0,
+     "account": 0.95
+    },
+    {
+     "payments": 0,
+     "auth": 0.09,
+     "infra": 0,
+     "data": 0,
+     "account": 0.91
+    },
+    {
+     "payments": 0,
+     "auth": 0.11,
+     "infra": 0,
+     "data": 0,
+     "account": 0.89
+    }
+   ]
+  },
+  {
+   "ticketId": "T-045",
+   "questionId": "urgency",
+   "tops": [
+    "Normal",
+    "Normal",
+    "Normal",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.34,
+     "Normal": 0.63,
+     "High": 0.03,
+     "Critical": 0
+    },
+    {
+     "Low": 0.11,
+     "Normal": 0.81,
+     "High": 0.08,
+     "Critical": 0
+    },
+    {
+     "Low": 0.36,
+     "Normal": 0.63,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.1,
+     "Normal": 0.83,
+     "High": 0.07,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-045",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.31,
+     "false": 0.69
+    },
+    {
+     "true": 0.13,
+     "false": 0.87
+    },
+    {
+     "true": 0.13,
+     "false": 0.87
+    },
+    {
+     "true": 0.51,
+     "false": 0.49
+    }
+   ]
+  },
+  {
+   "ticketId": "T-045",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.97,
+     "false": 0.030000000000000027
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    }
+   ]
+  },
+  {
+   "ticketId": "T-046",
+   "questionId": "team",
+   "tops": [
+    "payments",
+    "payments",
+    "payments",
+    "payments"
+   ],
+   "dists": [
+    {
+     "payments": 0.94,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.06
+    },
+    {
+     "payments": 0.97,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.03
+    },
+    {
+     "payments": 0.99,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.01
+    },
+    {
+     "payments": 0.91,
+     "auth": 0,
+     "infra": 0,
+     "data": 0,
+     "account": 0.09
+    }
+   ]
+  },
+  {
+   "ticketId": "T-046",
+   "questionId": "urgency",
+   "tops": [
+    "Low",
+    "Normal",
+    "Low",
+    "Normal"
+   ],
+   "dists": [
+    {
+     "Low": 0.9,
+     "Normal": 0.1,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.23,
+     "Normal": 0.76,
+     "High": 0.01,
+     "Critical": 0
+    },
+    {
+     "Low": 0.7,
+     "Normal": 0.3,
+     "High": 0,
+     "Critical": 0
+    },
+    {
+     "Low": 0.12,
+     "Normal": 0.83,
+     "High": 0.05,
+     "Critical": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-046",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.04,
+     "false": 0.96
+    },
+    {
+     "true": 0.05,
+     "false": 0.95
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.49,
+     "false": 0.51
+    }
+   ]
+  },
+  {
+   "ticketId": "T-046",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.02,
+     "false": 0.98
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    }
+   ]
+  },
+  {
+   "ticketId": "T-047",
+   "questionId": "team",
+   "tops": [
+    "auth",
+    "auth",
+    "auth",
+    "auth"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0.99,
+     "infra": 0,
+     "data": 0,
+     "account": 0.01
+    },
+    {
+     "payments": 0,
+     "auth": 0.98,
+     "infra": 0,
+     "data": 0,
+     "account": 0.02
+    },
+    {
+     "payments": 0,
+     "auth": 1,
+     "infra": 0,
+     "data": 0,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-047",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.35,
+     "Critical": 0.65
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.39,
+     "Critical": 0.61
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    }
+   ]
+  },
+  {
+   "ticketId": "T-047",
+   "questionId": "customer_blocked",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.13,
+     "false": 0.87
+    },
+    {
+     "true": 0.08,
+     "false": 0.92
+    },
+    {
+     "true": 0.1,
+     "false": 0.9
+    },
+    {
+     "true": 0.51,
+     "false": 0.49
+    }
+   ]
+  },
+  {
+   "ticketId": "T-047",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "false",
+    "false",
+    "false",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.06,
+     "false": 0.94
+    },
+    {
+     "true": 0.11,
+     "false": 0.89
+    },
+    {
+     "true": 0.14,
+     "false": 0.86
+    },
+    {
+     "true": 0.09,
+     "false": 0.91
+    }
+   ]
+  },
+  {
+   "ticketId": "T-048",
+   "questionId": "team",
+   "tops": [
+    "infra",
+    "infra",
+    "infra",
+    "infra"
+   ],
+   "dists": [
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.98,
+     "data": 0.02,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.99,
+     "data": 0.01,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.96,
+     "data": 0.04,
+     "account": 0
+    },
+    {
+     "payments": 0,
+     "auth": 0,
+     "infra": 0.97,
+     "data": 0.03,
+     "account": 0
+    }
+   ]
+  },
+  {
+   "ticketId": "T-048",
+   "questionId": "urgency",
+   "tops": [
+    "Critical",
+    "Critical",
+    "Critical",
+    "Critical"
+   ],
+   "dists": [
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0.01,
+     "Critical": 0.99
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    },
+    {
+     "Low": 0,
+     "Normal": 0,
+     "High": 0,
+     "Critical": 1
+    }
+   ]
+  },
+  {
+   "ticketId": "T-048",
+   "questionId": "customer_blocked",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "false"
+   ],
+   "dists": [
+    {
+     "true": 0.94,
+     "false": 0.06000000000000005
+    },
+    {
+     "true": 0.77,
+     "false": 0.22999999999999998
+    },
+    {
+     "true": 0.93,
+     "false": 0.06999999999999995
+    },
+    {
+     "true": 0.32,
+     "false": 0.6799999999999999
+    }
+   ]
+  },
+  {
+   "ticketId": "T-048",
+   "questionId": "contains_personal_data",
+   "tops": [
+    "true",
+    "true",
+    "true",
+    "true"
+   ],
+   "dists": [
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.99,
+     "false": 0.010000000000000009
+    },
+    {
+     "true": 0.97,
+     "false": 0.030000000000000027
+    },
+    {
+     "true": 0.98,
+     "false": 0.020000000000000018
+    }
+   ]
+  }
+ ],
+ "metrics": {
+  "flipRate": 0.1753472222222222,
+  "meanProbabilityShift": 0.14902777777777804,
+  "byQuestion": {
+   "team": {
+    "flipRate": 0.05555555555555555,
+    "meanProbabilityShift": 0.05923611111111107
+   },
+   "urgency": {
+    "flipRate": 0.2638888888888889,
+    "meanProbabilityShift": 0.2525694444444447
+   },
+   "customer_blocked": {
+    "flipRate": 0.3541666666666667,
+    "meanProbabilityShift": 0.22361111111111118
+   },
+   "contains_personal_data": {
+    "flipRate": 0.027777777777777776,
+    "meanProbabilityShift": 0.0606944444444444
+   }
+  }
+ }
+}

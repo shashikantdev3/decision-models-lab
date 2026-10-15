@@ -48,6 +48,7 @@ test("the threshold slider re-routes the queue", async ({ page }) => {
 
 test("the playground runs in mock mode", async ({ page }) => {
   await page.goto("#/playground");
+  await page.getByRole("button", { name: "Mock" }).click();
   await page.getByRole("button", { name: "Run", exact: true }).click();
   await expect(page.getByText("Raw JSON")).toBeVisible();
 });

@@ -148,6 +148,23 @@ describe("ClaudeDecider", () => {
     expect(r.answers.urgent.value).toBeCloseTo(0.95);
   });
 
+  it("doubles max_tokens when a thinking model runs out before finishing the answer", async () => {
+    const sent: number[] = [];
+    const cut = {
+      ...tool,
+      stop_reason: "max_tokens",
+      content: [{ ...tool.content[0], input: { team: tool.content[0].input.team } }],
+    };
+    const fetchImpl = (async (_u: string, init: RequestInit) => {
+      const body = JSON.parse(String(init.body));
+      sent.push(body.max_tokens);
+      return new Response(JSON.stringify(sent.length === 1 ? cut : tool), { status: 200 });
+    }) as unknown as typeof fetch;
+    const m = new ClaudeDecider({ apiKey: "k", modelId: "claude-sonnet-5-5", maxTokens: 600, fetchImpl });
+    await m.decide(toRequest(f.request));
+    expect(sent).toEqual([600, 1200]);
+  });
+
   it("sends the browser header only when asked", async () => {
     const capture = { calls: [] as { url: string; init: RequestInit }[] };
     const m = new ClaudeDecider({

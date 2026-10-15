@@ -18,7 +18,7 @@ Updated 2026-10-15.
 2. Done: `docs/03-hello-world.md` filled in.
 3. Done: cross-check run and disagreements resolved.
 4. Done: bench recorded, about $0.37 in total.
-5. `npm run triage -- --decider decision-1 --writer claude-sonnet --draft-all` and `npm run wording -- --model jev` and `-- --model decision-1`.
+5. Done: triage and wording recorded. Total live spend so far about $1.02 (cross-check $0.17, bench $0.37, triage $0.31 plus an estimated $0.16 for the first attempt that stopped on a token limit after about 25 tickets, wording $0.01).
 6. Turn on Pages (Settings > Pages > Source: GitHub Actions), then run the Pages workflow.
 
 ## Open questions

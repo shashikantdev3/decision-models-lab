@@ -6,7 +6,7 @@ Fast decisions with Jev and Decision-1, careful reasoning with Claude, and a cle
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-1D2A3F.svg)](LICENSE)
 [![Site](https://img.shields.io/badge/site-GitHub%20Pages-1D2A3F.svg)](https://shashikantdev3.github.io/decision-models-lab/)
 
-![The Triage Desk: tickets as strips on a board, confident ones in team bays, unsure ones on Claude's desk (Mock mode)](docs/screenshots/desk-1440-light.png)
+![The Triage Desk: tickets as strips on a board, confident ones in team bays, unsure ones on Claude's desk (recorded run, 2026-10-15)](docs/screenshots/desk-1440-light.png)
 
 ## What you will learn
 
@@ -102,6 +102,20 @@ How to read it:
 - **Both decision models were better calibrated than Claude's written probabilities** (ECE 0.015 and 0.037 against 0.066), at about 1/75th to 1/130th of the cost per decision.
 - **Latency includes the network from India** and is per call, measured in the client after warm-up.
 
+**The full loop** (Decision-1 deciding, Claude Sonnet 5.5 writing, threshold 0.8, run with `--draft-all` so every ticket has a Claude draft):
+
+| | Result |
+|---|---|
+| Routed automatically | 34 of 48 (70.8%), team correct on 33 |
+| Escalated to Claude | 14: 12 by the likely-critical rule, 2 by low team confidence |
+| Team correct after Claude | 11 of 14 escalated; the decision model alone had 12 of those 14 right |
+| Claude drafts that failed the decision model's checks | 0 of 14 |
+| Claude draft time | 5.0 s median, 9.7 s slowest |
+
+Claude did not improve team routing on this set: on T-002 and T-035 it overrode a decision model answer, once wrongly and once agreeing with a wrong one, and on T-040 it agreed with the decision model's wrong answer. What Claude added was the reason and the draft reply, which is the part a decision model cannot do.
+
+**Wording test:** asking the same four questions in three other wordings changed the top answer in 17.5% of cases for Jev and 7.3% for Decision-1. The biggest mover was Jev on `customer_blocked` (35.4%), driven by a rewording that asks the question in reverse ("Does the customer have a workaround?").
+
 Full charts on the [Results page](https://shashikantdev3.github.io/decision-models-lab/#/results); raw files and `VERIFY.md` in [`results/2026-10-15/`](results/2026-10-15/). Method: [docs/11-results-methodology.md](docs/11-results-methodology.md).
 
 ## Limitations
@@ -134,7 +148,7 @@ From the recorded run above (input tokens as reported by each API; prices in `co
 
 Decision models bill input tokens only. Jev counts about 1.7 times as many input tokens as Decision-1 for the same tickets, which is why it costs more at the same price per token.
 
-The whole benchmark (3 models x 3 runs, plus pilot and warm-up calls) cost about $0.37, nearly all of it Claude.
+The whole benchmark (3 models x 3 runs, plus pilot and warm-up calls) cost about $0.37, nearly all of it Claude. The triage run with a Claude Sonnet draft for every ticket cost $0.31; with drafts only for the 14 escalated tickets it would have been $0.09. Both wording tests together cost under $0.01.
 
 Spending caps: use a dedicated OpenRouter key with a credit limit, set a monthly limit on your Anthropic workspace, and keep the CLI's `--max-usd` (default $2). The CLI prints its estimate and asks before any run over 10 tickets.
 
@@ -188,7 +202,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Good first issues:
 
 ## Roadmap
 
-- Record a triage run and the wording test, so the site's Replay mode has strips to show.
+- More tickets, so differences of a few points mean something.
 - Demo GIF and short video of the loop, the slider and the race.
 - Jev `box` questions with images.
 - A second dataset and a Hindi ticket set.

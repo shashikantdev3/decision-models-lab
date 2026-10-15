@@ -124,7 +124,7 @@ function ReplayPlayground() {
       </div>
       {rec && (
         <>
-          <pre>
+          <pre tabIndex={0}>
             <code>{ticketById.get(rec.ticketId)?.body}</code>
           </pre>
           <Output r={rec.decision} title={file.decider.label} />

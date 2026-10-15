@@ -28,7 +28,7 @@ export function writerForMode(
   keys: { openrouter: string; anthropic: string },
 ): Writer {
   if (mode === "mock") return buildWriter(key, { keys: {}, mock: { tickets } });
-  return buildWriter(key, { keys: { anthropic: keys.anthropic }, browser: true, maxTokens: 600 });
+  return buildWriter(key, { keys: { anthropic: keys.anthropic }, browser: true, maxTokens: 1200 });
 }
 
 /** A mock decider with no dataset knowledge, for questions the visitor writes. */

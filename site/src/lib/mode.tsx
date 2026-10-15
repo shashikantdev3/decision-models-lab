@@ -33,8 +33,10 @@ export function LabProvider({ children }: { children: ReactNode }) {
   const [mock, setMock] = useState<ResultSet | undefined>();
   // Keys live in React state only: never localStorage, never sent anywhere except the provider.
   const [keys, setKeys] = useState<Keys>({ openrouter: "", anthropic: "" });
-  const [decider, setDecider] = useState("jev");
-  const [writer, setWriter] = useState("claude-sonnet");
+  // Start on the models of the recorded triage run, so the header matches what the board shows.
+  const recordedTriage = latestRecorded?.triage[0];
+  const [decider, setDecider] = useState(recordedTriage?.decider.key ?? "decision-1");
+  const [writer, setWriter] = useState(recordedTriage?.writer.key ?? "claude-sonnet");
 
   useEffect(() => {
     if (mode === "mock" && !mock) mockResultSet().then(setMock);

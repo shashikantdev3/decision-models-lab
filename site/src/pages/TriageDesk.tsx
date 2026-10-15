@@ -336,7 +336,7 @@ export function TriageDesk() {
         <div className="panel">
           <p style={{ marginTop: 0 }}>
             Live run: the first {LIVE_CAP} tickets through {d.label}, with escalations to {w.label} (replies
-            capped at 600 tokens). Estimated cost {usd(estimate)}.
+            capped at 1,200 tokens). Estimated cost {usd(estimate)}.
           </p>
           <div className="row">
             <button onClick={() => setConfirmOpen(true)} disabled={!!busy}>

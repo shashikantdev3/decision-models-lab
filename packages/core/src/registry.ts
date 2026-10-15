@@ -117,6 +117,6 @@ export function buildWriter(keyOrId: string, o: BuildOptions): Writer {
     modelId: e.id,
     label: e.label,
     browser: o.browser,
-    maxTokens: o.maxTokens ?? 600,
+    maxTokens: o.maxTokens ?? 1200,
   });
 }
