@@ -79,11 +79,11 @@ export function Home() {
           Claude's reply before it is sent.
         </p>
         <div className="row">
-          <Link className="button" to="/desk">
-            Watch the desk
+          <Link className="button" to="/hello">
+            Start with Hello World
           </Link>
-          <Link className="button secondary" to="/learn">
-            Read how it works
+          <Link className="button secondary" to="/desk">
+            Watch the desk
           </Link>
         </div>
       </section>
@@ -120,6 +120,14 @@ export function Home() {
       )}
 
       <section className={s.parts} aria-label="What is in the lab">
+        <div>
+          <h2>
+            <Link to="/hello">Hello World</Link>
+          </h2>
+          <p>
+            Clone, run it offline, add your key, run it live. Five minutes to a working lab you can change.
+          </p>
+        </div>
         <div>
           <h2>
             <Link to="/learn">Learn</Link>

@@ -1,7 +1,7 @@
 /** Screenshots of every page at 1440px and 390px in both themes, saved to docs/screenshots/. */
 import { test } from "@playwright/test";
 
-const pages = ["home", "learn", "playground", "desk", "results", "extend"];
+const pages = ["home", "hello", "learn", "playground", "desk", "results", "extend"];
 for (const name of pages) {
   for (const width of [1440, 390]) {
     for (const theme of ["light", "dark"] as const) {

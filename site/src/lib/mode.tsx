@@ -4,6 +4,13 @@ import { mockResultSet } from "./mockData.ts";
 
 export type Mode = "replay" | "live" | "mock";
 
+const EMPTY = { openrouter: "", anthropic: "" };
+/** Keys from .env when running `npm run dev` locally; always empty in the published site. */
+export function devKeys(): Keys {
+  return typeof __DEV_KEYS__ === "undefined" ? EMPTY : __DEV_KEYS__;
+}
+export const keysFromEnv = () => !!devKeys().openrouter;
+
 interface Keys {
   openrouter: string;
   anthropic: string;
@@ -32,7 +39,7 @@ export function LabProvider({ children }: { children: ReactNode }) {
   const [mode, setMode] = useState<Mode>(hasRecorded ? "replay" : "mock");
   const [mock, setMock] = useState<ResultSet | undefined>();
   // Keys live in React state only: never localStorage, never sent anywhere except the provider.
-  const [keys, setKeys] = useState<Keys>({ openrouter: "", anthropic: "" });
+  const [keys, setKeys] = useState<Keys>(() => ({ ...EMPTY, ...devKeys() }));
   // Start on the models of the recorded triage run, so the header matches what the board shows.
   const recordedTriage = latestRecorded?.triage[0];
   const [decider, setDecider] = useState(recordedTriage?.decider.key ?? "decision-1");

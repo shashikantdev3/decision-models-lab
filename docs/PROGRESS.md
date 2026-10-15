@@ -12,6 +12,10 @@ Updated 2026-10-15.
 | M5 Docs               | Mostly done       | README, docs 01 to 11, CONTRIBUTING, templates. Demo GIF and social preview image need a recorded run.                                                                                            |
 | M6 Share              | Not started       | Owner's video and LinkedIn post.                                                                                                                                                                  |
 
+## Hello World (2026-10-16)
+
+Hello World page added to the site and first in the README: get a key with credit, clone, `.env`, `npm run hello`, `npm run dev`, pick an issue. Offline fallback replays recorded answers. `scripts/create-starter-issues.mjs` creates the ten good first issues with the GitHub CLI.
+
 ## Next steps for the owner
 
 1. Done: keys confirmed, first live calls made, fixtures saved.

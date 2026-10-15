@@ -1,29 +1,49 @@
 # Hello World
 
-One request with a noul, a choice and a score question, sent to both decision models. Only the model id changes.
+Clone the lab, add an OpenRouter key, run it. About five minutes.
 
-## curl
+1. **Key.** Sign up at [openrouter.ai](https://openrouter.ai), add credit ($5 is more than enough; one run costs about $0.00003), and create a key with a credit limit at [openrouter.ai/settings/keys](https://openrouter.ai/settings/keys). One key covers both models.
+2. **Clone and install.**
 
-```bash
-OPENROUTER_API_KEY=sk-or-... ./examples/hello-world/curl.sh typesafe/jev-1.14
-OPENROUTER_API_KEY=sk-or-... ./examples/hello-world/curl.sh microsoft/microsoft-decision-1-20261009
-```
+   ```bash
+   git clone https://github.com/shashikantdev3/decision-models-lab.git
+   cd decision-models-lab
+   npm install
+   cp .env.example .env          # PowerShell: Copy-Item .env.example .env
+   ```
 
-## Python (standard library only)
+   Set `OPENROUTER_API_KEY=sk-or-v1-...` in `.env`. Git ignores it.
+3. **Run.**
 
-```bash
-OPENROUTER_API_KEY=sk-or-... python examples/hello-world/hello.py microsoft/microsoft-decision-1-20261009
-```
+   ```bash
+   npm run hello                          # one real request to each model
+   npm run hello -- --model decision-1    # one model
+   npm run hello -- --verbose             # also print the request and the raw JSON
+   ```
 
-## TypeScript (this repo's core library)
+4. **Open the lab.** `npm run dev` serves the site at http://localhost:5173 and reads the key from `.env`, so Live mode works without pasting it. Only the local dev server reads `.env`; builds never include a key, and CI checks `site/dist` for anything that looks like one.
 
-```bash
-npm run hello -- --model jev,decision-1          # reads .env
-npm run hello -- --mock                          # offline, no key
-npx tsx examples/hello-world/hello.ts typesafe/jev-1.14
-```
+The request is in `packages/cli/src/hello.ts`: one ticket and three questions, a yes/no (`urgent`), a choice (`team`) and a scale (`severity`). Change the ticket or the options and run it again to see the probabilities move.
 
-`npm run hello -- --model jev,decision-1 --save-fixture` saves each live response to `packages/core/test/fixtures/live.<model>.<date>.json`. The tests parse every fixture in that folder, so a response shape change fails the build.
+## Without credit
+
+`npm run hello -- --mock` makes no call and needs no key. It replays the newest live response saved in `packages/core/test/fixtures/` for each model and labels it as recorded. `npm test`, `npm run triage -- --mock` and the site's Replay and Mock modes also run offline.
+
+## One-file examples
+
+For people who want one call before cloning, `examples/hello-world/` has the same request with nothing to install:
+
+| File | Run |
+|---|---|
+| `hello.ps1` | `powershell -ExecutionPolicy Bypass -File examples/hello-world/hello.ps1 [-Model id] [-Raw]` |
+| `curl.sh` | `./examples/hello-world/curl.sh [model]` (prints raw JSON) |
+| `hello.py` | `python examples/hello-world/hello.py [model] [--raw]` |
+| `hello.mjs` | `node examples/hello-world/hello.mjs [model] [--raw]` |
+| `hello.ts` | `npx tsx examples/hello-world/hello.ts [model]` (uses this repo's core library) |
+
+All of them read `OPENROUTER_API_KEY` from the environment and print the same six lines.
+
+`npm run hello -- --save-fixture` saves each live response to `packages/core/test/fixtures/live.<model>.<date>.json`. The tests parse every fixture in that folder, and offline Hello World replays the newest one.
 
 ## Milestone 0 results (first live calls, 2026-10-16 IST, from Noida, India)
 

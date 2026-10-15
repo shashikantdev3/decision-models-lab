@@ -6,6 +6,62 @@ Fast decisions with Jev and Decision-1, careful reasoning with Claude, and a cle
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-1D2A3F.svg)](LICENSE)
 [![Site](https://img.shields.io/badge/site-GitHub%20Pages-1D2A3F.svg)](https://shashikantdev3.github.io/decision-models-lab/)
 
+## Hello World in 5 minutes
+
+You need git, Node.js 20.12 or newer, and an OpenRouter key with a little credit.
+
+**1. Get a key.** Sign up at [openrouter.ai](https://openrouter.ai), add credit at [openrouter.ai/settings/credits](https://openrouter.ai/settings/credits) ($5 is more than enough: one Hello World run costs about $0.00003), then create a key at [openrouter.ai/settings/keys](https://openrouter.ai/settings/keys) with a credit limit. One key covers both models.
+
+**2. Clone, install and add the key.**
+
+```bash
+git clone https://github.com/shashikantdev3/decision-models-lab.git
+cd decision-models-lab
+npm install
+cp .env.example .env          # PowerShell: Copy-Item .env.example .env
+```
+
+Open `.env` and set `OPENROUTER_API_KEY=sk-or-v1-...`. Git ignores this file.
+
+**3. Run it.**
+
+```bash
+npm run hello
+```
+
+One real request to each model: a support ticket and three typed questions. You get something like this (the first real answers recorded for this lab; yours will differ a little):
+
+```text
+Ticket:   Checkout returns HTTP 500 for all users since 10:05.
+Asking:   urgent (yes/no), team (payments, auth, infra), severity (Cosmetic to Critical)
+
+TypeSafe Jev 1.14
+model     typesafe/jev-1.14-20261014
+urgent    yes 0.95
+team      payments 0.97   confidence 0.95   (payments 0.97, infra 0.03, auth 0.00)
+severity  Critical 0.99   position 2.98 on 0 to 3
+cost      $0.0000184 for 438 input tokens (output is free)
+time      1086 ms
+
+Microsoft Decision-1
+model     microsoft/microsoft-decision-1-20261009
+urgent    yes 1.00
+team      payments 0.62   confidence 0.43   (payments 0.62, infra 0.38, auth 0.00)
+severity  Critical 0.98   position 2.98 on 0 to 3
+cost      $0.0000055 for 132 input tokens (output is free)
+time      730 ms
+
+Next: `npm run dev` opens the site on http://localhost:5173. To pick something to build, see CONTRIBUTING.md.
+```
+
+**4. Open the whole lab.** `npm run dev` starts the site at http://localhost:5173 and reads the key from your `.env`, so Live mode works straight away. Only the local dev server does this; the published site never contains a key.
+
+**5. Pick something to build:** a [good first issue](https://github.com/shashikantdev3/decision-models-lab/issues?q=is%3Aopen+label%3A%22good+first+issue%22), [a new model](docs/09-extending.md), [a new dataset](data/README.md) or [a new metric](docs/09-extending.md). Run `npm run check` before you open a pull request; [CONTRIBUTING.md](CONTRIBUTING.md) has the rest.
+
+**No credit yet?** `npm run hello -- --mock` runs offline with no key and no cost. It replays the answers above, recorded from the real API, and says so. `npm test`, `npm run triage -- --mock` and `npm run dev` (Replay and Mock modes) also work without a key.
+
+The [Hello World page](https://shashikantdev3.github.io/decision-models-lab/#/hello) walks through the same steps, with Windows commands and every field of the answer explained.
+
 ![The Triage Desk: tickets as strips on a board, confident ones in team bays, unsure ones on Claude's desk (recorded run, 2026-10-15)](docs/screenshots/desk-1440-light.png)
 
 ## What you will learn
@@ -39,22 +95,18 @@ out:  urgent    noul 0.97
 
 Both listed at $0.042 per million input tokens, output free, on OpenRouter on 15 October 2026.
 
-## Hello World
+## No Node.js? One-file examples
 
-Only the model id changes between the two.
+[`examples/hello-world`](examples/hello-world) has the same request as a single file in PowerShell, curl, Python and plain Node.js, with nothing to install:
 
-```bash
-# curl
-OPENROUTER_API_KEY=sk-or-... ./examples/hello-world/curl.sh typesafe/jev-1.14
-
-# Python, standard library only
-OPENROUTER_API_KEY=sk-or-... python examples/hello-world/hello.py microsoft/microsoft-decision-1-20261009
-
-# TypeScript, with this repo's core library (reads .env)
-npm run hello -- --model jev,decision-1
+```powershell
+$env:OPENROUTER_API_KEY = "sk-or-..."
+powershell -ExecutionPolicy Bypass -File examples/hello-world/hello.ps1
 ```
 
-No key yet? `npm run hello -- --mock` shows the same flow with an offline stand-in. More in [docs/03-hello-world.md](docs/03-hello-world.md).
+```bash
+OPENROUTER_API_KEY=sk-or-... python examples/hello-world/hello.py microsoft/microsoft-decision-1-20261009
+```
 
 ## The demo: Contoso Triage Desk
 
@@ -162,9 +214,10 @@ cd decision-models-lab
 npm install
 cp .env.example .env          # add OPENROUTER_API_KEY and, for Claude, ANTHROPIC_API_KEY
 
+npm run hello                 # Hello World, live, both models
+npm run hello -- --mock       # Hello World, offline, no key
 npm test                      # unit tests, offline
 npm run triage -- --mock      # whole pipeline, offline, no key
-npm run hello -- --model jev  # one live call, a fraction of a cent
 npm run bench -- --models jev,decision-1,claude-haiku --runs 3
 npm run triage -- --decider decision-1 --writer claude-sonnet --threshold 0.8
 npm run wording -- --model jev

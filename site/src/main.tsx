@@ -6,6 +6,7 @@ import { LabProvider } from "./lib/mode.tsx";
 import { Layout } from "./components/Layout.tsx";
 import { Home } from "./pages/Home.tsx";
 import { Learn } from "./pages/Learn.tsx";
+import { HelloWorld } from "./pages/HelloWorld.tsx";
 import { Playground } from "./pages/Playground.tsx";
 import { TriageDesk } from "./pages/TriageDesk.tsx";
 import { Results } from "./pages/Results.tsx";
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="hello" element={<HelloWorld />} />
             <Route path="learn" element={<Learn />} />
             <Route path="playground" element={<Playground />} />
             <Route path="desk" element={<TriageDesk />} />

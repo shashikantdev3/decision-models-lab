@@ -31,6 +31,8 @@ jobs:
       - run: npm test
       - run: npm run triage -- --mock
       - run: npm run build
+      - name: Make sure no key is in the built site
+        run: "! grep -rEl 'sk-or-v1-[0-9a-f]{32}|sk-ant-[A-Za-z0-9_-]{30}' site/dist"
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
       - name: Smoke and accessibility tests

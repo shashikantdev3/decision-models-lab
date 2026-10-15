@@ -1,5 +1,7 @@
 # Contributing
 
+New here? Do the [Hello World](README.md#hello-world-in-5-minutes) first; it gets the lab running in five minutes.
+
 Thanks for helping. This lab exists so people can learn decision models by using them, so the best contributions make something clearer or let people try something new.
 
 ## Set up
@@ -10,6 +12,7 @@ You need Node 20.12 or newer and git. Python 3.10+ only if you want to run `exam
 git clone https://github.com/shashikantdev3/decision-models-lab.git
 cd decision-models-lab
 npm install
+npm run hello -- --mock     # Hello World, offline
 npm test                    # unit tests, no network
 npm run triage -- --mock    # the whole pipeline with offline stand-in models
 npm run dev                 # the site at http://localhost:5173 (Mock mode works with no key)

@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 
 const pages = [
   { path: "#/", heading: /quick calls/ },
+  { path: "#/hello", heading: "Hello World" },
   { path: "#/learn", heading: "How decision models work" },
   { path: "#/playground", heading: "Playground" },
   { path: "#/desk", heading: "Contoso Triage Desk" },
@@ -51,6 +52,14 @@ test("the playground runs in mock mode", async ({ page }) => {
   await page.getByRole("button", { name: "Mock" }).click();
   await page.getByRole("button", { name: "Run", exact: true }).click();
   await expect(page.getByText("Raw JSON")).toBeVisible();
+});
+
+test("hello world shows the recorded answer without a key", async ({ page }) => {
+  await page.goto("#/hello");
+  await page.getByRole("button", { name: "Show the recorded answer" }).click();
+  await expect(page.getByText(/^Recorded answer, /)).toBeVisible();
+  await page.getByRole("tab", { name: "Windows PowerShell" }).click();
+  await expect(page.getByText("Copy-Item .env.example .env")).toBeVisible();
 });
 
 test("keys are never written to storage", async ({ page }) => {

@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { modelsConfig } from "@decision-models-lab/core";
-import { useLab, type Mode } from "../lib/mode.tsx";
+import { useLab, keysFromEnv, type Mode } from "../lib/mode.tsx";
 import s from "./Layout.module.css";
 
 const REPO = "https://github.com/shashikantdev3/decision-models-lab";
@@ -85,6 +85,12 @@ function KeyPanel() {
           onChange={(e) => setKeys({ ...keys, anthropic: e.target.value.trim() })}
         />
       </div>
+      {keysFromEnv() && (
+        <p className="small">
+          <strong>Keys loaded from your .env.</strong> This only happens with <code>npm run dev</code> on your
+          own machine; the published site never contains a key.
+        </p>
+      )}
       <p className="small muted">
         Keys stay in this tab's memory and are sent only to openrouter.ai and api.anthropic.com. Closing or
         reloading the tab forgets them. Use a key with a credit limit.
@@ -108,6 +114,7 @@ export function Layout() {
               Decision Models Lab
             </NavLink>
             <nav className={s.nav} aria-label="Main">
+              <NavLink to="/hello">Hello World</NavLink>
               <NavLink to="/learn">Learn</NavLink>
               <NavLink to="/playground">Playground</NavLink>
               <NavLink to="/desk">Desk</NavLink>
