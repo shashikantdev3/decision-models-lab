@@ -1,0 +1,82 @@
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { latestRecorded, type ResultSet } from "./data.ts";
+import { mockResultSet } from "./mockData.ts";
+
+export type Mode = "replay" | "live" | "mock";
+
+interface Keys {
+  openrouter: string;
+  anthropic: string;
+}
+
+interface Lab {
+  mode: Mode;
+  setMode: (m: Mode) => void;
+  /** Data the pages read: recorded runs in Replay and Live, generated data in Mock. */
+  data: ResultSet | undefined;
+  loading: boolean;
+  isMockData: boolean;
+  hasRecorded: boolean;
+  keys: Keys;
+  setKeys: (k: Keys) => void;
+  decider: string;
+  setDecider: (k: string) => void;
+  writer: string;
+  setWriter: (k: string) => void;
+}
+
+const Ctx = createContext<Lab | null>(null);
+
+export function LabProvider({ children }: { children: ReactNode }) {
+  const hasRecorded = !!latestRecorded;
+  const [mode, setMode] = useState<Mode>(hasRecorded ? "replay" : "mock");
+  const [mock, setMock] = useState<ResultSet | undefined>();
+  // Keys live in React state only: never localStorage, never sent anywhere except the provider.
+  const [keys, setKeys] = useState<Keys>({ openrouter: "", anthropic: "" });
+  const [decider, setDecider] = useState("jev");
+  const [writer, setWriter] = useState("claude-sonnet");
+
+  useEffect(() => {
+    if (mode === "mock" && !mock) mockResultSet().then(setMock);
+  }, [mode, mock]);
+
+  const value = useMemo<Lab>(() => {
+    const data = mode === "mock" ? mock : latestRecorded;
+    return {
+      mode,
+      setMode,
+      data,
+      loading: mode === "mock" && !mock,
+      isMockData: mode === "mock",
+      hasRecorded,
+      keys,
+      setKeys,
+      decider,
+      setDecider,
+      writer,
+      setWriter,
+    };
+  }, [mode, mock, hasRecorded, keys, decider, writer]);
+
+  return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
+}
+
+export function useLab(): Lab {
+  const v = useContext(Ctx);
+  if (!v) throw new Error("useLab outside LabProvider");
+  return v;
+}
+
+export function usePrefersReducedMotion(): boolean {
+  const [reduced, setReduced] = useState(
+    () => typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches,
+  );
+  useEffect(() => {
+    const m = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+    if (!m) return;
+    const on = () => setReduced(m.matches);
+    m.addEventListener("change", on);
+    return () => m.removeEventListener("change", on);
+  }, []);
+  return reduced;
+}

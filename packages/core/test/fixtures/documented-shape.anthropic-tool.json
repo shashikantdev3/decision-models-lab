@@ -1,0 +1,23 @@
+{
+  "_source": "Shape of an Anthropic Messages API response with a forced tool call. Values invented. Not a live capture.",
+  "response": {
+    "id": "msg_documented_shape",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-haiku-4-5-20251001",
+    "content": [
+      {
+        "type": "tool_use",
+        "id": "toolu_01",
+        "name": "record_decisions",
+        "input": {
+          "urgent": { "p_yes": 0.95 },
+          "team": { "payments": 0.9, "auth": 0.02, "infra": 0.08 },
+          "severity": { "Cosmetic": 0.0, "Minor": 0.0, "Major": 0.1, "Critical": 0.9 }
+        }
+      }
+    ],
+    "stop_reason": "tool_use",
+    "usage": { "input_tokens": 512, "output_tokens": 96 }
+  }
+}

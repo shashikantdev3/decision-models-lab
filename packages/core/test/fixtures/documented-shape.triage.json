@@ -1,0 +1,53 @@
+{
+  "_source": "Shape from the OpenRouter Decisions API reference, checked 2026-10-15. Values invented. Not a live capture.",
+  "request": {
+    "model": "typesafe/jev-1.14",
+    "state": ["Ticket: Checkout returns HTTP 500 for all users since 10:05."],
+    "questions": {
+      "urgent": {
+        "type": "noul",
+        "instructions": "Does this need someone right now?",
+        "criteria": {
+          "true": "Customers are blocked or data is at risk",
+          "false": "It can wait for normal hours"
+        }
+      },
+      "team": {
+        "type": "choice",
+        "instructions": "Which team should own this?",
+        "criteria": {
+          "payments": "Checkout and billing",
+          "auth": "Login and access",
+          "infra": "Servers, network and outages"
+        }
+      },
+      "severity": {
+        "type": "score",
+        "instructions": "How severe is the impact?",
+        "criteria": ["Cosmetic", "Minor", "Major", "Critical"]
+      }
+    }
+  },
+  "response": {
+    "id": "gen-documented-shape-0001",
+    "model": "typesafe/jev-1.14-20261014",
+    "provider": "TypeSafe",
+    "answers": {
+      "urgent": { "type": "noul", "noul": 0.97 },
+      "team": {
+        "type": "choice",
+        "choice": "payments",
+        "confidence": 0.91,
+        "probabilities": { "payments": 0.94, "auth": 0.01, "infra": 0.05 }
+      },
+      "severity": {
+        "type": "score",
+        "score": 2.87,
+        "confidence": 0.84,
+        "probabilities": { "0": 0.0, "1": 0.02, "2": 0.09, "3": 0.89 },
+        "legend": { "0": "Cosmetic", "1": "Minor", "2": "Major", "3": "Critical" }
+      }
+    },
+    "usage": { "input_tokens": 212, "output_tokens": 2, "cost": 0.0000089 }
+  }
+}

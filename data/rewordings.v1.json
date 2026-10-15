@@ -1,0 +1,90 @@
+{
+  "version": "v1",
+  "questionSet": "v1",
+  "note": "Three rewordings of each triage question. Criteria keys stay the same so answers can be compared; only the wording changes.",
+  "rewordings": {
+    "team": [
+      {
+        "instructions": "Which team at Contoso is responsible for fixing this?",
+        "criteria": {
+          "payments": "Payments, billing, invoices and charges",
+          "auth": "Login, MFA, SSO, API keys and permissions",
+          "infra": "Platform reliability: outages, errors, performance, webhooks",
+          "data": "Reports, exports, imports and data correctness",
+          "account": "Plans, seats, settings and account ownership"
+        }
+      },
+      {
+        "instructions": "Route this support ticket to the right owner.",
+        "criteria": {
+          "payments": "Money: checkout, cards, invoices, subscription charges",
+          "auth": "Identity and access",
+          "infra": "Uptime and performance of the service",
+          "data": "Data quality, reporting and data movement",
+          "account": "Account administration"
+        }
+      },
+      {
+        "instructions": "If you had to give this ticket to one team to start the fix, which team would it be?",
+        "criteria": {
+          "payments": "The team that runs billing and payment processing",
+          "auth": "The team that runs sign-in and access control",
+          "infra": "The team that keeps the platform running",
+          "data": "The team that owns reporting, exports and sync",
+          "account": "The team that manages plans, seats and account settings"
+        }
+      }
+    ],
+    "urgency": [
+      {
+        "instructions": "How quickly does someone need to act on this ticket?",
+        "criteria": ["Low", "Normal", "High", "Critical"]
+      },
+      {
+        "instructions": "Rate the urgency. Critical means many people are down or data or security is at risk right now.",
+        "criteria": ["Low", "Normal", "High", "Critical"]
+      },
+      {
+        "instructions": "What priority should this ticket get in the support queue?",
+        "criteria": ["Low", "Normal", "High", "Critical"]
+      }
+    ],
+    "customer_blocked": [
+      {
+        "instructions": "Is the customer stuck with no way to continue?",
+        "criteria": { "true": "Stuck, no workaround", "false": "Not stuck" }
+      },
+      {
+        "instructions": "Does this problem stop the customer's work completely?",
+        "criteria": { "true": "Yes, work has stopped", "false": "No, they can carry on or are just asking" }
+      },
+      {
+        "instructions": "Does the customer have a workaround or can they keep working?",
+        "criteria": {
+          "true": "No workaround; they cannot keep working",
+          "false": "They have a workaround or can keep working"
+        }
+      }
+    ],
+    "contains_personal_data": [
+      {
+        "instructions": "Is there any personally identifiable information in this ticket?",
+        "criteria": {
+          "true": "Yes: emails, phone numbers, card digits, addresses or full names",
+          "false": "No"
+        }
+      },
+      {
+        "instructions": "Would this ticket need redacting before it is shared outside support?",
+        "criteria": {
+          "true": "Yes, it includes a person's contact or payment details or full name",
+          "false": "No personal details"
+        }
+      },
+      {
+        "instructions": "Does the message include contact details, payment details or the full name of a person?",
+        "criteria": { "true": "Yes", "false": "No" }
+      }
+    ]
+  }
+}

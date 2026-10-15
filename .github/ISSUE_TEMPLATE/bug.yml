@@ -1,0 +1,35 @@
+name: Bug
+description: Something does not work as the docs say.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw. Paste error messages as text.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options: [Site, CLI, Core library, Dataset, Docs]
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options: [Replay, Live, Mock, Not relevant]
+  - type: input
+    id: version
+    attributes:
+      label: Commit or date
+      description: The git commit or the date of the results you were looking at.
+  - type: checkboxes
+    id: keys
+    attributes:
+      label: Safety
+      options:
+        - label: I have not pasted an API key or any real personal data in this issue.
+          required: true

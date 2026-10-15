@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.cache/
+dist/
+BUILD_PLAN.md
+playwright-report/
+test-results/
+results/mock/
+*.log
+.DS_Store

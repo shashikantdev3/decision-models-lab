@@ -1,0 +1,68 @@
+{
+  "version": "v1",
+  "triage": {
+    "team": {
+      "type": "choice",
+      "instructions": "Which Contoso team should own the first fix for this ticket?",
+      "criteria": {
+        "payments": "Checkout, card payments, invoices, refunds, subscriptions being charged or suspended for payment",
+        "auth": "Signing in, passwords, MFA, SSO, sessions, API keys and their scopes, user permissions and access",
+        "infra": "Outages, errors or slowness across the service, API availability, webhooks, uploads, servers and time settings",
+        "data": "Exports, imports, reports, dashboards, sync, and whether the numbers or records shown are correct",
+        "account": "Plans, seats, workspace and profile settings, account ownership, account closure"
+      }
+    },
+    "urgency": {
+      "type": "score",
+      "instructions": "How urgent is this ticket? Low: a question or cosmetic issue with no deadline. Normal: a real problem for one customer, or one with a workaround. High: an important function broken or a security concern, needs attention within hours. Critical: the service or a core function is down for many people, data is at risk, or a security incident is under way.",
+      "criteria": ["Low", "Normal", "High", "Critical"]
+    },
+    "customer_blocked": {
+      "type": "noul",
+      "instructions": "Is the customer, or the people they speak for, unable to carry on with the work this ticket is about?",
+      "criteria": {
+        "true": "They cannot do the task at all and have no workaround",
+        "false": "They can still work, have a workaround, or are only asking a question"
+      }
+    },
+    "contains_personal_data": {
+      "type": "noul",
+      "instructions": "Does the ticket text contain personal data about a person?",
+      "criteria": {
+        "true": "It contains an email address, phone number, postal address, payment card digits, date of birth, or a person's full name",
+        "false": "None of these. A first name on its own, a company name or a VAT number does not count"
+      }
+    }
+  },
+  "verify": {
+    "reply_answers_the_question": {
+      "type": "noul",
+      "instructions": "Does the draft reply respond to what the customer actually raised?",
+      "criteria": {
+        "true": "It addresses the customer's problem or question and says what happens next",
+        "false": "It ignores the problem, answers a different question, or is empty"
+      }
+    },
+    "reply_leaks_personal_data": {
+      "type": "noul",
+      "instructions": "Does the draft reply include personal data such as an email address, phone number, card digits or a full name?",
+      "criteria": {
+        "true": "The reply contains personal data",
+        "false": "The reply contains no personal data"
+      }
+    },
+    "reply_promises_something_unapproved": {
+      "type": "noul",
+      "instructions": "Does the draft reply promise a refund, credit, discount, or a specific date or time for a fix?",
+      "criteria": {
+        "true": "It promises money back, a credit, a discount, or a specific date or time",
+        "false": "It makes no such promise"
+      }
+    },
+    "reply_tone": {
+      "type": "score",
+      "instructions": "How does the tone of the draft reply read to a customer?",
+      "criteria": ["Rude", "Flat", "Professional", "Warm"]
+    }
+  }
+}

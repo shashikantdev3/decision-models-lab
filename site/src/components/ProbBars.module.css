@@ -1,0 +1,33 @@
+.list {
+  display: grid;
+  gap: 4px;
+  margin: 0 0 var(--s3);
+}
+.item {
+  display: grid;
+  grid-template-columns: minmax(6em, 9em) 1fr 3.5em;
+  gap: var(--s2);
+  align-items: center;
+  font-size: var(--fs-small);
+}
+.track {
+  height: 12px;
+  background: var(--console-deep);
+  border: 1px solid var(--rule);
+  position: relative;
+}
+.fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--ink-soft);
+  transition: width 300ms ease;
+}
+.top .fill {
+  background: var(--ink);
+}
+.top .name {
+  font-weight: 700;
+}
+.value {
+  text-align: right;
+}

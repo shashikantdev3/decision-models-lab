@@ -1,0 +1,95 @@
+{
+  "$comment": "Selectable models. Add a model with one entry here; write a new adapter only if its API differs. 'adapter' picks the class in packages/core/src/registry.ts.",
+  "deciders": [
+    {
+      "key": "jev",
+      "id": "typesafe/jev-1.14",
+      "alias": "~typesafe/jev-latest",
+      "label": "TypeSafe Jev 1.14",
+      "kind": "decision",
+      "adapter": "openrouter-decisions",
+      "provider": "openrouter",
+      "contextTokens": 262144,
+      "longContextBytes": 32000,
+      "questionTypes": ["noul", "choice", "score", "box"],
+      "color": "jev"
+    },
+    {
+      "key": "decision-1",
+      "id": "microsoft/microsoft-decision-1-20261009",
+      "alias": "microsoft/microsoft-decision-1",
+      "label": "Microsoft Decision-1",
+      "kind": "decision",
+      "adapter": "openrouter-decisions",
+      "provider": "openrouter",
+      "contextTokens": 32768,
+      "questionTypes": ["noul", "choice", "score"],
+      "color": "decision1"
+    },
+    {
+      "key": "claude-haiku",
+      "id": "claude-haiku-4-5-20251001",
+      "label": "Claude Haiku 4.5 (as decider)",
+      "kind": "llm-as-decider",
+      "adapter": "claude-decider",
+      "provider": "anthropic",
+      "contextTokens": 200000,
+      "questionTypes": ["noul", "choice", "score"],
+      "color": "claude"
+    },
+    {
+      "key": "claude-haiku-5-5",
+      "id": "claude-haiku-5-5",
+      "label": "Claude Haiku 5.5 (as decider)",
+      "kind": "llm-as-decider",
+      "adapter": "claude-decider",
+      "provider": "anthropic",
+      "contextTokens": 200000,
+      "questionTypes": ["noul", "choice", "score"],
+      "color": "claude"
+    },
+    {
+      "key": "claude-sonnet",
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5 (as decider)",
+      "kind": "llm-as-decider",
+      "adapter": "claude-decider",
+      "provider": "anthropic",
+      "contextTokens": 1000000,
+      "questionTypes": ["noul", "choice", "score"],
+      "color": "claude"
+    },
+    {
+      "key": "claude-opus",
+      "id": "claude-opus-5-5",
+      "label": "Claude Opus 5.5 (as decider)",
+      "kind": "llm-as-decider",
+      "adapter": "claude-decider",
+      "provider": "anthropic",
+      "contextTokens": 1000000,
+      "questionTypes": ["noul", "choice", "score"],
+      "color": "claude"
+    }
+  ],
+  "writers": [
+    {
+      "key": "claude-haiku",
+      "id": "claude-haiku-4-5-20251001",
+      "label": "Claude Haiku 4.5",
+      "provider": "anthropic"
+    },
+    {
+      "key": "claude-haiku-5-5",
+      "id": "claude-haiku-5-5",
+      "label": "Claude Haiku 5.5",
+      "provider": "anthropic"
+    },
+    {
+      "key": "claude-sonnet",
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5",
+      "provider": "anthropic"
+    },
+    { "key": "claude-opus", "id": "claude-opus-5-5", "label": "Claude Opus 5.5", "provider": "anthropic" }
+  ]
+}

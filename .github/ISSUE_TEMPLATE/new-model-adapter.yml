@@ -1,0 +1,33 @@
+name: New model or adapter
+description: Propose adding a model to the lab.
+labels: [new model]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model and exact version id
+      placeholder: provider/model-name-YYYYMMDD
+    validations:
+      required: true
+  - type: dropdown
+    id: api
+    attributes:
+      label: API
+      options:
+        - OpenRouter Decisions API (config entry only)
+        - Anthropic Messages API (config entry only)
+        - Something else (needs a new adapter)
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Docs and pricing
+      description: Links to the model page, API docs and price. Vendor numbers must have a source.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What it would teach
+      description: What comparison or lesson this model adds.

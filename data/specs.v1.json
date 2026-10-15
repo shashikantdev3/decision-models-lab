@@ -1,0 +1,553 @@
+{
+  "version": "v1",
+  "seed": "decision-models-lab/specs/v1",
+  "specs": [
+    {
+      "id": "T-001",
+      "channel": "chat",
+      "labels": {
+        "team": "payments",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "ambiguous",
+      "twist": "symptom points at one team, root cause sits with another"
+    },
+    {
+      "id": "T-002",
+      "channel": "chat",
+      "labels": {
+        "team": "auth",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "ambiguous",
+      "twist": "could belong to two teams; the label says which one owns the first fix"
+    },
+    {
+      "id": "T-003",
+      "channel": "form",
+      "labels": {
+        "team": "infra",
+        "urgency": "High",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "ambiguous",
+      "twist": "urgency is vague; the customer never says how bad it is"
+    },
+    {
+      "id": "T-004",
+      "channel": "email",
+      "labels": {
+        "team": "data",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "adversarial",
+      "twist": "sarcasm: sounds calm or positive but describes a real block"
+    },
+    {
+      "id": "T-005",
+      "channel": "email",
+      "labels": {
+        "team": "account",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "adversarial",
+      "twist": "uses another team's vocabulary, but the problem belongs to the labelled team"
+    },
+    {
+      "id": "T-006",
+      "channel": "email",
+      "labels": {
+        "team": "payments",
+        "urgency": "Normal",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-007",
+      "channel": "form",
+      "labels": {
+        "team": "auth",
+        "urgency": "High",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-008",
+      "channel": "form",
+      "labels": {
+        "team": "infra",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-009",
+      "channel": "form",
+      "labels": {
+        "team": "data",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-010",
+      "channel": "email",
+      "labels": {
+        "team": "account",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-011",
+      "channel": "form",
+      "labels": {
+        "team": "payments",
+        "urgency": "High",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "ambiguous",
+      "twist": "symptom points at one team, root cause sits with another"
+    },
+    {
+      "id": "T-012",
+      "channel": "chat",
+      "labels": {
+        "team": "auth",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-013",
+      "channel": "email",
+      "labels": {
+        "team": "infra",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": true
+      },
+      "difficulty": "ambiguous",
+      "twist": "symptom points at one team, root cause sits with another"
+    },
+    {
+      "id": "T-014",
+      "channel": "chat",
+      "labels": {
+        "team": "data",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-015",
+      "channel": "chat",
+      "labels": {
+        "team": "account",
+        "urgency": "High",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "adversarial",
+      "twist": "calm, polite and short, but describes something serious"
+    },
+    {
+      "id": "T-016",
+      "channel": "form",
+      "labels": {
+        "team": "payments",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "ambiguous",
+      "twist": "symptom points at one team, root cause sits with another"
+    },
+    {
+      "id": "T-017",
+      "channel": "chat",
+      "labels": {
+        "team": "auth",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": true
+      },
+      "difficulty": "ambiguous",
+      "twist": "urgency is vague; the customer never says how bad it is"
+    },
+    {
+      "id": "T-018",
+      "channel": "chat",
+      "labels": {
+        "team": "infra",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-019",
+      "channel": "form",
+      "labels": {
+        "team": "data",
+        "urgency": "High",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "adversarial",
+      "twist": "calm, polite and short, but describes something serious"
+    },
+    {
+      "id": "T-020",
+      "channel": "email",
+      "labels": {
+        "team": "account",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "adversarial",
+      "twist": "calm, polite and short, but describes something serious"
+    },
+    {
+      "id": "T-021",
+      "channel": "email",
+      "labels": {
+        "team": "payments",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "adversarial",
+      "twist": "urgent words in the subject, nothing urgent in the body"
+    },
+    {
+      "id": "T-022",
+      "channel": "chat",
+      "labels": {
+        "team": "auth",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-023",
+      "channel": "email",
+      "labels": {
+        "team": "infra",
+        "urgency": "High",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-024",
+      "channel": "chat",
+      "labels": {
+        "team": "data",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-025",
+      "channel": "chat",
+      "labels": {
+        "team": "account",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-026",
+      "channel": "chat",
+      "labels": {
+        "team": "payments",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-027",
+      "channel": "form",
+      "labels": {
+        "team": "auth",
+        "urgency": "High",
+        "customer_blocked": false,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-028",
+      "channel": "form",
+      "labels": {
+        "team": "infra",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-029",
+      "channel": "email",
+      "labels": {
+        "team": "data",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-030",
+      "channel": "email",
+      "labels": {
+        "team": "account",
+        "urgency": "Normal",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "ambiguous",
+      "twist": "could belong to two teams; the label says which one owns the first fix"
+    },
+    {
+      "id": "T-031",
+      "channel": "email",
+      "labels": {
+        "team": "payments",
+        "urgency": "High",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-032",
+      "channel": "email",
+      "labels": {
+        "team": "auth",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "adversarial",
+      "twist": "sarcasm: sounds calm or positive but describes a real block"
+    },
+    {
+      "id": "T-033",
+      "channel": "email",
+      "labels": {
+        "team": "infra",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-034",
+      "channel": "form",
+      "labels": {
+        "team": "data",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "ambiguous",
+      "twist": "urgency is vague; the customer never says how bad it is"
+    },
+    {
+      "id": "T-035",
+      "channel": "chat",
+      "labels": {
+        "team": "account",
+        "urgency": "High",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "ambiguous",
+      "twist": "could belong to two teams; the label says which one owns the first fix"
+    },
+    {
+      "id": "T-036",
+      "channel": "chat",
+      "labels": {
+        "team": "payments",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-037",
+      "channel": "form",
+      "labels": {
+        "team": "auth",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-038",
+      "channel": "chat",
+      "labels": {
+        "team": "infra",
+        "urgency": "Normal",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-039",
+      "channel": "email",
+      "labels": {
+        "team": "data",
+        "urgency": "High",
+        "customer_blocked": true,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-040",
+      "channel": "chat",
+      "labels": {
+        "team": "account",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-041",
+      "channel": "email",
+      "labels": {
+        "team": "payments",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "ambiguous",
+      "twist": "urgency is vague; the customer never says how bad it is"
+    },
+    {
+      "id": "T-042",
+      "channel": "chat",
+      "labels": {
+        "team": "auth",
+        "urgency": "Normal",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "ambiguous",
+      "twist": "could belong to two teams; the label says which one owns the first fix"
+    },
+    {
+      "id": "T-043",
+      "channel": "form",
+      "labels": {
+        "team": "infra",
+        "urgency": "High",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-044",
+      "channel": "chat",
+      "labels": {
+        "team": "data",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-045",
+      "channel": "chat",
+      "labels": {
+        "team": "account",
+        "urgency": "Low",
+        "customer_blocked": false,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-046",
+      "channel": "form",
+      "labels": {
+        "team": "payments",
+        "urgency": "Normal",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-047",
+      "channel": "email",
+      "labels": {
+        "team": "auth",
+        "urgency": "High",
+        "customer_blocked": false,
+        "contains_personal_data": false
+      },
+      "difficulty": "clear"
+    },
+    {
+      "id": "T-048",
+      "channel": "chat",
+      "labels": {
+        "team": "infra",
+        "urgency": "Critical",
+        "customer_blocked": true,
+        "contains_personal_data": true
+      },
+      "difficulty": "clear"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.hero {
+  margin: var(--s4) 0 var(--s6);
+}
+.hero h1 {
+  max-width: 18em;
+  margin-bottom: var(--s5);
+}
+.lede {
+  font-size: 19px;
+  max-width: 40em;
+}
+.caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s2) var(--s5);
+  font-size: var(--fs-small);
+  margin-top: var(--s3);
+}
+.parts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--s5) var(--s6);
+  margin-top: var(--s7);
+}
+.parts h2 {
+  font-size: var(--fs-h3);
+  margin: 0 0 var(--s2);
+}
+.parts p {
+  margin: 0;
+}

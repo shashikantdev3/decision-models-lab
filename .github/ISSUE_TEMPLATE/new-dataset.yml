@@ -1,0 +1,33 @@
+name: New dataset
+description: Propose a new labelled dataset for the lab.
+labels: [dataset]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      placeholder: HR requests, IT access requests, content moderation, invoice exceptions
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions
+      description: The typed questions (noul, choice, score) and their answers.
+    validations:
+      required: true
+  - type: textarea
+    id: labelling
+    attributes:
+      label: How the labels will be made and checked
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: All data is fictional. No real people, companies, customers or employer data.
+          required: true
+        - label: Any personal data in the text is obviously fake (@example.com, 555-01xx numbers, invented names).
+          required: true

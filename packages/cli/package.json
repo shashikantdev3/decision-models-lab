@@ -1,0 +1,10 @@
+{
+  "name": "@decision-models-lab/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "hello, bench, triage and wording commands. Run from the repo root with npm run <command>.",
+  "dependencies": {
+    "@decision-models-lab/core": "0.1.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$comment": "Default escalation policy. The site and CLI let you override each value.",
+  "teamConfidenceThreshold": 0.8,
+  "criticalProbabilityThreshold": 0.35,
+  "personalDataUncertainBand": [0.2, 0.8],
+  "verify": {
+    "answersQuestionMin": 0.5,
+    "leaksPersonalDataMax": 0.3,
+    "unapprovedPromiseMax": 0.3,
+    "minTone": "Professional"
+  }
+}

@@ -1,0 +1,98 @@
+/*
+  Strip board identity. Every colour, type size and spacing value on the site comes from here.
+  Printed = fast machine decision. Pencil = slow considered reasoning.
+*/
+:root {
+  /* Palette, light (default) */
+  --console: #d6dcd4;
+  --console-deep: #c5ccc3; /* bay wells, a step darker than the console */
+  --manila: #eee0b2;
+  --routed: #cadce7;
+  --escalated: #edc6bc;
+  --ink: #1d2a3f;
+  --ink-soft: #3d4a5e; /* secondary text, AA on every strip colour */
+  --pencil-red: #a3312a;
+  --pencil-red-text: #8e2a24; /* red pencil darkened for small text on strips: AA on every surface */
+  --holder: rgba(29, 42, 63, 0.35); /* 2px edge under strips instead of shadows */
+  --rule: rgba(29, 42, 63, 0.28);
+  --panel: #e3e8e1; /* panels and charts sit slightly lighter than the console */
+
+  /* Chart series */
+  --series-jev: #2b5b84;
+  --series-decision1: #3d7457;
+  --series-claude: #55565a;
+
+  /* Type */
+  --font-ui: "B612", "Segoe UI", sans-serif;
+  --font-mono: "B612 Mono", "Consolas", monospace;
+  --font-pencil: "Kalam", "Comic Neue", cursive;
+  --fs-body: 17px;
+  --lh-body: 1.55;
+  --fs-small: 14px;
+  --fs-h3: 21px;
+  --fs-h2: 27px;
+  --fs-h1: 40px;
+  --measure: 70ch;
+
+  /* Space */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 72px;
+  --max: 1120px;
+  --radius-strip: 3px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --console: #222b28;
+    --console-deep: #1a221f;
+    --manila: #4e4730;
+    --routed: #34444f;
+    --escalated: #54393a;
+    --ink: #ece6d3;
+    --ink-soft: #c9c3b0;
+    --pencil-red: #e0796f;
+    --pencil-red-text: #f3a39b;
+    --pencil-red-text: #f3a39b;
+    --holder: rgba(0, 0, 0, 0.55);
+    --rule: rgba(236, 230, 211, 0.26);
+    --panel: #2a3430;
+    --series-jev: #7fb0dc;
+    --series-decision1: #85c4a0;
+    --series-claude: #b9bac0;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --console: #222b28;
+  --console-deep: #1a221f;
+  --manila: #4e4730;
+  --routed: #34444f;
+  --escalated: #54393a;
+  --ink: #ece6d3;
+  --ink-soft: #c9c3b0;
+  --pencil-red: #e0796f;
+  --pencil-red-text: #f3a39b;
+  --holder: rgba(0, 0, 0, 0.55);
+  --rule: rgba(236, 230, 211, 0.26);
+  --panel: #2a3430;
+  --series-jev: #7fb0dc;
+  --series-decision1: #85c4a0;
+  --series-claude: #b9bac0;
+  color-scheme: dark;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --fs-h1: 30px;
+    --fs-h2: 24px;
+  }
+}

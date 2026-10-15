@@ -1,0 +1,44 @@
+{
+  "$comment": "USD per million tokens. Update with the date and source whenever a price changes. Decision model calls report their own usage.cost; these values are used for estimates and for Claude.",
+  "currency": "USD",
+  "unit": "per_million_tokens",
+  "models": {
+    "typesafe/jev-1.14": {
+      "input": 0.042,
+      "output": 0,
+      "checked": "2026-10-15",
+      "source": "https://openrouter.ai/api/v1/models/typesafe/jev-1.14/endpoints"
+    },
+    "microsoft/microsoft-decision-1-20261009": {
+      "input": 0.042,
+      "output": 0,
+      "checked": "2026-10-15",
+      "source": "https://openrouter.ai/api/v1/models/microsoft/microsoft-decision-1-20261009/endpoints"
+    },
+    "claude-haiku-4-5-20251001": {
+      "input": 1,
+      "output": 5,
+      "checked": "2026-10-15",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    "claude-haiku-5-5": {
+      "input": 0.1,
+      "output": 0.5,
+      "note": "Price for prompts up to 100K tokens. Above that: input 0.50, output 2.50.",
+      "checked": "2026-10-15",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    "claude-sonnet-5-5": {
+      "input": 2,
+      "output": 10,
+      "checked": "2026-10-15",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "checked": "2026-10-15",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing"
+    }
+  }
+}

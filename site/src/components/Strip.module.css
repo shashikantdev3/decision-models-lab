@@ -1,0 +1,169 @@
+/* A flight strip: a long narrow card with printed fields split by thin vertical rules. */
+.strip {
+  position: relative;
+  display: grid;
+  grid-template-columns: 6px 1fr;
+  background: var(--manila);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius-strip);
+  box-shadow: 0 2px 0 var(--holder);
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  font-weight: 400;
+  cursor: pointer;
+  overflow: hidden;
+}
+button.strip:hover {
+  box-shadow:
+    0 2px 0 var(--holder),
+    inset 0 0 0 1px var(--ink);
+}
+.strip[data-state="routed"] {
+  background: var(--routed);
+}
+.strip[data-state="escalated"] {
+  background: var(--escalated);
+}
+.band {
+  background: var(--ink-soft);
+}
+.strip[data-state="routed"] .band {
+  background: var(--ink);
+}
+.strip[data-state="escalated"] .band {
+  background: var(--pencil-red);
+}
+.strip[aria-pressed="true"] {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
+.body {
+  min-width: 0;
+  display: block;
+}
+
+/* Compact strip: three printed rows */
+.row {
+  display: flex;
+  font-size: 12.5px;
+  min-width: 0;
+  border-bottom: 1px solid var(--rule);
+}
+.row:last-child {
+  border-bottom: 0;
+}
+.cell {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  padding: 2px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 1px solid var(--rule);
+}
+.cell:last-child {
+  border-right: 0;
+}
+.grow {
+  flex: 1;
+  min-width: 0;
+}
+.subject {
+  font-family: var(--font-ui);
+  padding: 3px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.id {
+  font-weight: 700;
+}
+.blank {
+  color: transparent;
+  background-image: repeating-linear-gradient(90deg, var(--rule) 0 6px, transparent 6px 10px);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 75%;
+}
+.printed {
+  animation: print 180ms steps(4, end);
+}
+@keyframes print {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Full strip: one long row, the way real strips are printed */
+.full .body {
+  display: grid;
+  grid-template-columns: 4.5em minmax(10em, 1fr) 9em 8em 6.5em 6.5em 5.5em 6.5em;
+}
+.full .cell,
+.full .subject {
+  padding: 6px 8px;
+  border-right: 1px solid var(--rule);
+}
+.full .cell:last-child {
+  border-right: 0;
+}
+.label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  color: var(--ink-soft);
+  line-height: 1.1;
+}
+@media (max-width: 860px) {
+  .full .body {
+    grid-template-columns: 4.5em 1fr 1fr 1fr;
+  }
+  .full .subject {
+    grid-column: 2 / -1;
+  }
+  .full .cell,
+  .full .subject {
+    border-bottom: 1px solid var(--rule);
+  }
+}
+
+.note {
+  display: block;
+  font-family: var(--font-pencil);
+  font-size: 15px;
+  line-height: 1.3;
+  color: var(--ink);
+  padding: 4px 8px 6px;
+  border-top: 1px dashed var(--rule);
+}
+.writing {
+  animation: write var(--write-ms, 2400ms) steps(40, end) both;
+}
+@keyframes write {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+.flag {
+  color: var(--pencil-red-text);
+  font-weight: 700;
+}
+
+.flagCell {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.flagCell abbr {
+  text-decoration: none;
+}

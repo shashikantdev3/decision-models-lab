@@ -1,0 +1,55 @@
+{
+  "name": "decision-models-lab",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Learn decision models by building with them. TypeSafe Jev and Microsoft Decision-1 make fast, calibrated calls; Claude handles the hard cases.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "workspaces": [
+    "packages/core",
+    "packages/cli",
+    "site"
+  ],
+  "scripts": {
+    "hello": "tsx packages/cli/src/hello.ts",
+    "bench": "tsx packages/cli/src/bench.ts",
+    "triage": "tsx packages/cli/src/triage.ts",
+    "wording": "tsx packages/cli/src/wording.ts",
+    "data:plan": "tsx scripts/plan-tickets.ts",
+    "data:draft": "tsx scripts/draft-tickets.ts",
+    "data:crosscheck": "tsx scripts/crosscheck-labels.ts",
+    "data:merge": "tsx scripts/merge-review.ts",
+    "data:validate": "tsx scripts/validate-dataset.ts",
+    "dev": "npm run dev -w site",
+    "build": "npm run build -w site",
+    "preview": "npm run preview -w site",
+    "typecheck": "tsc -p tsconfig.json --noEmit && npm run typecheck -w site",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:live": "cross-env LIVE=1 vitest run packages/core/test/live.test.ts",
+    "test:e2e": "playwright test",
+    "screenshots": "playwright test site/e2e/screenshots.spec.ts",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "@eslint/js": "9.39.5",
+    "@playwright/test": "1.56.0",
+    "@types/node": "22.15.3",
+    "cross-env": "7.0.3",
+    "eslint": "9.39.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "globals": "15.15.0",
+    "prettier": "3.5.3",
+    "tsx": "4.19.4",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.2",
+    "vite": "6.4.1",
+    "vitest": "3.2.4"
+  }
+}
