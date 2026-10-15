@@ -1,0 +1,82 @@
+{
+ "_source": "Live capture from microsoft/microsoft-decision-1-20261009 on 2026-10-15T18:34:50.483Z",
+ "latencyMs": 729.6960470000001,
+ "request": {
+  "model": "microsoft/microsoft-decision-1-20261009",
+  "state": [
+   "Ticket: Checkout returns HTTP 500 for all users since 10:05."
+  ],
+  "questions": {
+   "urgent": {
+    "type": "noul",
+    "instructions": "Does this need someone right now?",
+    "criteria": {
+     "true": "Customers are blocked or data is at risk",
+     "false": "It can wait for normal hours"
+    }
+   },
+   "team": {
+    "type": "choice",
+    "instructions": "Which team should own this?",
+    "criteria": {
+     "payments": "Checkout and billing",
+     "auth": "Login and access",
+     "infra": "Servers, network and outages"
+    }
+   },
+   "severity": {
+    "type": "score",
+    "instructions": "How severe is the impact?",
+    "criteria": [
+     "Cosmetic",
+     "Minor",
+     "Major",
+     "Critical"
+    ]
+   }
+  }
+ },
+ "response": {
+  "model": "microsoft/microsoft-decision-1-20261009",
+  "answers": {
+   "severity": {
+    "type": "score",
+    "score": 2.975783493490222,
+    "legend": {
+     "0": "Cosmetic",
+     "1": "Minor",
+     "2": "Major",
+     "3": "Critical"
+    },
+    "probabilities": {
+     "0": 0.0001986885736871003,
+     "1": 0.0003275820776829921,
+     "2": 0.022965276633350892,
+     "3": 0.976508452715279
+    },
+    "confidence": 0.9686779369537053
+   },
+   "team": {
+    "type": "choice",
+    "choice": "payments",
+    "probabilities": {
+     "auth": 0.00287427382900488,
+     "infra": 0.37645551353443396,
+     "payments": 0.6206702126365612
+    },
+    "confidence": 0.43100531895484173
+   },
+   "urgent": {
+    "type": "noul",
+    "noul": 0.999569442334858
+   }
+  },
+  "usage": {
+   "input_tokens": 132,
+   "output_tokens": 3,
+   "cost": 0.000005544
+  },
+  "id": "gen-dec-1792089290-gYgjcv88UCc59tw32U5F",
+  "provider": "Azure"
+ }
+}

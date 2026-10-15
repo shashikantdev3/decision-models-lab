@@ -18,7 +18,7 @@ Fast decisions with Jev and Decision-1, careful reasoning with Claude, and a cle
 
 ## Decision models in 60 seconds
 
-You send context and a set of typed questions. The model returns a probability for every allowed answer, in one pass, writes about two output tokens, and charges for input tokens only.
+You send context and a set of typed questions. The model returns a probability for every allowed answer, in one pass, returns a few output tokens, and charges for input tokens only.
 
 ```text
 in:   state     ["Ticket: Checkout returns HTTP 500 for all users since 10:05."]

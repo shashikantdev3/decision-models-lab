@@ -14,8 +14,8 @@ Updated 2026-10-15.
 
 ## Next steps for the owner
 
-1. Check `.env` has both keys and the OpenRouter key has a credit limit, then say go for the first live call.
-2. `npm run hello -- --model jev,decision-1 --save-fixture` (about $0.00002). Fill in `docs/03-hello-world.md`.
+1. Done: keys confirmed, first live calls made, fixtures saved.
+2. Done: `docs/03-hello-world.md` filled in.
 3. `npm run data:crosscheck -- --model claude-sonnet`, then resolve `data/review.csv` and `npm run data:merge`.
 4. `npm run bench -- --models jev,decision-1,claude-haiku --region "India (Noida)"` (estimate printed first; about $0.25 for the Claude part).
 5. `npm run triage -- --decider decision-1 --writer claude-sonnet --draft-all` and `npm run wording -- --model jev` and `-- --model decision-1`.
@@ -23,5 +23,4 @@ Updated 2026-10-15.
 
 ## Open questions
 
-- Does Decision-1 accept the identical request body as Jev? Expected yes; confirm in M0.
 - Region string for result files.

@@ -85,7 +85,7 @@ answers.team.probabilities;    // { payments: 0.94, auth: 0.01, infra: 0.05 }`}<
       <h2>Decision models in one picture</h2>
       <p>
         You send context plus a set of typed questions. The model returns a probability for every allowed
-        answer, in one pass, and writes about two tokens. You pay for input tokens; output tokens are free.
+        answer, in one pass, and writes only a few tokens. You pay for input tokens; output tokens are free.
         Below is a real request and response from the recording
         {isMockData ? " (here a mock response in the documented shape)" : ""}.
       </p>
