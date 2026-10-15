@@ -1,0 +1,12 @@
+{
+  "crosscheckDate": "2026-10-16",
+  "crosscheckModel": "claude-sonnet-5-5",
+  "ticketAgreement": 0.7708333333333334,
+  "fieldAgreement": 0.9375,
+  "disagreements": 12,
+  "reviewedDate": "2026-10-16",
+  "note": "T-019 was re-labelled after the first blind answer omitted two fields; the second answer agreed with the spec on all four.",
+  "reviewedRows": 12,
+  "markedForRewrite": [],
+  "datesAre": "IST"
+}

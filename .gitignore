@@ -10,3 +10,4 @@ test-results/
 results/mock/
 *.log
 .DS_Store
+data/review.csv

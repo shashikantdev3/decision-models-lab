@@ -16,11 +16,12 @@ Updated 2026-10-15.
 
 1. Done: keys confirmed, first live calls made, fixtures saved.
 2. Done: `docs/03-hello-world.md` filled in.
-3. `npm run data:crosscheck -- --model claude-sonnet`, then resolve `data/review.csv` and `npm run data:merge`.
+3. Done: cross-check run and disagreements resolved.
 4. `npm run bench -- --models jev,decision-1,claude-haiku --region "India (Noida)"` (estimate printed first; about $0.25 for the Claude part).
 5. `npm run triage -- --decider decision-1 --writer claude-sonnet --draft-all` and `npm run wording -- --model jev` and `-- --model decision-1`.
 6. Turn on Pages (Settings > Pages > Source: GitHub Actions), then run the Pages workflow.
 
 ## Open questions
+
 
 - Region string for result files.

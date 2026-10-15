@@ -6,3 +6,4 @@ package-lock.json
 data/tickets.jsonl
 BUILD_PLAN.md
 *.md
+packages/core/test/fixtures/live.*.json

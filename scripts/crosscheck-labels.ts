@@ -43,9 +43,28 @@ const definitions = [
   `contains_personal_data: ${qs.triage.contains_personal_data.instructions} true = ${qs.triage.contains_personal_data.criteria.true}; false = ${qs.triage.contains_personal_data.criteria.false}`,
 ].join("\n");
 
-const blind = await mapPool(tickets, 4, async (t) => {
+const FIELDS = ["team", "urgency", "customer_blocked", "contains_personal_data"] as const;
+const complete = (l: Partial<TicketLabels>) =>
+  (TEAMS as readonly string[]).includes(String(l.team)) &&
+  (URGENCY as readonly string[]).includes(String(l.urgency)) &&
+  typeof l.customer_blocked === "boolean" &&
+  typeof l.contains_personal_data === "boolean";
+
+async function labelBlind(t: (typeof tickets)[number]): Promise<TicketLabels> {
+  // Models that reject a forced tool call can return a partial answer; ask again up to twice.
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const labels = await askOnce(t);
+    if (complete(labels)) return labels;
+    console.warn(
+      `  ${t.id}: incomplete answer (${FIELDS.filter((f) => labels[f] === undefined).join(", ")} missing), asking again`,
+    );
+  }
+  throw new Error(`${t.id}: no complete answer after 3 tries`);
+}
+
+async function askOnce(t: (typeof tickets)[number]): Promise<TicketLabels> {
   const call = await callToolOnce<TicketLabels>(
-    { apiKey: key, modelId: model.id, maxTokens: 300 },
+    { apiKey: key as string, modelId: model.id, maxTokens: 300 },
     {
       system: "You are a careful support lead. Label the ticket using the definitions. Call the tool only.",
       user: `Definitions:\n${definitions}\n\nTicket:\n${ticketContext(t).join("\n")}`,
@@ -65,10 +84,12 @@ const blind = await mapPool(tickets, 4, async (t) => {
       },
     },
   );
-  return { id: t.id, labels: call.input };
-});
+  return call.input;
+}
 
-const fields = ["team", "urgency", "customer_blocked", "contains_personal_data"] as const;
+const blind = await mapPool(tickets, 4, async (t) => ({ id: t.id, labels: await labelBlind(t) }));
+
+const fields = FIELDS;
 const review: Record<string, string>[] = [];
 let agreedTickets = 0;
 let agreedFields = 0;

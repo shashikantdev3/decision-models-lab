@@ -109,6 +109,45 @@ describe("ClaudeDecider", () => {
     expect(r.answers.team.top).toBe("payments");
   });
 
+  it("falls back to tool_choice auto when the model rejects a forced tool", async () => {
+    const bodies: Record<string, unknown>[] = [];
+    const fetchImpl = (async (_url: string, init: RequestInit) => {
+      const body = JSON.parse(String(init.body));
+      bodies.push(body);
+      if (body.tool_choice.type === "tool") {
+        return new Response(
+          JSON.stringify({
+            error: { message: 'tool_choice: type "tool" and "any" are not supported for this model.' },
+          }),
+          { status: 400 },
+        );
+      }
+      return new Response(JSON.stringify(tool), { status: 200 });
+    }) as unknown as typeof fetch;
+    const m = new ClaudeDecider({ apiKey: "k", modelId: "claude-sonnet-5-5", fetchImpl });
+    const r = await m.decide(toRequest(f.request));
+    expect(bodies).toHaveLength(2);
+    expect(bodies[1].tool_choice).toEqual({ type: "auto" });
+    expect(String(bodies[1].system)).toMatch(/only by calling the record_decisions tool/);
+    expect(r.answers.team.top).toBe("payments");
+  });
+
+  it("asks again when the tool answer leaves out a required field", async () => {
+    let n = 0;
+    const partial = {
+      ...tool,
+      content: [{ ...tool.content[0], input: { team: tool.content[0].input.team } }],
+    };
+    const fetchImpl = (async () => {
+      n++;
+      return new Response(JSON.stringify(n === 1 ? partial : tool), { status: 200 });
+    }) as unknown as typeof fetch;
+    const m = new ClaudeDecider({ apiKey: "k", modelId: "claude-sonnet-5-5", fetchImpl });
+    const r = await m.decide(toRequest(f.request));
+    expect(n).toBe(2);
+    expect(r.answers.urgent.value).toBeCloseTo(0.95);
+  });
+
   it("sends the browser header only when asked", async () => {
     const capture = { calls: [] as { url: string; init: RequestInit }[] };
     const m = new ClaudeDecider({
