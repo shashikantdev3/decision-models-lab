@@ -43,7 +43,7 @@ function QuestionWidget({ id, answer, title }: { id: string; answer?: Answer; ti
 }
 
 export function Learn() {
-  const { data, loading, isMockData } = useLab();
+  const { data, loading, isMockData, decider } = useLab();
   const file = useTriageFile();
   const ids = file?.records.map((r) => r.ticketId) ?? [];
   const [picked, setPicked] = useState("T-016");
@@ -54,7 +54,8 @@ export function Learn() {
     const c = b?.calls.find((x) => x.ticketId === rec?.ticketId && !x.error);
     return b && c ? { label: b.model.label, call: c } : undefined;
   }, [data, rec]);
-  const jevCurve = data?.bench.find((b) => b.model.key === file?.decider.key)?.metrics.coverage;
+  const curveBench = data?.bench.find((b) => b.model.key === (file?.decider.key ?? decider));
+  const jevCurve = curveBench?.metrics.coverage;
 
   return (
     <article>
@@ -89,7 +90,7 @@ answers.team.probabilities;    // { payments: 0.94, auth: 0.01, infra: 0.05 }`}<
         Below is a real request and response from the recording
         {isMockData ? " (here a mock response in the documented shape)" : ""}.
       </p>
-      <DataNotice what="examples" />
+      <DataNotice what="examples" needsTriage />
       {loading && <Loading />}
       {rec && ticket && file && (
         <>
@@ -220,7 +221,7 @@ answers.team.probabilities;    // { payments: 0.94, auth: 0.01, infra: 0.05 }`}<
       {jevCurve && (
         <table style={{ maxWidth: 520 }}>
           <caption className="small" style={{ textAlign: "left", marginBottom: 6 }}>
-            {file?.decider.label}
+            {curveBench?.model.label}
             {isMockData ? " (mock)" : ""}: share of tickets above each team-confidence threshold, and team
             accuracy on those
           </caption>

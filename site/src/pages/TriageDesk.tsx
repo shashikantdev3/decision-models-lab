@@ -329,7 +329,7 @@ export function TriageDesk() {
         into a team's bay; unsure, likely critical, or unclear personal-data strips go to Claude's desk, where
         Claude writes a note and a draft reply, and the decision model checks the draft.
       </p>
-      <DataNotice what="tickets and numbers" />
+      <DataNotice what="tickets and numbers" needsTriage />
       {loading && <Loading />}
 
       {mode === "live" && (

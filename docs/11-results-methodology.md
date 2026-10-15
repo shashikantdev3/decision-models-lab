@@ -2,6 +2,8 @@
 
 The site and README may only show numbers produced this way. Every result file stamps the date, model ids, the model string each provider says it served, question set version, dataset version and hash, label status, run count, region and git commit.
 
+Result folders and `date` fields use the UTC date; `createdAt` is a full UTC timestamp.
+
 ## Protocol
 
 - **Calls.** 48 tickets x 4 questions, one decision call per ticket. Each model runs the full set 3 times (144 calls per model).

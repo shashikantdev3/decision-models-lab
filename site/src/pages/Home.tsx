@@ -88,7 +88,7 @@ export function Home() {
         </div>
       </section>
 
-      <DataNotice what="strips" />
+      <DataNotice what="strips" needsTriage />
       {loading && <Loading />}
       {file ? (
         <>

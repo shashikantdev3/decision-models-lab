@@ -2,8 +2,25 @@ import { useLab } from "../lib/mode.tsx";
 import { labelStatusText } from "../lib/data.ts";
 
 /** Shown wherever numbers appear. Mock numbers are made up; replayed numbers carry their date and versions. */
-export function DataNotice({ what = "numbers" }: { what?: string }) {
+export function DataNotice({
+  what = "numbers",
+  needsTriage = false,
+}: {
+  what?: string;
+  needsTriage?: boolean;
+}) {
   const { isMockData, data, mode, hasRecorded } = useLab();
+  if (needsTriage && data && !isMockData && data.triage.length === 0) {
+    return (
+      <div className="alert" role="note">
+        <p>
+          The recorded run from {data.date} is a benchmark only; no triage run has been recorded yet, so there
+          are no strips to replay. Run <code>npm run triage</code> to record one, or switch to Mock to see how
+          the desk works.
+        </p>
+      </div>
+    );
+  }
   if (isMockData) {
     return (
       <div className="alert warning" role="note">

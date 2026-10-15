@@ -87,7 +87,22 @@ flowchart LR
 
 ## Results snapshot
 
-No live run has been recorded yet. The first recorded run will appear here as a table with its date, pinned model versions and region, and on the [Results page](https://shashikantdev3.github.io/decision-models-lab/#/results). Until then the site shows Mock data with a Mock badge on every number. How every number is produced: [docs/11-results-methodology.md](docs/11-results-methodology.md).
+Recorded 2026-10-15 UTC (2026-10-16 IST) from Noida, India. 48 tickets x 3 runs per model, labels cross-checked by a second model with disagreements reviewed by the owner. Served versions: `typesafe/jev-1.14-20261014`, `microsoft/microsoft-decision-1-20261009`, `claude-haiku-4-5-20251001`.
+
+| Model | Team | Urgency | Blocked | Personal data | Team macro-F1 | Urgency MAE | ECE | p50 | p95 | Per 1,000 decisions |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Decision-1 | 93.8% | 88.9% | 97.9% | 100% | 0.935 | 0.18 | 0.015 | 619 ms | 1,208 ms | $0.019 |
+| Jev 1.14 | 89.6% | 83.3% | 97.9% | 100% | 0.895 | 0.19 | 0.037 | 477 ms | 943 ms | $0.032 |
+| Claude Haiku 4.5 as decider | 89.6% | 85.4% | 95.8% | 97.9% | 0.891 | 0.28 | 0.066 | 2,078 ms | 2,184 ms | $2.47 |
+
+How to read it:
+
+- **One ticket is about 2 points.** Decision-1's lead over Jev on team is two tickets. Treat it as a hint, not a ranking.
+- **Accuracy did not move across the 3 runs** for any model. The decision models' probabilities shifted slightly from run to run, but never enough to change a top answer.
+- **Both decision models were better calibrated than Claude's written probabilities** (ECE 0.015 and 0.037 against 0.066), at about 1/75th to 1/130th of the cost per decision.
+- **Latency includes the network from India** and is per call, measured in the client after warm-up.
+
+Full charts on the [Results page](https://shashikantdev3.github.io/decision-models-lab/#/results); raw files and `VERIFY.md` in [`results/2026-10-15/`](results/2026-10-15/). Method: [docs/11-results-methodology.md](docs/11-results-methodology.md).
 
 ## Limitations
 
@@ -109,13 +124,17 @@ No live run has been recorded yet. The first recorded run will appear here as a 
 
 ## Cost
 
-Recorded costs per model will appear here after the first run. Until then, these are **estimates** from `config/pricing.json` (checked 15 October 2026), for one full bench of 48 tickets x 3 runs:
+From the recorded run above (input tokens as reported by each API; prices in `config/pricing.json`, checked 15 October 2026):
 
-| Model                        | Basis                                                            | Estimate per bench |
-| ---------------------------- | ---------------------------------------------------------------- | ------------------ |
-| Jev 1.14 or Decision-1       | about 300 input tokens per call, $0.042 per million, output free | under $0.01        |
-| Claude Haiku 4.5 as decider  | about 720 in and 160 out per call, $1 / $5 per million           | about $0.25        |
-| Claude Sonnet 5.5 as decider | same tokens, $2 / $10 per million                                | about $0.51        |
+| Model | Mean tokens in / out per call | One pass over 48 tickets | Per 1,000 decisions |
+|---|---|---|---|
+| Decision-1 | 444 / 4 | $0.0009 | $0.019 |
+| Jev 1.14 | 770 / 106 | $0.0016 | $0.032 |
+| Claude Haiku 4.5 as decider | 1,604 / 174 | $0.12 | $2.47 |
+
+Decision models bill input tokens only. Jev counts about 1.7 times as many input tokens as Decision-1 for the same tickets, which is why it costs more at the same price per token.
+
+The whole benchmark (3 models x 3 runs, plus pilot and warm-up calls) cost about $0.37, nearly all of it Claude.
 
 Spending caps: use a dedicated OpenRouter key with a credit limit, set a monthly limit on your Anthropic workspace, and keep the CLI's `--max-usd` (default $2). The CLI prints its estimate and asks before any run over 10 tickets.
 
@@ -169,8 +188,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Good first issues:
 
 ## Roadmap
 
-- Record the first live runs and publish them with dates and versions.
-- Owner-reviewed labels for the v1 dataset.
+- Record a triage run and the wording test, so the site's Replay mode has strips to show.
 - Demo GIF and short video of the loop, the slider and the race.
 - Jev `box` questions with images.
 - A second dataset and a Hindi ticket set.

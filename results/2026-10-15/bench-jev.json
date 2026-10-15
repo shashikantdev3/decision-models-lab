@@ -1,0 +1,8909 @@
+{
+ "schema": 1,
+ "kind": "bench",
+ "model": {
+  "key": "jev",
+  "id": "typesafe/jev-1.14",
+  "label": "TypeSafe Jev 1.14",
+  "kind": "decision"
+ },
+ "provenance": {
+  "date": "2026-10-15",
+  "createdAt": "2026-10-15T18:54:47.739Z",
+  "gitCommit": "62728dc+uncommitted",
+  "region": "India (Noida)",
+  "questionSet": "v1",
+  "dataset": {
+   "version": "v1",
+   "sha256": "17766faa2e6346beab2ad7d4399ac92d38ce181aa9d5f9dbfde4fc1d78e2f2e4",
+   "count": 48,
+   "labelStatus": "labels machine-made, cross-checked, disagreements reviewed by the owner"
+  },
+  "runs": 3,
+  "mock": false
+ },
+ "warmupCalls": 0,
+ "calls": [
+  {
+   "run": 1,
+   "ticketId": "T-001",
+   "latencyMs": 516.2976839999999,
+   "usage": {
+    "inputTokens": 798,
+    "outputTokens": 106,
+    "costUsd": 0.000033516
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.12,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.88,
+      "account": 0
+     },
+     "confidence": 0.85,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.59,
+     "probabilities": {
+      "Low": 0.41,
+      "Normal": 0.59,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.59,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-002",
+   "latencyMs": 545.4864610000001,
+   "usage": {
+    "inputTokens": 776,
+    "outputTokens": 106,
+    "costUsd": 0.000032592
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.12,
+      "infra": 0,
+      "data": 0,
+      "account": 0.88
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.98,
+     "probabilities": {
+      "Low": 0.04,
+      "Normal": 0.94,
+      "High": 0.02,
+      "Critical": 0
+     },
+     "confidence": 0.94,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.13,
+     "probabilities": {
+      "true": 0.13,
+      "false": 0.87
+     },
+     "confidence": 0.87,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-003",
+   "latencyMs": 535.888395,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.64,
+      "infra": 0.36,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.55,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.54,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.01,
+      "High": 0.45,
+      "Critical": 0.54
+     },
+     "confidence": 0.53,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.47,
+     "probabilities": {
+      "true": 0.47,
+      "false": 0.53
+     },
+     "confidence": 0.53,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-004",
+   "latencyMs": 520.663437,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.01,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.61,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.03,
+      "High": 0.33,
+      "Critical": 0.64
+     },
+     "confidence": 0.61,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.84,
+     "probabilities": {
+      "true": 0.84,
+      "false": 0.16000000000000003
+     },
+     "confidence": 0.84,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-005",
+   "latencyMs": 453.69958299999985,
+   "usage": {
+    "inputTokens": 763,
+    "outputTokens": 106,
+    "costUsd": 0.000032046
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0,
+     "probabilities": {
+      "Low": 1,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 1,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-006",
+   "latencyMs": 470.63400100000035,
+   "usage": {
+    "inputTokens": 775,
+    "outputTokens": 106,
+    "costUsd": 0.00003255
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.99,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.01
+     },
+     "confidence": 0.99,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.47,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.53,
+      "High": 0.47,
+      "Critical": 0
+     },
+     "confidence": 0.53,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.81,
+     "probabilities": {
+      "true": 0.81,
+      "false": 0.18999999999999995
+     },
+     "confidence": 0.81,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-007",
+   "latencyMs": 1315.7874899999997,
+   "usage": {
+    "inputTokens": 784,
+    "outputTokens": 106,
+    "costUsd": 0.000032928
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.96,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.05,
+      "High": 0.95,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.89,
+     "probabilities": {
+      "true": 0.89,
+      "false": 0.10999999999999999
+     },
+     "confidence": 0.89,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-008",
+   "latencyMs": 466.66972899999973,
+   "usage": {
+    "inputTokens": 791,
+    "outputTokens": 106,
+    "costUsd": 0.000033222
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.96,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.03,
+      "Critical": 0.97
+     },
+     "confidence": 0.97,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-009",
+   "latencyMs": 1315.6810250000003,
+   "usage": {
+    "inputTokens": 763,
+    "outputTokens": 106,
+    "costUsd": 0.000032046
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-010",
+   "latencyMs": 1049.639068,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.96,
+     "probabilities": {
+      "Low": 0.14,
+      "Normal": 0.76,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.76,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-011",
+   "latencyMs": 503.863155,
+   "usage": {
+    "inputTokens": 794,
+    "outputTokens": 106,
+    "costUsd": 0.000033348
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.99,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.05,
+      "High": 0.9299999999999999,
+      "Critical": 0.02
+     },
+     "confidence": 0.93,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.86,
+     "probabilities": {
+      "true": 0.86,
+      "false": 0.14
+     },
+     "confidence": 0.86,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-012",
+   "latencyMs": 540.6977180000004,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 3,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 1
+     },
+     "confidence": 1,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.91,
+     "probabilities": {
+      "true": 0.91,
+      "false": 0.08999999999999997
+     },
+     "confidence": 0.91,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-013",
+   "latencyMs": 575.7338049999998,
+   "usage": {
+    "inputTokens": 782,
+    "outputTokens": 106,
+    "costUsd": 0.000032844
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.5700000000000001,
+      "data": 0.43,
+      "account": 0
+     },
+     "confidence": 0.46,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.25,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.25,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-014",
+   "latencyMs": 1015.7220440000001,
+   "usage": {
+    "inputTokens": 790,
+    "outputTokens": 106,
+    "costUsd": 0.00003318
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.02,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.94,
+      "High": 0.04,
+      "Critical": 0
+     },
+     "confidence": 0.94,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.96,
+     "probabilities": {
+      "true": 0.96,
+      "false": 0.040000000000000036
+     },
+     "confidence": 0.96,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-015",
+   "latencyMs": 450.22687399999995,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.06,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.01,
+      "account": 0.93
+     },
+     "confidence": 0.91,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.88,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.25,
+      "High": 0.58,
+      "Critical": 0.16
+     },
+     "confidence": 0.57,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.17,
+     "probabilities": {
+      "true": 0.17,
+      "false": 0.83
+     },
+     "confidence": 0.83,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-016",
+   "latencyMs": 506.40475700000025,
+   "usage": {
+    "inputTokens": 796,
+    "outputTokens": 106,
+    "costUsd": 0.000033432
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.92,
+      "auth": 0.01,
+      "infra": 0.02,
+      "data": 0,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.98,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.02,
+      "Critical": 0.98
+     },
+     "confidence": 0.98,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-017",
+   "latencyMs": 497.0675090000004,
+   "usage": {
+    "inputTokens": 789,
+    "outputTokens": 106,
+    "costUsd": 0.000033138
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.91,
+     "probabilities": {
+      "Low": 0.32,
+      "Normal": 0.45,
+      "High": 0.23,
+      "Critical": 0
+     },
+     "confidence": 0.45,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-018",
+   "latencyMs": 464.3217370000002,
+   "usage": {
+    "inputTokens": 762,
+    "outputTokens": 106,
+    "costUsd": 0.000032004
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.98,
+     "probabilities": {
+      "Low": 0.07,
+      "Normal": 0.89,
+      "High": 0.04,
+      "Critical": 0
+     },
+     "confidence": 0.89,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-019",
+   "latencyMs": 512.2946339999999,
+   "usage": {
+    "inputTokens": 765,
+    "outputTokens": 106,
+    "costUsd": 0.00003213
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.12,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.77,
+      "Critical": 0.18
+     },
+     "confidence": 0.76,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.11,
+     "probabilities": {
+      "true": 0.11,
+      "false": 0.89
+     },
+     "confidence": 0.89,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-020",
+   "latencyMs": 512.7828140000001,
+   "usage": {
+    "inputTokens": 769,
+    "outputTokens": 106,
+    "costUsd": 0.000032298
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.32,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.01,
+      "High": 0.66,
+      "Critical": 0.33
+     },
+     "confidence": 0.66,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.86,
+     "probabilities": {
+      "true": 0.86,
+      "false": 0.14
+     },
+     "confidence": 0.86,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-021",
+   "latencyMs": 472.7486490000001,
+   "usage": {
+    "inputTokens": 762,
+    "outputTokens": 106,
+    "costUsd": 0.000032004
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.01,
+      "account": 0.14
+     },
+     "confidence": 0.81,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.03,
+     "probabilities": {
+      "Low": 0.97,
+      "Normal": 0.03,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.97,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-022",
+   "latencyMs": 515.0886039999996,
+   "usage": {
+    "inputTokens": 774,
+    "outputTokens": 106,
+    "costUsd": 0.000032508
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.99,
+      "infra": 0.01,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.1,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.9,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.9,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.09,
+     "probabilities": {
+      "true": 0.09,
+      "false": 0.91
+     },
+     "confidence": 0.91,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-023",
+   "latencyMs": 452.8583929999995,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.64,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.37,
+      "High": 0.63,
+      "Critical": 0
+     },
+     "confidence": 0.63,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-024",
+   "latencyMs": 462.3053380000001,
+   "usage": {
+    "inputTokens": 764,
+    "outputTokens": 106,
+    "costUsd": 0.000032088
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.01,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.95,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-025",
+   "latencyMs": 449.77572299999974,
+   "usage": {
+    "inputTokens": 744,
+    "outputTokens": 106,
+    "costUsd": 0.000031248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-026",
+   "latencyMs": 461.9541989999998,
+   "usage": {
+    "inputTokens": 752,
+    "outputTokens": 106,
+    "costUsd": 0.000031584
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 1,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.99,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.97,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.97,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-027",
+   "latencyMs": 466.3816340000003,
+   "usage": {
+    "inputTokens": 790,
+    "outputTokens": 106,
+    "costUsd": 0.00003318
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.13,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.87,
+      "Critical": 0.13
+     },
+     "confidence": 0.87,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-028",
+   "latencyMs": 471.0327420000003,
+   "usage": {
+    "inputTokens": 759,
+    "outputTokens": 106,
+    "costUsd": 0.000031878
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 3,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 1
+     },
+     "confidence": 1,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-029",
+   "latencyMs": 443.4721950000003,
+   "usage": {
+    "inputTokens": 749,
+    "outputTokens": 106,
+    "costUsd": 0.000031458
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.04,
+     "probabilities": {
+      "Low": 0.96,
+      "Normal": 0.04,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.96,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.13,
+     "probabilities": {
+      "true": 0.13,
+      "false": 0.87
+     },
+     "confidence": 0.87,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-030",
+   "latencyMs": 489.7837040000004,
+   "usage": {
+    "inputTokens": 766,
+    "outputTokens": 106,
+    "costUsd": 0.000032172
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.01,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.99
+     },
+     "confidence": 0.99,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.11,
+      "High": 0.88,
+      "Critical": 0.01
+     },
+     "confidence": 0.88,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.8,
+     "probabilities": {
+      "true": 0.8,
+      "false": 0.19999999999999996
+     },
+     "confidence": 0.8,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-031",
+   "latencyMs": 475.9498400000002,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.97,
+      "auth": 0,
+      "infra": 0.03,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.89,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.11,
+      "Critical": 0.89
+     },
+     "confidence": 0.89,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.79,
+     "probabilities": {
+      "true": 0.79,
+      "false": 0.20999999999999996
+     },
+     "confidence": 0.79,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-032",
+   "latencyMs": 649.8136509999995,
+   "usage": {
+    "inputTokens": 806,
+    "outputTokens": 106,
+    "costUsd": 0.000033852
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.02,
+      "Critical": 0.98
+     },
+     "confidence": 0.98,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-033",
+   "latencyMs": 490.64586399999916,
+   "usage": {
+    "inputTokens": 746,
+    "outputTokens": 106,
+    "costUsd": 0.000031332
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.04,
+     "probabilities": {
+      "Low": 0.96,
+      "Normal": 0.04,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.96,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.09,
+     "probabilities": {
+      "true": 0.09,
+      "false": 0.91
+     },
+     "confidence": 0.91,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-034",
+   "latencyMs": 446.0134969999999,
+   "usage": {
+    "inputTokens": 755,
+    "outputTokens": 106,
+    "costUsd": 0.00003171
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.01,
+     "probabilities": {
+      "Low": 0.12,
+      "Normal": 0.75,
+      "High": 0.13,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.11,
+     "probabilities": {
+      "true": 0.11,
+      "false": 0.89
+     },
+     "confidence": 0.89,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-035",
+   "latencyMs": 464.703399,
+   "usage": {
+    "inputTokens": 789,
+    "outputTokens": 106,
+    "costUsd": 0.000033138
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.51,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.49
+     },
+     "confidence": 0.39,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.15,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.06,
+      "High": 0.73,
+      "Critical": 0.21
+     },
+     "confidence": 0.73,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.88,
+     "probabilities": {
+      "true": 0.88,
+      "false": 0.12
+     },
+     "confidence": 0.88,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-036",
+   "latencyMs": 467.4974139999995,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.97,
+      "auth": 0,
+      "infra": 0.03,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.01,
+      "Critical": 0.99
+     },
+     "confidence": 0.99,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-037",
+   "latencyMs": 468.5375700000004,
+   "usage": {
+    "inputTokens": 746,
+    "outputTokens": 106,
+    "costUsd": 0.000031332
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.02,
+     "probabilities": {
+      "true": 0.02,
+      "false": 0.98
+     },
+     "confidence": 0.98,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-038",
+   "latencyMs": 460.480149,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.57,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.43,
+      "High": 0.5700000000000001,
+      "Critical": 0
+     },
+     "confidence": 0.57,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.78,
+     "probabilities": {
+      "true": 0.78,
+      "false": 0.21999999999999997
+     },
+     "confidence": 0.78,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-039",
+   "latencyMs": 454.2621370000006,
+   "usage": {
+    "inputTokens": 756,
+    "outputTokens": 106,
+    "costUsd": 0.000031752
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.13,
+      "data": 0.87,
+      "account": 0
+     },
+     "confidence": 0.84,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.92,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.1,
+      "High": 0.88,
+      "Critical": 0.02
+     },
+     "confidence": 0.88,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.7,
+     "probabilities": {
+      "true": 0.7,
+      "false": 0.30000000000000004
+     },
+     "confidence": 0.7,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-040",
+   "latencyMs": 475.0960670000004,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.02,
+      "infra": 0,
+      "data": 0,
+      "account": 0.98
+     },
+     "confidence": 0.97,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.81,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.19,
+      "Critical": 0.81
+     },
+     "confidence": 0.81,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-041",
+   "latencyMs": 617.7172510000009,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.96,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.04,
+      "account": 0
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-042",
+   "latencyMs": 499.35646499999984,
+   "usage": {
+    "inputTokens": 778,
+    "outputTokens": 106,
+    "costUsd": 0.000032676
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0,
+      "data": 0,
+      "account": 0.05
+     },
+     "confidence": 0.94,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.89,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.11,
+      "High": 0.89,
+      "Critical": 0
+     },
+     "confidence": 0.89,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-043",
+   "latencyMs": 485.11950799999886,
+   "usage": {
+    "inputTokens": 782,
+    "outputTokens": 106,
+    "costUsd": 0.000032844
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.94,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.11,
+      "High": 0.83,
+      "Critical": 0.06
+     },
+     "confidence": 0.83,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-044",
+   "latencyMs": 464.91932799999995,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.02,
+      "infra": 0,
+      "data": 0.98,
+      "account": 0
+     },
+     "confidence": 0.97,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.96,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.03,
+      "Critical": 0.97
+     },
+     "confidence": 0.97,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.54,
+     "probabilities": {
+      "true": 0.54,
+      "false": 0.45999999999999996
+     },
+     "confidence": 0.54,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.94,
+     "probabilities": {
+      "true": 0.94,
+      "false": 0.06000000000000005
+     },
+     "confidence": 0.94,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-045",
+   "latencyMs": 471.6869509999997,
+   "usage": {
+    "inputTokens": 764,
+    "outputTokens": 106,
+    "costUsd": 0.000032088
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.02,
+      "infra": 0,
+      "data": 0,
+      "account": 0.98
+     },
+     "confidence": 0.97,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.79,
+     "probabilities": {
+      "Low": 0.24,
+      "Normal": 0.73,
+      "High": 0.03,
+      "Critical": 0
+     },
+     "confidence": 0.73,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.33,
+     "probabilities": {
+      "true": 0.33,
+      "false": 0.6699999999999999
+     },
+     "confidence": 0.6699999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-046",
+   "latencyMs": 1049.3636779999997,
+   "usage": {
+    "inputTokens": 750,
+    "outputTokens": 106,
+    "costUsd": 0.0000315
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.94,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.06
+     },
+     "confidence": 0.92,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.11,
+     "probabilities": {
+      "Low": 0.89,
+      "Normal": 0.11,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.89,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-047",
+   "latencyMs": 481.53609900000083,
+   "usage": {
+    "inputTokens": 758,
+    "outputTokens": 106,
+    "costUsd": 0.000031836
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.68,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.32,
+      "Critical": 0.68
+     },
+     "confidence": 0.68,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.14,
+     "probabilities": {
+      "true": 0.14,
+      "false": 0.86
+     },
+     "confidence": 0.86,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-048",
+   "latencyMs": 482.5753729999997,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.98,
+      "data": 0.02,
+      "account": 0
+     },
+     "confidence": 0.97,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 1
+     },
+     "confidence": 1,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.94,
+     "probabilities": {
+      "true": 0.94,
+      "false": 0.06000000000000005
+     },
+     "confidence": 0.94,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-001",
+   "latencyMs": 476.59803699999975,
+   "usage": {
+    "inputTokens": 798,
+    "outputTokens": 106,
+    "costUsd": 0.000033516
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.13,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.87,
+      "account": 0
+     },
+     "confidence": 0.84,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.6,
+     "probabilities": {
+      "Low": 0.41,
+      "Normal": 0.59,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.59,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-002",
+   "latencyMs": 455.0904300000002,
+   "usage": {
+    "inputTokens": 776,
+    "outputTokens": 106,
+    "costUsd": 0.000032592
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.12,
+      "infra": 0,
+      "data": 0,
+      "account": 0.88
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.96,
+      "High": 0.02,
+      "Critical": 0
+     },
+     "confidence": 0.96,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.13,
+     "probabilities": {
+      "true": 0.13,
+      "false": 0.87
+     },
+     "confidence": 0.87,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-003",
+   "latencyMs": 476.6484930000006,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.62,
+      "infra": 0.38,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.52,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.57,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.01,
+      "High": 0.42,
+      "Critical": 0.57
+     },
+     "confidence": 0.56,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.47,
+     "probabilities": {
+      "true": 0.47,
+      "false": 0.53
+     },
+     "confidence": 0.53,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-004",
+   "latencyMs": 478.99981000000116,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.01,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.65,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.02,
+      "High": 0.31,
+      "Critical": 0.67
+     },
+     "confidence": 0.65,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-005",
+   "latencyMs": 474.6124060000002,
+   "usage": {
+    "inputTokens": 763,
+    "outputTokens": 106,
+    "costUsd": 0.000032046
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0,
+     "probabilities": {
+      "Low": 1,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 1,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-006",
+   "latencyMs": 500.1164410000001,
+   "usage": {
+    "inputTokens": 775,
+    "outputTokens": 106,
+    "costUsd": 0.00003255
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.99,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.01
+     },
+     "confidence": 0.99,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.49,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.51,
+      "High": 0.49,
+      "Critical": 0
+     },
+     "confidence": 0.51,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.8,
+     "probabilities": {
+      "true": 0.8,
+      "false": 0.19999999999999996
+     },
+     "confidence": 0.8,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-007",
+   "latencyMs": 491.57715199999984,
+   "usage": {
+    "inputTokens": 784,
+    "outputTokens": 106,
+    "costUsd": 0.000032928
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.03,
+      "High": 0.96,
+      "Critical": 0.01
+     },
+     "confidence": 0.96,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-008",
+   "latencyMs": 442.5360639999999,
+   "usage": {
+    "inputTokens": 791,
+    "outputTokens": 106,
+    "costUsd": 0.000033222
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.94,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.91,
+     "probabilities": {
+      "true": 0.91,
+      "false": 0.08999999999999997
+     },
+     "confidence": 0.91,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-009",
+   "latencyMs": 538.2179539999997,
+   "usage": {
+    "inputTokens": 763,
+    "outputTokens": 106,
+    "costUsd": 0.000032046
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-010",
+   "latencyMs": 547.7059150000005,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.99,
+     "probabilities": {
+      "Low": 0.11,
+      "Normal": 0.79,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.79,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-011",
+   "latencyMs": 502.378686,
+   "usage": {
+    "inputTokens": 794,
+    "outputTokens": 106,
+    "costUsd": 0.000033348
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.99,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.04,
+      "High": 0.94,
+      "Critical": 0.02
+     },
+     "confidence": 0.94,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.87,
+     "probabilities": {
+      "true": 0.87,
+      "false": 0.13
+     },
+     "confidence": 0.87,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-012",
+   "latencyMs": 493.29053700000077,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.01,
+      "Critical": 0.99
+     },
+     "confidence": 0.99,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.91,
+     "probabilities": {
+      "true": 0.91,
+      "false": 0.08999999999999997
+     },
+     "confidence": 0.91,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-013",
+   "latencyMs": 556.2848649999996,
+   "usage": {
+    "inputTokens": 782,
+    "outputTokens": 106,
+    "costUsd": 0.000032844
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.58,
+      "data": 0.42,
+      "account": 0
+     },
+     "confidence": 0.47,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.29,
+     "probabilities": {
+      "Low": 0.71,
+      "Normal": 0.29,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.71,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-014",
+   "latencyMs": 482.42663600000014,
+   "usage": {
+    "inputTokens": 790,
+    "outputTokens": 106,
+    "costUsd": 0.00003318
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.01,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.95,
+      "High": 0.03,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.96,
+     "probabilities": {
+      "true": 0.96,
+      "false": 0.040000000000000036
+     },
+     "confidence": 0.96,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-015",
+   "latencyMs": 1072.9866540000003,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.09,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.01,
+      "account": 0.9
+     },
+     "confidence": 0.87,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.96,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.21000000000000002,
+      "High": 0.56,
+      "Critical": 0.21000000000000002
+     },
+     "confidence": 0.54,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.16,
+     "probabilities": {
+      "true": 0.16,
+      "false": 0.84
+     },
+     "confidence": 0.84,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-016",
+   "latencyMs": 487.59636800000044,
+   "usage": {
+    "inputTokens": 796,
+    "outputTokens": 106,
+    "costUsd": 0.000033432
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.92,
+      "auth": 0.01,
+      "infra": 0.02,
+      "data": 0,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.02,
+      "Critical": 0.98
+     },
+     "confidence": 0.98,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-017",
+   "latencyMs": 572.4225299999998,
+   "usage": {
+    "inputTokens": 789,
+    "outputTokens": 106,
+    "costUsd": 0.000033138
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.8,
+     "probabilities": {
+      "Low": 0.38,
+      "Normal": 0.44,
+      "High": 0.18,
+      "Critical": 0
+     },
+     "confidence": 0.44,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-018",
+   "latencyMs": 462.41358299999956,
+   "usage": {
+    "inputTokens": 762,
+    "outputTokens": 106,
+    "costUsd": 0.000032004
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.98,
+     "probabilities": {
+      "Low": 0.06,
+      "Normal": 0.89,
+      "High": 0.05,
+      "Critical": 0
+     },
+     "confidence": 0.89,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-019",
+   "latencyMs": 484.68169599999965,
+   "usage": {
+    "inputTokens": 765,
+    "outputTokens": 106,
+    "costUsd": 0.00003213
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.09,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.05,
+      "High": 0.78,
+      "Critical": 0.16
+     },
+     "confidence": 0.77,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.11,
+     "probabilities": {
+      "true": 0.11,
+      "false": 0.89
+     },
+     "confidence": 0.89,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-020",
+   "latencyMs": 630.9470139999994,
+   "usage": {
+    "inputTokens": 769,
+    "outputTokens": 106,
+    "costUsd": 0.000032298
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.34,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.01,
+      "High": 0.64,
+      "Critical": 0.35
+     },
+     "confidence": 0.64,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.86,
+     "probabilities": {
+      "true": 0.86,
+      "false": 0.14
+     },
+     "confidence": 0.86,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-021",
+   "latencyMs": 478.9733460000007,
+   "usage": {
+    "inputTokens": 762,
+    "outputTokens": 106,
+    "costUsd": 0.000032004
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.8,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.01,
+      "account": 0.19
+     },
+     "confidence": 0.75,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.02,
+     "probabilities": {
+      "Low": 0.98,
+      "Normal": 0.02,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.98,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-022",
+   "latencyMs": 552.6587119999986,
+   "usage": {
+    "inputTokens": 774,
+    "outputTokens": 106,
+    "costUsd": 0.000032508
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.99,
+      "infra": 0.01,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.09,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.91,
+      "High": 0.09,
+      "Critical": 0
+     },
+     "confidence": 0.91,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.09,
+     "probabilities": {
+      "true": 0.09,
+      "false": 0.91
+     },
+     "confidence": 0.91,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-023",
+   "latencyMs": 666.4923010000002,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.6,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.4,
+      "High": 0.6,
+      "Critical": 0
+     },
+     "confidence": 0.6,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-024",
+   "latencyMs": 548.3868169999987,
+   "usage": {
+    "inputTokens": 764,
+    "outputTokens": 106,
+    "costUsd": 0.000032088
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.01,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.95,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-025",
+   "latencyMs": 583.5018529999998,
+   "usage": {
+    "inputTokens": 744,
+    "outputTokens": 106,
+    "costUsd": 0.000031248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0,
+     "probabilities": {
+      "Low": 1,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 1,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-026",
+   "latencyMs": 518.182256,
+   "usage": {
+    "inputTokens": 752,
+    "outputTokens": 106,
+    "costUsd": 0.000031584
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 1,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.98,
+     "probabilities": {
+      "Low": 0.03,
+      "Normal": 0.96,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.96,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-027",
+   "latencyMs": 547.2455220000011,
+   "usage": {
+    "inputTokens": 790,
+    "outputTokens": 106,
+    "costUsd": 0.00003318
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.13,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.86,
+      "Critical": 0.14
+     },
+     "confidence": 0.86,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-028",
+   "latencyMs": 532.2536280000004,
+   "usage": {
+    "inputTokens": 759,
+    "outputTokens": 106,
+    "costUsd": 0.000031878
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 3,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 1
+     },
+     "confidence": 1,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-029",
+   "latencyMs": 440.28294000000096,
+   "usage": {
+    "inputTokens": 749,
+    "outputTokens": 106,
+    "costUsd": 0.000031458
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.13,
+     "probabilities": {
+      "true": 0.13,
+      "false": 0.87
+     },
+     "confidence": 0.87,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-030",
+   "latencyMs": 464.28674500000125,
+   "usage": {
+    "inputTokens": 766,
+    "outputTokens": 106,
+    "costUsd": 0.000032172
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.01,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.99
+     },
+     "confidence": 0.99,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.86,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.15,
+      "High": 0.85,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.81,
+     "probabilities": {
+      "true": 0.81,
+      "false": 0.18999999999999995
+     },
+     "confidence": 0.81,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-031",
+   "latencyMs": 435.2777619999997,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.98,
+      "auth": 0,
+      "infra": 0.02,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.97,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.83,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.17,
+      "Critical": 0.83
+     },
+     "confidence": 0.83,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.78,
+     "probabilities": {
+      "true": 0.78,
+      "false": 0.21999999999999997
+     },
+     "confidence": 0.78,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-032",
+   "latencyMs": 439.5969760000007,
+   "usage": {
+    "inputTokens": 806,
+    "outputTokens": 106,
+    "costUsd": 0.000033852
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.99,
+      "infra": 0.01,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.98,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.02,
+      "Critical": 0.98
+     },
+     "confidence": 0.98,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-033",
+   "latencyMs": 463.43515900000057,
+   "usage": {
+    "inputTokens": 746,
+    "outputTokens": 106,
+    "costUsd": 0.000031332
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.03,
+     "probabilities": {
+      "Low": 0.97,
+      "Normal": 0.03,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.97,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-034",
+   "latencyMs": 443.5759450000005,
+   "usage": {
+    "inputTokens": 755,
+    "outputTokens": 106,
+    "costUsd": 0.00003171
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.97,
+     "probabilities": {
+      "Low": 0.14,
+      "Normal": 0.76,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.76,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-035",
+   "latencyMs": 437.21364300000096,
+   "usage": {
+    "inputTokens": 789,
+    "outputTokens": 106,
+    "costUsd": 0.000033138
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.53,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.47
+     },
+     "confidence": 0.41,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.12,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.06,
+      "High": 0.75,
+      "Critical": 0.19
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.89,
+     "probabilities": {
+      "true": 0.89,
+      "false": 0.10999999999999999
+     },
+     "confidence": 0.89,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-036",
+   "latencyMs": 470.54409099999975,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.97,
+      "auth": 0,
+      "infra": 0.03,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.01,
+      "Critical": 0.99
+     },
+     "confidence": 0.99,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-037",
+   "latencyMs": 468.4387169999991,
+   "usage": {
+    "inputTokens": 746,
+    "outputTokens": 106,
+    "costUsd": 0.000031332
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.02,
+     "probabilities": {
+      "true": 0.02,
+      "false": 0.98
+     },
+     "confidence": 0.98,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-038",
+   "latencyMs": 532.4446160000007,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.55,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.45,
+      "High": 0.55,
+      "Critical": 0
+     },
+     "confidence": 0.55,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.77,
+     "probabilities": {
+      "true": 0.77,
+      "false": 0.22999999999999998
+     },
+     "confidence": 0.77,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-039",
+   "latencyMs": 497.16475700000046,
+   "usage": {
+    "inputTokens": 756,
+    "outputTokens": 106,
+    "costUsd": 0.000031752
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.17,
+      "data": 0.83,
+      "account": 0
+     },
+     "confidence": 0.79,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.92,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.1,
+      "High": 0.88,
+      "Critical": 0.02
+     },
+     "confidence": 0.88,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.71,
+     "probabilities": {
+      "true": 0.71,
+      "false": 0.29000000000000004
+     },
+     "confidence": 0.71,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-040",
+   "latencyMs": 462.8578890000008,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0,
+      "account": 0.99
+     },
+     "confidence": 0.99,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.2,
+      "Critical": 0.8
+     },
+     "confidence": 0.8,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.84,
+     "probabilities": {
+      "true": 0.84,
+      "false": 0.16000000000000003
+     },
+     "confidence": 0.84,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-041",
+   "latencyMs": 475.9593139999997,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.97,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.03,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-042",
+   "latencyMs": 465.71991999999955,
+   "usage": {
+    "inputTokens": 778,
+    "outputTokens": 106,
+    "costUsd": 0.000032676
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0,
+      "data": 0,
+      "account": 0.05
+     },
+     "confidence": 0.94,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.86,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.14,
+      "High": 0.86,
+      "Critical": 0
+     },
+     "confidence": 0.86,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.84,
+     "probabilities": {
+      "true": 0.84,
+      "false": 0.16000000000000003
+     },
+     "confidence": 0.84,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-043",
+   "latencyMs": 458.4052909999991,
+   "usage": {
+    "inputTokens": 782,
+    "outputTokens": 106,
+    "costUsd": 0.000032844
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.91,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.14,
+      "High": 0.81,
+      "Critical": 0.05
+     },
+     "confidence": 0.81,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-044",
+   "latencyMs": 459.4494940000004,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.03,
+      "Critical": 0.97
+     },
+     "confidence": 0.97,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.59,
+     "probabilities": {
+      "true": 0.59,
+      "false": 0.41000000000000003
+     },
+     "confidence": 0.59,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-045",
+   "latencyMs": 489.1364830000002,
+   "usage": {
+    "inputTokens": 764,
+    "outputTokens": 106,
+    "costUsd": 0.000032088
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.03,
+      "infra": 0,
+      "data": 0,
+      "account": 0.97
+     },
+     "confidence": 0.96,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.77,
+     "probabilities": {
+      "Low": 0.25,
+      "Normal": 0.72,
+      "High": 0.03,
+      "Critical": 0
+     },
+     "confidence": 0.72,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.33,
+     "probabilities": {
+      "true": 0.33,
+      "false": 0.6699999999999999
+     },
+     "confidence": 0.6699999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-046",
+   "latencyMs": 465.0865439999998,
+   "usage": {
+    "inputTokens": 750,
+    "outputTokens": 106,
+    "costUsd": 0.0000315
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.96,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.04
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.1,
+     "probabilities": {
+      "Low": 0.9,
+      "Normal": 0.1,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.9,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.02,
+     "probabilities": {
+      "true": 0.02,
+      "false": 0.98
+     },
+     "confidence": 0.98,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-047",
+   "latencyMs": 464.3806430000004,
+   "usage": {
+    "inputTokens": 758,
+    "outputTokens": 106,
+    "costUsd": 0.000031836
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.64,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.36,
+      "Critical": 0.64
+     },
+     "confidence": 0.64,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 2,
+   "ticketId": "T-048",
+   "latencyMs": 495.5288469999996,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.99,
+      "data": 0.01,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.01,
+      "Critical": 0.99
+     },
+     "confidence": 0.99,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.94,
+     "probabilities": {
+      "true": 0.94,
+      "false": 0.06000000000000005
+     },
+     "confidence": 0.94,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-001",
+   "latencyMs": 943.1148190000004,
+   "usage": {
+    "inputTokens": 798,
+    "outputTokens": 106,
+    "costUsd": 0.000033516
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.12,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.88,
+      "account": 0
+     },
+     "confidence": 0.85,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.57,
+     "probabilities": {
+      "Low": 0.43,
+      "Normal": 0.5700000000000001,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.57,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-002",
+   "latencyMs": 675.2031170000009,
+   "usage": {
+    "inputTokens": 776,
+    "outputTokens": 106,
+    "costUsd": 0.000032592
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.14,
+      "infra": 0,
+      "data": 0,
+      "account": 0.86
+     },
+     "confidence": 0.82,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.98,
+     "probabilities": {
+      "Low": 0.03,
+      "Normal": 0.96,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.96,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.13,
+     "probabilities": {
+      "true": 0.13,
+      "false": 0.87
+     },
+     "confidence": 0.87,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-003",
+   "latencyMs": 563.2628390000009,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.58,
+      "infra": 0.42,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.47,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.52,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.47,
+      "Critical": 0.53
+     },
+     "confidence": 0.53,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.43,
+     "probabilities": {
+      "true": 0.43,
+      "false": 0.5700000000000001
+     },
+     "confidence": 0.5700000000000001,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-004",
+   "latencyMs": 485.7301179999977,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.01,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.63,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.02,
+      "High": 0.34,
+      "Critical": 0.64
+     },
+     "confidence": 0.62,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.84,
+     "probabilities": {
+      "true": 0.84,
+      "false": 0.16000000000000003
+     },
+     "confidence": 0.84,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-005",
+   "latencyMs": 460.5181160000029,
+   "usage": {
+    "inputTokens": 763,
+    "outputTokens": 106,
+    "costUsd": 0.000032046
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0,
+     "probabilities": {
+      "Low": 1,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 1,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-006",
+   "latencyMs": 481.38602000000174,
+   "usage": {
+    "inputTokens": 775,
+    "outputTokens": 106,
+    "costUsd": 0.00003255
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 1,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.49,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.52,
+      "High": 0.48,
+      "Critical": 0
+     },
+     "confidence": 0.52,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.8,
+     "probabilities": {
+      "true": 0.8,
+      "false": 0.19999999999999996
+     },
+     "confidence": 0.8,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-007",
+   "latencyMs": 450.1984340000017,
+   "usage": {
+    "inputTokens": 784,
+    "outputTokens": 106,
+    "costUsd": 0.000032928
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.96,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.04,
+      "High": 0.96,
+      "Critical": 0
+     },
+     "confidence": 0.96,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.89,
+     "probabilities": {
+      "true": 0.89,
+      "false": 0.10999999999999999
+     },
+     "confidence": 0.89,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-008",
+   "latencyMs": 484.6227199999994,
+   "usage": {
+    "inputTokens": 791,
+    "outputTokens": 106,
+    "costUsd": 0.000033222
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.02,
+      "Critical": 0.98
+     },
+     "confidence": 0.98,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-009",
+   "latencyMs": 474.92553899999984,
+   "usage": {
+    "inputTokens": 763,
+    "outputTokens": 106,
+    "costUsd": 0.000032046
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-010",
+   "latencyMs": 460.6137090000011,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.99,
+     "probabilities": {
+      "Low": 0.11,
+      "Normal": 0.79,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.79,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-011",
+   "latencyMs": 487.53313600000183,
+   "usage": {
+    "inputTokens": 794,
+    "outputTokens": 106,
+    "costUsd": 0.000033348
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.99,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.96,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.05,
+      "High": 0.94,
+      "Critical": 0.01
+     },
+     "confidence": 0.94,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.87,
+     "probabilities": {
+      "true": 0.87,
+      "false": 0.13
+     },
+     "confidence": 0.87,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-012",
+   "latencyMs": 461.3934389999995,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 1
+     },
+     "confidence": 1,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.91,
+     "probabilities": {
+      "true": 0.91,
+      "false": 0.08999999999999997
+     },
+     "confidence": 0.91,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-013",
+   "latencyMs": 984.7313979999999,
+   "usage": {
+    "inputTokens": 782,
+    "outputTokens": 106,
+    "costUsd": 0.000032844
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.6,
+      "data": 0.4,
+      "account": 0
+     },
+     "confidence": 0.5,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.22,
+     "probabilities": {
+      "Low": 0.79,
+      "Normal": 0.21,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.79,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-014",
+   "latencyMs": 455.3577170000026,
+   "usage": {
+    "inputTokens": 790,
+    "outputTokens": 106,
+    "costUsd": 0.00003318
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.01,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.95,
+      "High": 0.03,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.96,
+     "probabilities": {
+      "true": 0.96,
+      "false": 0.040000000000000036
+     },
+     "confidence": 0.96,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-015",
+   "latencyMs": 456.93239999999787,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.08,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.01,
+      "account": 0.91
+     },
+     "confidence": 0.89,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.91,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.23,
+      "High": 0.5599999999999999,
+      "Critical": 0.19
+     },
+     "confidence": 0.54,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.16,
+     "probabilities": {
+      "true": 0.16,
+      "false": 0.84
+     },
+     "confidence": 0.84,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-016",
+   "latencyMs": 482.64182099999744,
+   "usage": {
+    "inputTokens": 796,
+    "outputTokens": 106,
+    "costUsd": 0.000033432
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.9393939393939393,
+      "auth": 0.0101010101010101,
+      "infra": 0.0101010101010101,
+      "data": 0,
+      "account": 0.0404040404040404
+     },
+     "confidence": 0.91,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.98,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.02,
+      "Critical": 0.98
+     },
+     "confidence": 0.98,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-017",
+   "latencyMs": 455.72121499999776,
+   "usage": {
+    "inputTokens": 789,
+    "outputTokens": 106,
+    "costUsd": 0.000033138
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.91,
+     "probabilities": {
+      "Low": 0.33,
+      "Normal": 0.44,
+      "High": 0.23,
+      "Critical": 0
+     },
+     "confidence": 0.44,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-018",
+   "latencyMs": 496.7950410000012,
+   "usage": {
+    "inputTokens": 762,
+    "outputTokens": 106,
+    "costUsd": 0.000032004
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.97,
+     "probabilities": {
+      "Low": 0.07,
+      "Normal": 0.89,
+      "High": 0.04,
+      "Critical": 0
+     },
+     "confidence": 0.89,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-019",
+   "latencyMs": 467.63698900000236,
+   "usage": {
+    "inputTokens": 765,
+    "outputTokens": 106,
+    "costUsd": 0.00003213
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.02,
+      "infra": 0,
+      "data": 0.98,
+      "account": 0
+     },
+     "confidence": 0.97,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.03,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.07,
+      "High": 0.8,
+      "Critical": 0.12
+     },
+     "confidence": 0.79,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.11,
+     "probabilities": {
+      "true": 0.11,
+      "false": 0.89
+     },
+     "confidence": 0.89,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-020",
+   "latencyMs": 482.8934590000026,
+   "usage": {
+    "inputTokens": 769,
+    "outputTokens": 106,
+    "costUsd": 0.000032298
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.28,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.02,
+      "High": 0.6799999999999999,
+      "Critical": 0.3
+     },
+     "confidence": 0.68,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.86,
+     "probabilities": {
+      "true": 0.86,
+      "false": 0.14
+     },
+     "confidence": 0.86,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-021",
+   "latencyMs": 464.861028000003,
+   "usage": {
+    "inputTokens": 762,
+    "outputTokens": 106,
+    "costUsd": 0.000032004
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.8,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.01,
+      "account": 0.19
+     },
+     "confidence": 0.75,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.02,
+     "probabilities": {
+      "Low": 0.98,
+      "Normal": 0.02,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.98,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-022",
+   "latencyMs": 475.6484180000007,
+   "usage": {
+    "inputTokens": 774,
+    "outputTokens": 106,
+    "costUsd": 0.000032508
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.99,
+      "infra": 0.01,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.11,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.88,
+      "High": 0.11,
+      "Critical": 0
+     },
+     "confidence": 0.88,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.09,
+     "probabilities": {
+      "true": 0.09,
+      "false": 0.91
+     },
+     "confidence": 0.91,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-023",
+   "latencyMs": 486.3838190000024,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.62,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.38,
+      "High": 0.62,
+      "Critical": 0
+     },
+     "confidence": 0.62,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-024",
+   "latencyMs": 471.34617699999944,
+   "usage": {
+    "inputTokens": 764,
+    "outputTokens": 106,
+    "costUsd": 0.000032088
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.01,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.91,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.08,
+      "Critical": 0.92
+     },
+     "confidence": 0.92,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-025",
+   "latencyMs": 476.28654099999767,
+   "usage": {
+    "inputTokens": 744,
+    "outputTokens": 106,
+    "costUsd": 0.000031248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-026",
+   "latencyMs": 445.46304699999746,
+   "usage": {
+    "inputTokens": 752,
+    "outputTokens": 106,
+    "costUsd": 0.000031584
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 1,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.99,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.97,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.97,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-027",
+   "latencyMs": 461.24194999999963,
+   "usage": {
+    "inputTokens": 790,
+    "outputTokens": 106,
+    "costUsd": 0.00003318
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.12,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.87,
+      "Critical": 0.13
+     },
+     "confidence": 0.87,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.07,
+     "probabilities": {
+      "true": 0.07,
+      "false": 0.9299999999999999
+     },
+     "confidence": 0.9299999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-028",
+   "latencyMs": 451.20086699999956,
+   "usage": {
+    "inputTokens": 759,
+    "outputTokens": 106,
+    "costUsd": 0.000031878
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 3,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0,
+      "Critical": 1
+     },
+     "confidence": 1,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-029",
+   "latencyMs": 508.0389389999982,
+   "usage": {
+    "inputTokens": 749,
+    "outputTokens": 106,
+    "costUsd": 0.000031458
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.13,
+     "probabilities": {
+      "true": 0.13,
+      "false": 0.87
+     },
+     "confidence": 0.87,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-030",
+   "latencyMs": 489.02086500000223,
+   "usage": {
+    "inputTokens": 766,
+    "outputTokens": 106,
+    "costUsd": 0.000032172
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.01,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.99
+     },
+     "confidence": 0.99,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.1,
+      "High": 0.9,
+      "Critical": 0
+     },
+     "confidence": 0.9,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.82,
+     "probabilities": {
+      "true": 0.82,
+      "false": 0.18000000000000005
+     },
+     "confidence": 0.82,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-031",
+   "latencyMs": 446.7423340000023,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.98,
+      "auth": 0,
+      "infra": 0.02,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.97,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.84,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.16,
+      "Critical": 0.84
+     },
+     "confidence": 0.84,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.78,
+     "probabilities": {
+      "true": 0.78,
+      "false": 0.21999999999999997
+     },
+     "confidence": 0.78,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-032",
+   "latencyMs": 474.94823800000086,
+   "usage": {
+    "inputTokens": 806,
+    "outputTokens": 106,
+    "costUsd": 0.000033852
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.98,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.02,
+      "Critical": 0.98
+     },
+     "confidence": 0.98,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.93,
+     "probabilities": {
+      "true": 0.93,
+      "false": 0.06999999999999995
+     },
+     "confidence": 0.93,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-033",
+   "latencyMs": 486.9500220000009,
+   "usage": {
+    "inputTokens": 746,
+    "outputTokens": 106,
+    "costUsd": 0.000031332
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.09,
+     "probabilities": {
+      "true": 0.09,
+      "false": 0.91
+     },
+     "confidence": 0.91,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-034",
+   "latencyMs": 480.78690300000017,
+   "usage": {
+    "inputTokens": 755,
+    "outputTokens": 106,
+    "costUsd": 0.00003171
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 1,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.98,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.73,
+      "High": 0.12,
+      "Critical": 0
+     },
+     "confidence": 0.73,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.11,
+     "probabilities": {
+      "true": 0.11,
+      "false": 0.89
+     },
+     "confidence": 0.89,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.03,
+     "probabilities": {
+      "true": 0.03,
+      "false": 0.97
+     },
+     "confidence": 0.97,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-035",
+   "latencyMs": 482.5863959999988,
+   "usage": {
+    "inputTokens": 789,
+    "outputTokens": 106,
+    "costUsd": 0.000033138
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.52,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.48
+     },
+     "confidence": 0.4,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.22,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.03,
+      "High": 0.71,
+      "Critical": 0.26
+     },
+     "confidence": 0.71,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.87,
+     "probabilities": {
+      "true": 0.87,
+      "false": 0.13
+     },
+     "confidence": 0.87,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-036",
+   "latencyMs": 455.3746979999996,
+   "usage": {
+    "inputTokens": 760,
+    "outputTokens": 106,
+    "costUsd": 0.00003192
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.97,
+      "auth": 0,
+      "infra": 0.03,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.01,
+      "Critical": 0.99
+     },
+     "confidence": 0.99,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.89,
+     "probabilities": {
+      "true": 0.89,
+      "false": 0.10999999999999999
+     },
+     "confidence": 0.89,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-037",
+   "latencyMs": 465.432671999999,
+   "usage": {
+    "inputTokens": 746,
+    "outputTokens": 106,
+    "costUsd": 0.000031332
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.01,
+     "probabilities": {
+      "Low": 0.99,
+      "Normal": 0.01,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.99,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.02,
+     "probabilities": {
+      "true": 0.02,
+      "false": 0.98
+     },
+     "confidence": 0.98,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-038",
+   "latencyMs": 457.26541200000065,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.54,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.46,
+      "High": 0.54,
+      "Critical": 0
+     },
+     "confidence": 0.54,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.78,
+     "probabilities": {
+      "true": 0.78,
+      "false": 0.21999999999999997
+     },
+     "confidence": 0.78,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-039",
+   "latencyMs": 486.4430289999982,
+   "usage": {
+    "inputTokens": 756,
+    "outputTokens": 106,
+    "costUsd": 0.000031752
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.18,
+      "data": 0.82,
+      "account": 0
+     },
+     "confidence": 0.77,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.91,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.12,
+      "High": 0.86,
+      "Critical": 0.02
+     },
+     "confidence": 0.86,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.7,
+     "probabilities": {
+      "true": 0.7,
+      "false": 0.30000000000000004
+     },
+     "confidence": 0.7,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-040",
+   "latencyMs": 468.9314189999968,
+   "usage": {
+    "inputTokens": 770,
+    "outputTokens": 106,
+    "costUsd": 0.00003234
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.02,
+      "infra": 0,
+      "data": 0,
+      "account": 0.98
+     },
+     "confidence": 0.97,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.81,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.19,
+      "Critical": 0.81
+     },
+     "confidence": 0.81,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-041",
+   "latencyMs": 516.6771169999993,
+   "usage": {
+    "inputTokens": 767,
+    "outputTokens": 106,
+    "costUsd": 0.000032214
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.97,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.03,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.07,
+     "probabilities": {
+      "Low": 0.93,
+      "Normal": 0.07,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.93,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.08,
+     "probabilities": {
+      "true": 0.08,
+      "false": 0.92
+     },
+     "confidence": 0.92,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-042",
+   "latencyMs": 472.65199199999915,
+   "usage": {
+    "inputTokens": 778,
+    "outputTokens": 106,
+    "costUsd": 0.000032676
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.96,
+      "infra": 0,
+      "data": 0,
+      "account": 0.04
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.89,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.11,
+      "High": 0.89,
+      "Critical": 0
+     },
+     "confidence": 0.89,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.84,
+     "probabilities": {
+      "true": 0.84,
+      "false": 0.16000000000000003
+     },
+     "confidence": 0.84,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-043",
+   "latencyMs": 462.5119110000014,
+   "usage": {
+    "inputTokens": 782,
+    "outputTokens": 106,
+    "costUsd": 0.000032844
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 1,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.92,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.13,
+      "High": 0.82,
+      "Critical": 0.05
+     },
+     "confidence": 0.82,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-044",
+   "latencyMs": 481.18161500000133,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.01,
+      "infra": 0,
+      "data": 0.99,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.97,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.03,
+      "Critical": 0.97
+     },
+     "confidence": 0.97,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.59,
+     "probabilities": {
+      "true": 0.59,
+      "false": 0.41000000000000003
+     },
+     "confidence": 0.59,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-045",
+   "latencyMs": 460.9621269999989,
+   "usage": {
+    "inputTokens": 764,
+    "outputTokens": 106,
+    "costUsd": 0.000032088
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.03,
+      "infra": 0,
+      "data": 0,
+      "account": 0.97
+     },
+     "confidence": 0.96,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.76,
+     "probabilities": {
+      "Low": 0.26,
+      "Normal": 0.71,
+      "High": 0.03,
+      "Critical": 0
+     },
+     "confidence": 0.71,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.34,
+     "probabilities": {
+      "true": 0.34,
+      "false": 0.6599999999999999
+     },
+     "confidence": 0.6599999999999999,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-046",
+   "latencyMs": 665.4404920000015,
+   "usage": {
+    "inputTokens": 750,
+    "outputTokens": 106,
+    "costUsd": 0.0000315
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.95,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 0.05
+     },
+     "confidence": 0.94,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.11,
+     "probabilities": {
+      "Low": 0.89,
+      "Normal": 0.11,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.89,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.04,
+     "probabilities": {
+      "true": 0.04,
+      "false": 0.96
+     },
+     "confidence": 0.96,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.02,
+     "probabilities": {
+      "true": 0.02,
+      "false": 0.98
+     },
+     "confidence": 0.98,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-047",
+   "latencyMs": 454.199564999999,
+   "usage": {
+    "inputTokens": 758,
+    "outputTokens": 106,
+    "costUsd": 0.000031836
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 1,
+      "infra": 0,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 1,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.67,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.33,
+      "Critical": 0.67
+     },
+     "confidence": 0.67,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.06,
+     "probabilities": {
+      "true": 0.06,
+      "false": 0.94
+     },
+     "confidence": 0.94,
+     "top": "false"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  },
+  {
+   "run": 3,
+   "ticketId": "T-048",
+   "latencyMs": 467.5778769999997,
+   "usage": {
+    "inputTokens": 771,
+    "outputTokens": 106,
+    "costUsd": 0.000032382
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.99,
+      "data": 0.01,
+      "account": 0
+     },
+     "confidence": 0.99,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.99,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.01,
+      "Critical": 0.99
+     },
+     "confidence": 0.99,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.94,
+     "probabilities": {
+      "true": 0.94,
+      "false": 0.06000000000000005
+     },
+     "confidence": 0.94,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "typesafe/jev-1.14-20261014",
+   "cached": true
+  }
+ ],
+ "metrics": {
+  "calls": 144,
+  "errors": 0,
+  "accuracy": {
+   "team": {
+    "mean": 0.8958333333333334,
+    "min": 0.8958333333333334,
+    "max": 0.8958333333333334
+   },
+   "urgency": {
+    "mean": 0.8333333333333334,
+    "min": 0.8333333333333334,
+    "max": 0.8333333333333334
+   },
+   "customer_blocked": {
+    "mean": 0.9791666666666666,
+    "min": 0.9791666666666666,
+    "max": 0.9791666666666666
+   },
+   "contains_personal_data": {
+    "mean": 1,
+    "min": 1,
+    "max": 1
+   }
+  },
+  "teamMacroF1": {
+   "mean": 0.8950818222025653,
+   "min": 0.8950818222025653,
+   "max": 0.8950818222025653
+  },
+  "urgencyMAE": {
+   "mean": 0.18486111111111106,
+   "min": 0.18395833333333333,
+   "max": 0.18645833333333328
+  },
+  "brier": {
+   "noul": 0.013343055555555558,
+   "team": 0.14158826140189773
+  },
+  "ece": 0.037067024410773246,
+  "reliability": [
+   {
+    "lo": 0,
+    "hi": 0.1,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.1,
+    "hi": 0.2,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.2,
+    "hi": 0.3,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.3,
+    "hi": 0.4,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.4,
+    "hi": 0.5,
+    "count": 3,
+    "meanConfidence": 0.44333333333333336,
+    "accuracy": 1
+   },
+   {
+    "lo": 0.5,
+    "hi": 0.6,
+    "count": 27,
+    "meanConfidence": 0.5537037037037037,
+    "accuracy": 0.4074074074074074
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "count": 18,
+    "meanConfidence": 0.646111111111111,
+    "accuracy": 0.5555555555555556
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "count": 26,
+    "meanConfidence": 0.7507692307692307,
+    "accuracy": 0.8846153846153846
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "count": 83,
+    "meanConfidence": 0.8560240963855421,
+    "accuracy": 0.8674698795180723
+   },
+   {
+    "lo": 0.9,
+    "hi": 1,
+    "count": 419,
+    "meanConfidence": 0.9673732552252855,
+    "accuracy": 0.9904534606205251
+   }
+  ],
+  "latency": {
+   "p50": 476.6484930000006,
+   "p95": 943.1148190000004,
+   "mean": 523.4140023611112
+  },
+  "cost": {
+   "totalUsd": 0.004657086000000001,
+   "perCallUsd": 0.000032340875000000006,
+   "per100Usd": 0.0032340875000000007,
+   "per1000Usd": 0.032340875000000005
+  },
+  "tokens": {
+   "inputMean": 770.0208333333334,
+   "outputMean": 106
+  },
+  "coverage": [
+   {
+    "threshold": 0.5,
+    "coverage": 0.9583333333333334,
+    "accuracy": 0.9202898550724637
+   },
+   {
+    "threshold": 0.51,
+    "coverage": 0.9513888888888888,
+    "accuracy": 0.9197080291970803
+   },
+   {
+    "threshold": 0.52,
+    "coverage": 0.9513888888888888,
+    "accuracy": 0.9197080291970803
+   },
+   {
+    "threshold": 0.53,
+    "coverage": 0.9444444444444444,
+    "accuracy": 0.9264705882352942
+   },
+   {
+    "threshold": 0.54,
+    "coverage": 0.9444444444444444,
+    "accuracy": 0.9264705882352942
+   },
+   {
+    "threshold": 0.55,
+    "coverage": 0.9444444444444444,
+    "accuracy": 0.9264705882352942
+   },
+   {
+    "threshold": 0.56,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.57,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.58,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.59,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.6,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.61,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.62,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.63,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.64,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.65,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.66,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.67,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.68,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.69,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.7,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.71,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.72,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.73,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.74,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.75,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.76,
+    "coverage": 0.9236111111111112,
+    "accuracy": 0.9323308270676691
+   },
+   {
+    "threshold": 0.77,
+    "coverage": 0.9236111111111112,
+    "accuracy": 0.9323308270676691
+   },
+   {
+    "threshold": 0.78,
+    "coverage": 0.9166666666666666,
+    "accuracy": 0.9318181818181818
+   },
+   {
+    "threshold": 0.79,
+    "coverage": 0.9166666666666666,
+    "accuracy": 0.9318181818181818
+   },
+   {
+    "threshold": 0.8,
+    "coverage": 0.9097222222222222,
+    "accuracy": 0.9312977099236641
+   },
+   {
+    "threshold": 0.81,
+    "coverage": 0.9097222222222222,
+    "accuracy": 0.9312977099236641
+   },
+   {
+    "threshold": 0.82,
+    "coverage": 0.9027777777777778,
+    "accuracy": 0.9307692307692308
+   },
+   {
+    "threshold": 0.83,
+    "coverage": 0.8958333333333334,
+    "accuracy": 0.937984496124031
+   },
+   {
+    "threshold": 0.84,
+    "coverage": 0.8958333333333334,
+    "accuracy": 0.937984496124031
+   },
+   {
+    "threshold": 0.85,
+    "coverage": 0.8819444444444444,
+    "accuracy": 0.9448818897637795
+   },
+   {
+    "threshold": 0.86,
+    "coverage": 0.8541666666666666,
+    "accuracy": 0.975609756097561
+   },
+   {
+    "threshold": 0.87,
+    "coverage": 0.8541666666666666,
+    "accuracy": 0.975609756097561
+   },
+   {
+    "threshold": 0.88,
+    "coverage": 0.8472222222222222,
+    "accuracy": 0.9754098360655737
+   },
+   {
+    "threshold": 0.89,
+    "coverage": 0.8472222222222222,
+    "accuracy": 0.9754098360655737
+   },
+   {
+    "threshold": 0.9,
+    "coverage": 0.8402777777777778,
+    "accuracy": 0.9752066115702479
+   },
+   {
+    "threshold": 0.91,
+    "coverage": 0.8263888888888888,
+    "accuracy": 0.9747899159663865
+   },
+   {
+    "threshold": 0.92,
+    "coverage": 0.8125,
+    "accuracy": 0.9743589743589743
+   },
+   {
+    "threshold": 0.93,
+    "coverage": 0.8055555555555556,
+    "accuracy": 0.9741379310344828
+   },
+   {
+    "threshold": 0.94,
+    "coverage": 0.8055555555555556,
+    "accuracy": 0.9741379310344828
+   },
+   {
+    "threshold": 0.95,
+    "coverage": 0.7847222222222222,
+    "accuracy": 0.9734513274336283
+   },
+   {
+    "threshold": 0.96,
+    "coverage": 0.7638888888888888,
+    "accuracy": 0.9727272727272728
+   },
+   {
+    "threshold": 0.97,
+    "coverage": 0.7083333333333334,
+    "accuracy": 0.9705882352941176
+   },
+   {
+    "threshold": 0.98,
+    "coverage": 0.6527777777777778,
+    "accuracy": 0.9893617021276596
+   },
+   {
+    "threshold": 0.99,
+    "coverage": 0.6527777777777778,
+    "accuracy": 0.9893617021276596
+   }
+  ],
+  "teamAccuracyByDifficulty": {
+   "clear": 0.9655172413793104,
+   "ambiguous": 0.6666666666666666,
+   "adversarial": 1
+  }
+ }
+}

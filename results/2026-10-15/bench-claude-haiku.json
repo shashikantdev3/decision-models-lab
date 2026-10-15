@@ -1,0 +1,8909 @@
+{
+ "schema": 1,
+ "kind": "bench",
+ "model": {
+  "key": "claude-haiku",
+  "id": "claude-haiku-4-5-20251001",
+  "label": "Claude Haiku 4.5 (as decider)",
+  "kind": "llm-as-decider"
+ },
+ "provenance": {
+  "date": "2026-10-15",
+  "createdAt": "2026-10-15T18:56:07.486Z",
+  "gitCommit": "62728dc+uncommitted",
+  "region": "India (Noida)",
+  "questionSet": "v1",
+  "dataset": {
+   "version": "v1",
+   "sha256": "17766faa2e6346beab2ad7d4399ac92d38ce181aa9d5f9dbfde4fc1d78e2f2e4",
+   "count": 48,
+   "labelStatus": "labels machine-made, cross-checked, disagreements reviewed by the owner"
+  },
+  "runs": 3,
+  "mock": false
+ },
+ "warmupCalls": 3,
+ "calls": [
+  {
+   "run": 1,
+   "ticketId": "T-001",
+   "latencyMs": 2415.233425999999,
+   "usage": {
+    "inputTokens": 1629,
+    "outputTokens": 176,
+    "costUsd": 0.002509
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.3,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.55,
+      "account": 0.05
+     },
+     "confidence": 0.55,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.35,
+     "probabilities": {
+      "Low": 0.7,
+      "Normal": 0.25,
+      "High": 0.05,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-002",
+   "latencyMs": 2442.2138179999965,
+   "usage": {
+    "inputTokens": 1610,
+    "outputTokens": 176,
+    "costUsd": 0.00249
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.35,
+      "infra": 0.05,
+      "data": 0.05,
+      "account": 0.5
+     },
+     "confidence": 0.5,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.7,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.6,
+     "probabilities": {
+      "true": 0.6,
+      "false": 0.4
+     },
+     "confidence": 0.6,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-003",
+   "latencyMs": 2489.9286319999956,
+   "usage": {
+    "inputTokens": 1600,
+    "outputTokens": 176,
+    "costUsd": 0.00248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.15,
+      "infra": 0.75,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.75,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.08,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.7,
+      "Critical": 0.2
+     },
+     "confidence": 0.7,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-004",
+   "latencyMs": 2483.0842150000026,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 176,
+    "costUsd": 0.002488
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.02,
+      "infra": 0.08,
+      "data": 0.85,
+      "account": 0
+     },
+     "confidence": 0.85,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.85,
+      "Critical": 0.05
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-005",
+   "latencyMs": 2042.4895270000052,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 174,
+    "costUsd": 0.002467
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.05,
+      "account": 0.8
+     },
+     "confidence": 0.8,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": true
+  },
+  {
+   "run": 1,
+   "ticketId": "T-006",
+   "latencyMs": 2144.8079610000004,
+   "usage": {
+    "inputTokens": 1610,
+    "outputTokens": 176,
+    "costUsd": 0.00249
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.02,
+      "account": 0.03
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-007",
+   "latencyMs": 1990.9217169999993,
+   "usage": {
+    "inputTokens": 1617,
+    "outputTokens": 174,
+    "costUsd": 0.002487
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9900000000000002,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.9,
+      "Critical": 0.05
+     },
+     "confidence": 0.9,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-008",
+   "latencyMs": 2146.9393150000005,
+   "usage": {
+    "inputTokens": 1621,
+    "outputTokens": 176,
+    "costUsd": 0.002501
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.04,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.78,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.15,
+      "Critical": 0.82
+     },
+     "confidence": 0.82,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-009",
+   "latencyMs": 2120.2042249999995,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 166,
+    "costUsd": 0.002427
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.95,
+      "account": 0.05
+     },
+     "confidence": 0.95,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-010",
+   "latencyMs": 2015.4013109999996,
+   "usage": {
+    "inputTokens": 1593,
+    "outputTokens": 166,
+    "costUsd": 0.002423
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.15,
+      "infra": 0,
+      "data": 0,
+      "account": 0.85
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.05,
+     "probabilities": {
+      "Low": 0.1,
+      "Normal": 0.75,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-011",
+   "latencyMs": 2018.1296789999997,
+   "usage": {
+    "inputTokens": 1630,
+    "outputTokens": 176,
+    "costUsd": 0.00251
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.75,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.75,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-012",
+   "latencyMs": 2054.244184000001,
+   "usage": {
+    "inputTokens": 1605,
+    "outputTokens": 164,
+    "costUsd": 0.002425
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.05,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.9499999999999997,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-013",
+   "latencyMs": 2127.378267,
+   "usage": {
+    "inputTokens": 1624,
+    "outputTokens": 176,
+    "costUsd": 0.002504
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.75,
+      "data": 0.15,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.35,
+     "probabilities": {
+      "Low": 0.7,
+      "Normal": 0.25,
+      "High": 0.05,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-014",
+   "latencyMs": 2029.1408850000007,
+   "usage": {
+    "inputTokens": 1621,
+    "outputTokens": 170,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.05,
+      "data": 0.9,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.95,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.75,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.2,
+     "probabilities": {
+      "true": 0.2,
+      "false": 0.8
+     },
+     "confidence": 0.8,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-015",
+   "latencyMs": 2080.990935,
+   "usage": {
+    "inputTokens": 1602,
+    "outputTokens": 176,
+    "costUsd": 0.002482
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.7499999999999999,
+      "auth": 0.04999999999999999,
+      "infra": 0.04999999999999999,
+      "data": 0.04999999999999999,
+      "account": 0.09999999999999998
+     },
+     "confidence": 0.7499999999999999,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8500000000000003,
+     "probabilities": {
+      "Low": 0.05000000000000001,
+      "Normal": 0.15000000000000002,
+      "High": 0.7000000000000001,
+      "Critical": 0.10000000000000002
+     },
+     "confidence": 0.7000000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-016",
+   "latencyMs": 2043.5611640000006,
+   "usage": {
+    "inputTokens": 1638,
+    "outputTokens": 176,
+    "costUsd": 0.002518
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.04,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.85,
+      "Critical": 0.1
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-017",
+   "latencyMs": 2057.080750000001,
+   "usage": {
+    "inputTokens": 1624,
+    "outputTokens": 176,
+    "costUsd": 0.002504
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.85,
+      "infra": 0.05,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.2000000000000002,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.55,
+      "High": 0.25,
+      "Critical": 0.05
+     },
+     "confidence": 0.55,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-018",
+   "latencyMs": 2071.390007,
+   "usage": {
+    "inputTokens": 1599,
+    "outputTokens": 176,
+    "costUsd": 0.002479
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.25,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.7,
+      "High": 0.2,
+      "Critical": 0.05
+     },
+     "confidence": 0.7,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-019",
+   "latencyMs": 2078.021742000001,
+   "usage": {
+    "inputTokens": 1600,
+    "outputTokens": 176,
+    "costUsd": 0.00248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.1,
+      "data": 0.75,
+      "account": 0.05
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.4,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.35,
+      "High": 0.45,
+      "Critical": 0.05
+     },
+     "confidence": 0.45,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.2,
+     "probabilities": {
+      "true": 0.2,
+      "false": 0.8
+     },
+     "confidence": 0.8,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-020",
+   "latencyMs": 1714.409792999999,
+   "usage": {
+    "inputTokens": 1603,
+    "outputTokens": 176,
+    "costUsd": 0.002483
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.05,
+      "account": 0.7
+     },
+     "confidence": 0.7,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-021",
+   "latencyMs": 2056.3138609999987,
+   "usage": {
+    "inputTokens": 1591,
+    "outputTokens": 176,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.95,
+      "auth": 0.02,
+      "infra": 0.01,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-022",
+   "latencyMs": 2027.7538110000005,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 174,
+    "costUsd": 0.002478
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.17,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.75,
+      "High": 0.18,
+      "Critical": 0.02
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-023",
+   "latencyMs": 2032.5707870000006,
+   "usage": {
+    "inputTokens": 1603,
+    "outputTokens": 176,
+    "costUsd": 0.002483
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.35,
+     "probabilities": {
+      "true": 0.35,
+      "false": 0.65
+     },
+     "confidence": 0.65,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-024",
+   "latencyMs": 2085.0159570000014,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 176,
+    "costUsd": 0.002477
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.15,
+      "data": 0.75,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8499999999999996,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.15,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-025",
+   "latencyMs": 1917.0830189999997,
+   "usage": {
+    "inputTokens": 1577,
+    "outputTokens": 158,
+    "costUsd": 0.002367
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-026",
+   "latencyMs": 2097.2811889999975,
+   "usage": {
+    "inputTokens": 1585,
+    "outputTokens": 176,
+    "costUsd": 0.002465
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.95,
+      "auth": 0.01,
+      "infra": 0.02,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.1,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.8,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.8,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.25,
+     "probabilities": {
+      "true": 0.25,
+      "false": 0.75
+     },
+     "confidence": 0.75,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-027",
+   "latencyMs": 2009.7730679999986,
+   "usage": {
+    "inputTokens": 1626,
+    "outputTokens": 174,
+    "costUsd": 0.002496
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.95,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.94,
+      "Critical": 0.01
+     },
+     "confidence": 0.94,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-028",
+   "latencyMs": 2077.359461,
+   "usage": {
+    "inputTokens": 1595,
+    "outputTokens": 176,
+    "costUsd": 0.002475
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8099999999999996,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.12,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-029",
+   "latencyMs": 2078.2406550000014,
+   "usage": {
+    "inputTokens": 1582,
+    "outputTokens": 166,
+    "costUsd": 0.002412
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.95,
+      "account": 0.05
+     },
+     "confidence": 0.95,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-030",
+   "latencyMs": 2103.149276,
+   "usage": {
+    "inputTokens": 1601,
+    "outputTokens": 176,
+    "costUsd": 0.002481
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.15,
+      "auth": 0.1,
+      "infra": 0.15,
+      "data": 0.1,
+      "account": 0.5
+     },
+     "confidence": 0.5,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.75,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.2,
+      "High": 0.7,
+      "Critical": 0.05
+     },
+     "confidence": 0.7,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-031",
+   "latencyMs": 2049.791107000001,
+   "usage": {
+    "inputTokens": 1596,
+    "outputTokens": 176,
+    "costUsd": 0.002476
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.08,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.85,
+      "Critical": 0.12
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-032",
+   "latencyMs": 2077.723629,
+   "usage": {
+    "inputTokens": 1636,
+    "outputTokens": 176,
+    "costUsd": 0.002516
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.02,
+      "auth": 0.95,
+      "infra": 0.02,
+      "data": 0.01,
+      "account": 0
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.9499999999999997,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-033",
+   "latencyMs": 2018.4808029999986,
+   "usage": {
+    "inputTokens": 1579,
+    "outputTokens": 176,
+    "costUsd": 0.002459
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-034",
+   "latencyMs": 2088.9013460000024,
+   "usage": {
+    "inputTokens": 1589,
+    "outputTokens": 176,
+    "costUsd": 0.002469
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.1,
+      "data": 0.75,
+      "account": 0.05
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.07,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.65,
+      "High": 0.18,
+      "Critical": 0.02
+     },
+     "confidence": 0.65,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-035",
+   "latencyMs": 2047.0599860000002,
+   "usage": {
+    "inputTokens": 1626,
+    "outputTokens": 176,
+    "costUsd": 0.002506
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.7,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.05,
+      "account": 0.05
+     },
+     "confidence": 0.7,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.0300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.75,
+      "Critical": 0.15
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-036",
+   "latencyMs": 2104.8253189999996,
+   "usage": {
+    "inputTokens": 1596,
+    "outputTokens": 176,
+    "costUsd": 0.002476
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.78,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.15,
+      "Critical": 0.82
+     },
+     "confidence": 0.82,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-037",
+   "latencyMs": 2079.6617140000017,
+   "usage": {
+    "inputTokens": 1580,
+    "outputTokens": 170,
+    "costUsd": 0.00243
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-038",
+   "latencyMs": 2164.412192,
+   "usage": {
+    "inputTokens": 1599,
+    "outputTokens": 176,
+    "costUsd": 0.002479
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7000000000000002,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.25,
+      "High": 0.65,
+      "Critical": 0.05
+     },
+     "confidence": 0.65,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-039",
+   "latencyMs": 2138.944599999999,
+   "usage": {
+    "inputTokens": 1591,
+    "outputTokens": 176,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.15,
+      "data": 0.75,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-040",
+   "latencyMs": 2047.658325999997,
+   "usage": {
+    "inputTokens": 1612,
+    "outputTokens": 168,
+    "costUsd": 0.002452
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.15,
+      "infra": 0,
+      "data": 0,
+      "account": 0.85
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.05,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.05,
+      "High": 0.85,
+      "Critical": 0.1
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-041",
+   "latencyMs": 2062.334790000001,
+   "usage": {
+    "inputTokens": 1601,
+    "outputTokens": 176,
+    "costUsd": 0.002481
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.02,
+      "infra": 0.02,
+      "data": 0.05,
+      "account": 0.06
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-042",
+   "latencyMs": 2072.876114999999,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 176,
+    "costUsd": 0.002488
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.85,
+      "infra": 0.05,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-043",
+   "latencyMs": 2039.1585670000022,
+   "usage": {
+    "inputTokens": 1617,
+    "outputTokens": 176,
+    "costUsd": 0.002497
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.25,
+     "probabilities": {
+      "true": 0.25,
+      "false": 0.75
+     },
+     "confidence": 0.75,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-044",
+   "latencyMs": 1982.2400179999968,
+   "usage": {
+    "inputTokens": 1607,
+    "outputTokens": 168,
+    "costUsd": 0.002447
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.05,
+      "data": 0.9,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8499999999999996,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.15,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-045",
+   "latencyMs": 2020.7143230000001,
+   "usage": {
+    "inputTokens": 1593,
+    "outputTokens": 162,
+    "costUsd": 0.002403
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.15,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.15,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-046",
+   "latencyMs": 2157.4410620000017,
+   "usage": {
+    "inputTokens": 1583,
+    "outputTokens": 176,
+    "costUsd": 0.002463
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.02,
+      "account": 0.03
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-047",
+   "latencyMs": 2124.3027540000003,
+   "usage": {
+    "inputTokens": 1592,
+    "outputTokens": 176,
+    "costUsd": 0.002472
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.9,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.9,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.85,
+      "Critical": 0.05
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 1,
+   "ticketId": "T-048",
+   "latencyMs": 2100.344148,
+   "usage": {
+    "inputTokens": 1602,
+    "outputTokens": 176,
+    "costUsd": 0.002482
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.04,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8099999999999996,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.12,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-001",
+   "latencyMs": 2078.5498819999993,
+   "usage": {
+    "inputTokens": 1629,
+    "outputTokens": 176,
+    "costUsd": 0.002509
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.3,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.55,
+      "account": 0.05
+     },
+     "confidence": 0.55,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.35,
+     "probabilities": {
+      "Low": 0.7,
+      "Normal": 0.25,
+      "High": 0.05,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-002",
+   "latencyMs": 2123.644830999998,
+   "usage": {
+    "inputTokens": 1610,
+    "outputTokens": 176,
+    "costUsd": 0.00249
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.35,
+      "infra": 0.05,
+      "data": 0.05,
+      "account": 0.5
+     },
+     "confidence": 0.5,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.7,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.6,
+     "probabilities": {
+      "true": 0.6,
+      "false": 0.4
+     },
+     "confidence": 0.6,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-003",
+   "latencyMs": 2151.906125999998,
+   "usage": {
+    "inputTokens": 1600,
+    "outputTokens": 176,
+    "costUsd": 0.00248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.15,
+      "infra": 0.75,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.75,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.08,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.7,
+      "Critical": 0.2
+     },
+     "confidence": 0.7,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-004",
+   "latencyMs": 2120.6134560000028,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 176,
+    "costUsd": 0.002488
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.02,
+      "infra": 0.08,
+      "data": 0.85,
+      "account": 0
+     },
+     "confidence": 0.85,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.85,
+      "Critical": 0.05
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-005",
+   "latencyMs": 2117.6380379999973,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 174,
+    "costUsd": 0.002467
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.05,
+      "account": 0.8
+     },
+     "confidence": 0.8,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-006",
+   "latencyMs": 2125.867951,
+   "usage": {
+    "inputTokens": 1610,
+    "outputTokens": 176,
+    "costUsd": 0.00249
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.02,
+      "account": 0.03
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-007",
+   "latencyMs": 1718.3957840000003,
+   "usage": {
+    "inputTokens": 1617,
+    "outputTokens": 176,
+    "costUsd": 0.002497
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.02,
+      "auth": 0.96,
+      "infra": 0.01,
+      "data": 0.01,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9500000000000002,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.05,
+      "High": 0.92,
+      "Critical": 0.02
+     },
+     "confidence": 0.92,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-008",
+   "latencyMs": 2065.3247789999987,
+   "usage": {
+    "inputTokens": 1621,
+    "outputTokens": 176,
+    "costUsd": 0.002501
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.04,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.78,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.15,
+      "Critical": 0.82
+     },
+     "confidence": 0.82,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-009",
+   "latencyMs": 2081.396084,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 166,
+    "costUsd": 0.002427
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.95,
+      "account": 0.05
+     },
+     "confidence": 0.95,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-010",
+   "latencyMs": 2073.8398000000016,
+   "usage": {
+    "inputTokens": 1593,
+    "outputTokens": 166,
+    "costUsd": 0.002423
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.15,
+      "infra": 0,
+      "data": 0,
+      "account": 0.85
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.05,
+     "probabilities": {
+      "Low": 0.1,
+      "Normal": 0.75,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-011",
+   "latencyMs": 2046.8452009999965,
+   "usage": {
+    "inputTokens": 1630,
+    "outputTokens": 176,
+    "costUsd": 0.00251
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.75,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.75,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-012",
+   "latencyMs": 2040.9895379999944,
+   "usage": {
+    "inputTokens": 1605,
+    "outputTokens": 164,
+    "costUsd": 0.002425
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.05,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.9499999999999997,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-013",
+   "latencyMs": 2159.304901999996,
+   "usage": {
+    "inputTokens": 1624,
+    "outputTokens": 176,
+    "costUsd": 0.002504
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.75,
+      "data": 0.15,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.35,
+     "probabilities": {
+      "Low": 0.7,
+      "Normal": 0.25,
+      "High": 0.05,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-014",
+   "latencyMs": 2035.1086770000038,
+   "usage": {
+    "inputTokens": 1621,
+    "outputTokens": 170,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.05,
+      "data": 0.9,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.95,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.75,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.2,
+     "probabilities": {
+      "true": 0.2,
+      "false": 0.8
+     },
+     "confidence": 0.8,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-015",
+   "latencyMs": 2151.422795999999,
+   "usage": {
+    "inputTokens": 1602,
+    "outputTokens": 176,
+    "costUsd": 0.002482
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.7499999999999999,
+      "auth": 0.04999999999999999,
+      "infra": 0.04999999999999999,
+      "data": 0.04999999999999999,
+      "account": 0.09999999999999998
+     },
+     "confidence": 0.7499999999999999,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8500000000000003,
+     "probabilities": {
+      "Low": 0.05000000000000001,
+      "Normal": 0.15000000000000002,
+      "High": 0.7000000000000001,
+      "Critical": 0.10000000000000002
+     },
+     "confidence": 0.7000000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-016",
+   "latencyMs": 2108.4300749999966,
+   "usage": {
+    "inputTokens": 1638,
+    "outputTokens": 176,
+    "costUsd": 0.002518
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.04,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.85,
+      "Critical": 0.1
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-017",
+   "latencyMs": 2059.0061360000036,
+   "usage": {
+    "inputTokens": 1624,
+    "outputTokens": 176,
+    "costUsd": 0.002504
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.85,
+      "infra": 0.05,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.2000000000000002,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.55,
+      "High": 0.25,
+      "Critical": 0.05
+     },
+     "confidence": 0.55,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-018",
+   "latencyMs": 2107.6795280000006,
+   "usage": {
+    "inputTokens": 1599,
+    "outputTokens": 176,
+    "costUsd": 0.002479
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.25,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.7,
+      "High": 0.2,
+      "Critical": 0.05
+     },
+     "confidence": 0.7,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-019",
+   "latencyMs": 2077.961240000004,
+   "usage": {
+    "inputTokens": 1600,
+    "outputTokens": 176,
+    "costUsd": 0.00248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.1,
+      "data": 0.75,
+      "account": 0.05
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.4,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.35,
+      "High": 0.45,
+      "Critical": 0.05
+     },
+     "confidence": 0.45,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.2,
+     "probabilities": {
+      "true": 0.2,
+      "false": 0.8
+     },
+     "confidence": 0.8,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-020",
+   "latencyMs": 1722.9013479999994,
+   "usage": {
+    "inputTokens": 1603,
+    "outputTokens": 176,
+    "costUsd": 0.002483
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.05,
+      "account": 0.7
+     },
+     "confidence": 0.7,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-021",
+   "latencyMs": 2059.225351000001,
+   "usage": {
+    "inputTokens": 1591,
+    "outputTokens": 176,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.95,
+      "auth": 0.02,
+      "infra": 0.01,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-022",
+   "latencyMs": 2055.090258999997,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 174,
+    "costUsd": 0.002478
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.17,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.75,
+      "High": 0.18,
+      "Critical": 0.02
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-023",
+   "latencyMs": 2065.7522890000037,
+   "usage": {
+    "inputTokens": 1603,
+    "outputTokens": 176,
+    "costUsd": 0.002483
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.35,
+     "probabilities": {
+      "true": 0.35,
+      "false": 0.65
+     },
+     "confidence": 0.65,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-024",
+   "latencyMs": 2097.830041000001,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 176,
+    "costUsd": 0.002477
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.15,
+      "data": 0.75,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8499999999999996,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.15,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-025",
+   "latencyMs": 1964.2290869999997,
+   "usage": {
+    "inputTokens": 1577,
+    "outputTokens": 158,
+    "costUsd": 0.002367
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-026",
+   "latencyMs": 2055.8003129999997,
+   "usage": {
+    "inputTokens": 1585,
+    "outputTokens": 176,
+    "costUsd": 0.002465
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.95,
+      "auth": 0.01,
+      "infra": 0.02,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.1,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.8,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.8,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.25,
+     "probabilities": {
+      "true": 0.25,
+      "false": 0.75
+     },
+     "confidence": 0.75,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-027",
+   "latencyMs": 2033.8698939999958,
+   "usage": {
+    "inputTokens": 1626,
+    "outputTokens": 174,
+    "costUsd": 0.002496
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.95,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.94,
+      "Critical": 0.01
+     },
+     "confidence": 0.94,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-028",
+   "latencyMs": 2097.4872470000046,
+   "usage": {
+    "inputTokens": 1595,
+    "outputTokens": 176,
+    "costUsd": 0.002475
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8099999999999996,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.12,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-029",
+   "latencyMs": 2067.1125200000024,
+   "usage": {
+    "inputTokens": 1582,
+    "outputTokens": 166,
+    "costUsd": 0.002412
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.95,
+      "account": 0.05
+     },
+     "confidence": 0.95,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-030",
+   "latencyMs": 2111.7826490000007,
+   "usage": {
+    "inputTokens": 1601,
+    "outputTokens": 176,
+    "costUsd": 0.002481
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.15,
+      "auth": 0.1,
+      "infra": 0.15,
+      "data": 0.1,
+      "account": 0.5
+     },
+     "confidence": 0.5,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.75,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.2,
+      "High": 0.7,
+      "Critical": 0.05
+     },
+     "confidence": 0.7,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-031",
+   "latencyMs": 2060.6433040000047,
+   "usage": {
+    "inputTokens": 1596,
+    "outputTokens": 176,
+    "costUsd": 0.002476
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.08,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.85,
+      "Critical": 0.12
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-032",
+   "latencyMs": 2096.993244000005,
+   "usage": {
+    "inputTokens": 1636,
+    "outputTokens": 176,
+    "costUsd": 0.002516
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.02,
+      "auth": 0.95,
+      "infra": 0.02,
+      "data": 0.01,
+      "account": 0
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.9499999999999997,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-033",
+   "latencyMs": 2150.2274649999963,
+   "usage": {
+    "inputTokens": 1579,
+    "outputTokens": 176,
+    "costUsd": 0.002459
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-034",
+   "latencyMs": 2097.797612000002,
+   "usage": {
+    "inputTokens": 1589,
+    "outputTokens": 176,
+    "costUsd": 0.002469
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.1,
+      "data": 0.75,
+      "account": 0.05
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.07,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.65,
+      "High": 0.18,
+      "Critical": 0.02
+     },
+     "confidence": 0.65,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-035",
+   "latencyMs": 2073.985483000004,
+   "usage": {
+    "inputTokens": 1626,
+    "outputTokens": 176,
+    "costUsd": 0.002506
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.7,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.05,
+      "account": 0.05
+     },
+     "confidence": 0.7,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.0300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.75,
+      "Critical": 0.15
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-036",
+   "latencyMs": 2026.9301730000007,
+   "usage": {
+    "inputTokens": 1596,
+    "outputTokens": 176,
+    "costUsd": 0.002476
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.78,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.15,
+      "Critical": 0.82
+     },
+     "confidence": 0.82,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-037",
+   "latencyMs": 2127.605960000001,
+   "usage": {
+    "inputTokens": 1580,
+    "outputTokens": 170,
+    "costUsd": 0.00243
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-038",
+   "latencyMs": 2040.0037850000008,
+   "usage": {
+    "inputTokens": 1599,
+    "outputTokens": 176,
+    "costUsd": 0.002479
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7000000000000002,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.25,
+      "High": 0.65,
+      "Critical": 0.05
+     },
+     "confidence": 0.65,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-039",
+   "latencyMs": 2168.963183,
+   "usage": {
+    "inputTokens": 1591,
+    "outputTokens": 176,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.15,
+      "data": 0.75,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-040",
+   "latencyMs": 2008.752201999996,
+   "usage": {
+    "inputTokens": 1612,
+    "outputTokens": 168,
+    "costUsd": 0.002452
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.15,
+      "infra": 0,
+      "data": 0,
+      "account": 0.85
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.05,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.05,
+      "High": 0.85,
+      "Critical": 0.1
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-041",
+   "latencyMs": 2124.2517359999983,
+   "usage": {
+    "inputTokens": 1601,
+    "outputTokens": 176,
+    "costUsd": 0.002481
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.02,
+      "infra": 0.02,
+      "data": 0.05,
+      "account": 0.06
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-042",
+   "latencyMs": 2048.4946039999995,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 176,
+    "costUsd": 0.002488
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.85,
+      "infra": 0.05,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-043",
+   "latencyMs": 2096.6559190000044,
+   "usage": {
+    "inputTokens": 1617,
+    "outputTokens": 176,
+    "costUsd": 0.002497
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.25,
+     "probabilities": {
+      "true": 0.25,
+      "false": 0.75
+     },
+     "confidence": 0.75,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-044",
+   "latencyMs": 2015.6291409999976,
+   "usage": {
+    "inputTokens": 1607,
+    "outputTokens": 168,
+    "costUsd": 0.002447
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.05,
+      "data": 0.9,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8499999999999996,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.15,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-045",
+   "latencyMs": 1970.9322600000014,
+   "usage": {
+    "inputTokens": 1593,
+    "outputTokens": 162,
+    "costUsd": 0.002403
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.15,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.15,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-046",
+   "latencyMs": 2169.980456999998,
+   "usage": {
+    "inputTokens": 1583,
+    "outputTokens": 176,
+    "costUsd": 0.002463
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.02,
+      "account": 0.03
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-047",
+   "latencyMs": 2109.433241999999,
+   "usage": {
+    "inputTokens": 1592,
+    "outputTokens": 176,
+    "costUsd": 0.002472
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.9,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.9,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.85,
+      "Critical": 0.05
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 2,
+   "ticketId": "T-048",
+   "latencyMs": 2093.063159999998,
+   "usage": {
+    "inputTokens": 1602,
+    "outputTokens": 176,
+    "costUsd": 0.002482
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.04,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8099999999999996,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.12,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-001",
+   "latencyMs": 2068.6588820000034,
+   "usage": {
+    "inputTokens": 1629,
+    "outputTokens": 176,
+    "costUsd": 0.002509
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.3,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.55,
+      "account": 0.05
+     },
+     "confidence": 0.55,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.35,
+     "probabilities": {
+      "Low": 0.7,
+      "Normal": 0.25,
+      "High": 0.05,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-002",
+   "latencyMs": 2072.4927439999956,
+   "usage": {
+    "inputTokens": 1610,
+    "outputTokens": 176,
+    "costUsd": 0.00249
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.35,
+      "infra": 0.05,
+      "data": 0.05,
+      "account": 0.5
+     },
+     "confidence": 0.5,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.7,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.6,
+     "probabilities": {
+      "true": 0.6,
+      "false": 0.4
+     },
+     "confidence": 0.6,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-003",
+   "latencyMs": 2254.5308030000015,
+   "usage": {
+    "inputTokens": 1600,
+    "outputTokens": 176,
+    "costUsd": 0.00248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.15,
+      "infra": 0.75,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.75,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.08,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.7,
+      "Critical": 0.2
+     },
+     "confidence": 0.7,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-004",
+   "latencyMs": 2221.9362240000046,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 176,
+    "costUsd": 0.002488
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.02,
+      "infra": 0.08,
+      "data": 0.85,
+      "account": 0
+     },
+     "confidence": 0.85,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.85,
+      "Critical": 0.05
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-005",
+   "latencyMs": 2108.7442340000052,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 174,
+    "costUsd": 0.002467
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.05,
+      "account": 0.8
+     },
+     "confidence": 0.8,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-006",
+   "latencyMs": 2102.6183880000026,
+   "usage": {
+    "inputTokens": 1610,
+    "outputTokens": 176,
+    "costUsd": 0.00249
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.02,
+      "account": 0.03
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-007",
+   "latencyMs": 1950.2567479999998,
+   "usage": {
+    "inputTokens": 1617,
+    "outputTokens": 176,
+    "costUsd": 0.002497
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.02,
+      "auth": 0.96,
+      "infra": 0.01,
+      "data": 0.01,
+      "account": 0
+     },
+     "confidence": 0.96,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.95,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.94,
+      "Critical": 0.01
+     },
+     "confidence": 0.94,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-008",
+   "latencyMs": 2117.5054290000044,
+   "usage": {
+    "inputTokens": 1621,
+    "outputTokens": 176,
+    "costUsd": 0.002501
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.04,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.78,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.15,
+      "Critical": 0.82
+     },
+     "confidence": 0.82,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-009",
+   "latencyMs": 2055.9652850000057,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 166,
+    "costUsd": 0.002427
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.95,
+      "account": 0.05
+     },
+     "confidence": 0.95,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-010",
+   "latencyMs": 2039.6972860000024,
+   "usage": {
+    "inputTokens": 1593,
+    "outputTokens": 166,
+    "costUsd": 0.002423
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.15,
+      "infra": 0,
+      "data": 0,
+      "account": 0.85
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.05,
+     "probabilities": {
+      "Low": 0.1,
+      "Normal": 0.75,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-011",
+   "latencyMs": 2030.4840719999993,
+   "usage": {
+    "inputTokens": 1630,
+    "outputTokens": 176,
+    "costUsd": 0.00251
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.75,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.75,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-012",
+   "latencyMs": 2057.5192220000026,
+   "usage": {
+    "inputTokens": 1605,
+    "outputTokens": 164,
+    "costUsd": 0.002425
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.05,
+      "data": 0,
+      "account": 0
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.9499999999999997,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-013",
+   "latencyMs": 2082.4919240000017,
+   "usage": {
+    "inputTokens": 1624,
+    "outputTokens": 176,
+    "costUsd": 0.002504
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.75,
+      "data": 0.15,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.35,
+     "probabilities": {
+      "Low": 0.7,
+      "Normal": 0.25,
+      "High": 0.05,
+      "Critical": 0
+     },
+     "confidence": 0.7,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-014",
+   "latencyMs": 2006.5922510000019,
+   "usage": {
+    "inputTokens": 1621,
+    "outputTokens": 170,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.05,
+      "data": 0.9,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.95,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.75,
+      "High": 0.1,
+      "Critical": 0
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.2,
+     "probabilities": {
+      "true": 0.2,
+      "false": 0.8
+     },
+     "confidence": 0.8,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-015",
+   "latencyMs": 2173.634801,
+   "usage": {
+    "inputTokens": 1602,
+    "outputTokens": 176,
+    "costUsd": 0.002482
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.7499999999999999,
+      "auth": 0.04999999999999999,
+      "infra": 0.04999999999999999,
+      "data": 0.04999999999999999,
+      "account": 0.09999999999999998
+     },
+     "confidence": 0.7499999999999999,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8500000000000003,
+     "probabilities": {
+      "Low": 0.05000000000000001,
+      "Normal": 0.15000000000000002,
+      "High": 0.7000000000000001,
+      "Critical": 0.10000000000000002
+     },
+     "confidence": 0.7000000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-016",
+   "latencyMs": 2047.2302130000025,
+   "usage": {
+    "inputTokens": 1638,
+    "outputTokens": 176,
+    "costUsd": 0.002518
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.04,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.85,
+      "Critical": 0.1
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.92,
+     "probabilities": {
+      "true": 0.92,
+      "false": 0.07999999999999996
+     },
+     "confidence": 0.92,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-017",
+   "latencyMs": 2049.5668970000042,
+   "usage": {
+    "inputTokens": 1624,
+    "outputTokens": 176,
+    "costUsd": 0.002504
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.85,
+      "infra": 0.05,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.2000000000000002,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.55,
+      "High": 0.25,
+      "Critical": 0.05
+     },
+     "confidence": 0.55,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-018",
+   "latencyMs": 2041.1677980000022,
+   "usage": {
+    "inputTokens": 1599,
+    "outputTokens": 176,
+    "costUsd": 0.002479
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.25,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.7,
+      "High": 0.2,
+      "Critical": 0.05
+     },
+     "confidence": 0.7,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-019",
+   "latencyMs": 2132.090336000001,
+   "usage": {
+    "inputTokens": 1600,
+    "outputTokens": 176,
+    "costUsd": 0.00248
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.1,
+      "data": 0.75,
+      "account": 0.05
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.4,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.35,
+      "High": 0.45,
+      "Critical": 0.05
+     },
+     "confidence": 0.45,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.2,
+     "probabilities": {
+      "true": 0.2,
+      "false": 0.8
+     },
+     "confidence": 0.8,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-020",
+   "latencyMs": 1740.7682040000072,
+   "usage": {
+    "inputTokens": 1603,
+    "outputTokens": 176,
+    "costUsd": 0.002483
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.05,
+      "account": 0.7
+     },
+     "confidence": 0.7,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-021",
+   "latencyMs": 2149.7249560000055,
+   "usage": {
+    "inputTokens": 1591,
+    "outputTokens": 176,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.95,
+      "auth": 0.02,
+      "infra": 0.01,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-022",
+   "latencyMs": 2089.097624999995,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 174,
+    "costUsd": 0.002478
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.17,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.75,
+      "High": 0.18,
+      "Critical": 0.02
+     },
+     "confidence": 0.75,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-023",
+   "latencyMs": 2028.4900449999986,
+   "usage": {
+    "inputTokens": 1603,
+    "outputTokens": 176,
+    "costUsd": 0.002483
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.35,
+     "probabilities": {
+      "true": 0.35,
+      "false": 0.65
+     },
+     "confidence": 0.65,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-024",
+   "latencyMs": 2138.2489550000028,
+   "usage": {
+    "inputTokens": 1597,
+    "outputTokens": 176,
+    "costUsd": 0.002477
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.15,
+      "data": 0.75,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8499999999999996,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.15,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-025",
+   "latencyMs": 2049.895687000011,
+   "usage": {
+    "inputTokens": 1577,
+    "outputTokens": 158,
+    "costUsd": 0.002367
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.05,
+     "probabilities": {
+      "Low": 0.95,
+      "Normal": 0.05,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.95,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-026",
+   "latencyMs": 2092.6827300000004,
+   "usage": {
+    "inputTokens": 1585,
+    "outputTokens": 176,
+    "costUsd": 0.002465
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.95,
+      "auth": 0.01,
+      "infra": 0.02,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.1,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.8,
+      "High": 0.15,
+      "Critical": 0
+     },
+     "confidence": 0.8,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.25,
+     "probabilities": {
+      "true": 0.25,
+      "false": 0.75
+     },
+     "confidence": 0.75,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-027",
+   "latencyMs": 2073.6695029999973,
+   "usage": {
+    "inputTokens": 1626,
+    "outputTokens": 174,
+    "costUsd": 0.002496
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.95,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.04,
+      "High": 0.94,
+      "Critical": 0.01
+     },
+     "confidence": 0.94,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-028",
+   "latencyMs": 2096.863664999997,
+   "usage": {
+    "inputTokens": 1595,
+    "outputTokens": 176,
+    "costUsd": 0.002475
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8099999999999996,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.12,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-029",
+   "latencyMs": 2030.426099999997,
+   "usage": {
+    "inputTokens": 1582,
+    "outputTokens": 166,
+    "costUsd": 0.002412
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0.95,
+      "account": 0.05
+     },
+     "confidence": 0.95,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-030",
+   "latencyMs": 2088.1010010000027,
+   "usage": {
+    "inputTokens": 1601,
+    "outputTokens": 176,
+    "costUsd": 0.002481
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0.15,
+      "auth": 0.1,
+      "infra": 0.15,
+      "data": 0.1,
+      "account": 0.5
+     },
+     "confidence": 0.5,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.75,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.2,
+      "High": 0.7,
+      "Critical": 0.05
+     },
+     "confidence": 0.7,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-031",
+   "latencyMs": 2023.0228430000134,
+   "usage": {
+    "inputTokens": 1596,
+    "outputTokens": 176,
+    "costUsd": 0.002476
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.08,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.85,
+      "Critical": 0.12
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-032",
+   "latencyMs": 2132.7231100000063,
+   "usage": {
+    "inputTokens": 1636,
+    "outputTokens": 176,
+    "costUsd": 0.002516
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.02,
+      "auth": 0.95,
+      "infra": 0.02,
+      "data": 0.01,
+      "account": 0
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.9499999999999997,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.05,
+      "Critical": 0.95
+     },
+     "confidence": 0.95,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.98,
+     "probabilities": {
+      "true": 0.98,
+      "false": 0.020000000000000018
+     },
+     "confidence": 0.98,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.99,
+     "probabilities": {
+      "true": 0.99,
+      "false": 0.010000000000000009
+     },
+     "confidence": 0.99,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-033",
+   "latencyMs": 2068.588524000006,
+   "usage": {
+    "inputTokens": 1579,
+    "outputTokens": 176,
+    "costUsd": 0.002459
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-034",
+   "latencyMs": 2091.324124000006,
+   "usage": {
+    "inputTokens": 1589,
+    "outputTokens": 176,
+    "costUsd": 0.002469
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.1,
+      "data": 0.75,
+      "account": 0.05
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.07,
+     "probabilities": {
+      "Low": 0.15,
+      "Normal": 0.65,
+      "High": 0.18,
+      "Critical": 0.02
+     },
+     "confidence": 0.65,
+     "top": "Normal"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.3,
+     "probabilities": {
+      "true": 0.3,
+      "false": 0.7
+     },
+     "confidence": 0.7,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-035",
+   "latencyMs": 2075.84627200001,
+   "usage": {
+    "inputTokens": 1626,
+    "outputTokens": 176,
+    "costUsd": 0.002506
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.7,
+      "auth": 0.1,
+      "infra": 0.1,
+      "data": 0.05,
+      "account": 0.05
+     },
+     "confidence": 0.7,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.0300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.75,
+      "Critical": 0.15
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-036",
+   "latencyMs": 2079.2810520000057,
+   "usage": {
+    "inputTokens": 1596,
+    "outputTokens": 176,
+    "costUsd": 0.002476
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.08,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.78,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.15,
+      "Critical": 0.82
+     },
+     "confidence": 0.82,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-037",
+   "latencyMs": 2159.5149519999977,
+   "usage": {
+    "inputTokens": 1580,
+    "outputTokens": 170,
+    "costUsd": 0.00243
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.95,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.95,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.16,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.14,
+      "High": 0.01,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-038",
+   "latencyMs": 2102.032533999998,
+   "usage": {
+    "inputTokens": 1599,
+    "outputTokens": 176,
+    "costUsd": 0.002479
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7000000000000002,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.25,
+      "High": 0.65,
+      "Critical": 0.05
+     },
+     "confidence": 0.65,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-039",
+   "latencyMs": 2095.0985050000018,
+   "usage": {
+    "inputTokens": 1591,
+    "outputTokens": 176,
+    "costUsd": 0.002471
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.15,
+      "data": 0.75,
+      "account": 0
+     },
+     "confidence": 0.75,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-040",
+   "latencyMs": 2078.156860999996,
+   "usage": {
+    "inputTokens": 1612,
+    "outputTokens": 168,
+    "costUsd": 0.002452
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0.15,
+      "infra": 0,
+      "data": 0,
+      "account": 0.85
+     },
+     "confidence": 0.85,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.05,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0.05,
+      "High": 0.85,
+      "Critical": 0.1
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-041",
+   "latencyMs": 2135.6720399999904,
+   "usage": {
+    "inputTokens": 1601,
+    "outputTokens": 176,
+    "costUsd": 0.002481
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.02,
+      "infra": 0.02,
+      "data": 0.05,
+      "account": 0.06
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.05,
+     "probabilities": {
+      "true": 0.05,
+      "false": 0.95
+     },
+     "confidence": 0.95,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-042",
+   "latencyMs": 2028.9061159999983,
+   "usage": {
+    "inputTokens": 1608,
+    "outputTokens": 176,
+    "costUsd": 0.002488
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.85,
+      "infra": 0.05,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.7999999999999998,
+     "probabilities": {
+      "Low": 0.05,
+      "Normal": 0.15,
+      "High": 0.75,
+      "Critical": 0.05
+     },
+     "confidence": 0.75,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.85,
+     "probabilities": {
+      "true": 0.85,
+      "false": 0.15000000000000002
+     },
+     "confidence": 0.85,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-043",
+   "latencyMs": 2101.7377429999906,
+   "usage": {
+    "inputTokens": 1617,
+    "outputTokens": 176,
+    "costUsd": 0.002497
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.03,
+      "account": 0.02
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.8900000000000003,
+     "probabilities": {
+      "Low": 0.020000000000000004,
+      "Normal": 0.15000000000000002,
+      "High": 0.7500000000000001,
+      "Critical": 0.08000000000000002
+     },
+     "confidence": 0.7500000000000001,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.25,
+     "probabilities": {
+      "true": 0.25,
+      "false": 0.75
+     },
+     "confidence": 0.75,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-044",
+   "latencyMs": 2047.748271000004,
+   "usage": {
+    "inputTokens": 1607,
+    "outputTokens": 168,
+    "costUsd": 0.002447
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "data",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0.05,
+      "data": 0.9,
+      "account": 0.05
+     },
+     "confidence": 0.9,
+     "top": "data"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8499999999999996,
+     "probabilities": {
+      "Low": 0,
+      "Normal": 0,
+      "High": 0.15,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.9,
+     "probabilities": {
+      "true": 0.9,
+      "false": 0.09999999999999998
+     },
+     "confidence": 0.9,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-045",
+   "latencyMs": 1959.345856999993,
+   "usage": {
+    "inputTokens": 1593,
+    "outputTokens": 162,
+    "costUsd": 0.002403
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "account",
+     "probabilities": {
+      "payments": 0,
+      "auth": 0,
+      "infra": 0,
+      "data": 0,
+      "account": 1
+     },
+     "confidence": 1,
+     "top": "account"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.15,
+     "probabilities": {
+      "Low": 0.85,
+      "Normal": 0.15,
+      "High": 0,
+      "Critical": 0
+     },
+     "confidence": 0.85,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.1,
+     "probabilities": {
+      "true": 0.1,
+      "false": 0.9
+     },
+     "confidence": 0.9,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-046",
+   "latencyMs": 2184.211614999993,
+   "usage": {
+    "inputTokens": 1583,
+    "outputTokens": 176,
+    "costUsd": 0.002463
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "payments",
+     "probabilities": {
+      "payments": 0.85,
+      "auth": 0.05,
+      "infra": 0.05,
+      "data": 0.02,
+      "account": 0.03
+     },
+     "confidence": 0.85,
+     "top": "payments"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 0.31000000000000005,
+     "probabilities": {
+      "Low": 0.75,
+      "Normal": 0.2,
+      "High": 0.04,
+      "Critical": 0.01
+     },
+     "confidence": 0.75,
+     "top": "Low"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0,
+     "probabilities": {
+      "true": 0,
+      "false": 1
+     },
+     "confidence": 1,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-047",
+   "latencyMs": 2219.3622130000003,
+   "usage": {
+    "inputTokens": 1592,
+    "outputTokens": 176,
+    "costUsd": 0.002472
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "auth",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.9,
+      "infra": 0.03,
+      "data": 0.01,
+      "account": 0.01
+     },
+     "confidence": 0.9,
+     "top": "auth"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 1.9300000000000002,
+     "probabilities": {
+      "Low": 0.02,
+      "Normal": 0.08,
+      "High": 0.85,
+      "Critical": 0.05
+     },
+     "confidence": 0.85,
+     "top": "High"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.15,
+     "probabilities": {
+      "true": 0.15,
+      "false": 0.85
+     },
+     "confidence": 0.85,
+     "top": "false"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  },
+  {
+   "run": 3,
+   "ticketId": "T-048",
+   "latencyMs": 2071.2836959999986,
+   "usage": {
+    "inputTokens": 1602,
+    "outputTokens": 176,
+    "costUsd": 0.002482
+   },
+   "answers": {
+    "team": {
+     "type": "choice",
+     "value": "infra",
+     "probabilities": {
+      "payments": 0.05,
+      "auth": 0.05,
+      "infra": 0.85,
+      "data": 0.04,
+      "account": 0.01
+     },
+     "confidence": 0.85,
+     "top": "infra"
+    },
+    "urgency": {
+     "type": "score",
+     "value": 2.8099999999999996,
+     "probabilities": {
+      "Low": 0.01,
+      "Normal": 0.02,
+      "High": 0.12,
+      "Critical": 0.85
+     },
+     "confidence": 0.85,
+     "top": "Critical"
+    },
+    "customer_blocked": {
+     "type": "noul",
+     "value": 0.95,
+     "probabilities": {
+      "true": 0.95,
+      "false": 0.050000000000000044
+     },
+     "confidence": 0.95,
+     "top": "true"
+    },
+    "contains_personal_data": {
+     "type": "noul",
+     "value": 0.75,
+     "probabilities": {
+      "true": 0.75,
+      "false": 0.25
+     },
+     "confidence": 0.75,
+     "top": "true"
+    }
+   },
+   "servedModel": "claude-haiku-4-5-20251001",
+   "cached": false
+  }
+ ],
+ "metrics": {
+  "calls": 144,
+  "errors": 0,
+  "accuracy": {
+   "team": {
+    "mean": 0.8958333333333334,
+    "min": 0.8958333333333334,
+    "max": 0.8958333333333334
+   },
+   "urgency": {
+    "mean": 0.8541666666666666,
+    "min": 0.8541666666666666,
+    "max": 0.8541666666666666
+   },
+   "customer_blocked": {
+    "mean": 0.9583333333333334,
+    "min": 0.9583333333333334,
+    "max": 0.9583333333333334
+   },
+   "contains_personal_data": {
+    "mean": 0.9791666666666666,
+    "min": 0.9791666666666666,
+    "max": 0.9791666666666666
+   }
+  },
+  "teamMacroF1": {
+   "mean": 0.8909022556390976,
+   "min": 0.8909022556390978,
+   "max": 0.8909022556390978
+  },
+  "urgencyMAE": {
+   "mean": 0.274513888888889,
+   "min": 0.27395833333333347,
+   "max": 0.27479166666666677
+  },
+  "brier": {
+   "noul": 0.028503125000000042,
+   "team": 0.15483055555555553
+  },
+  "ece": 0.06647569444444588,
+  "reliability": [
+   {
+    "lo": 0,
+    "hi": 0.1,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.1,
+    "hi": 0.2,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.2,
+    "hi": 0.3,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.3,
+    "hi": 0.4,
+    "count": 0,
+    "meanConfidence": 0,
+    "accuracy": 0
+   },
+   {
+    "lo": 0.4,
+    "hi": 0.5,
+    "count": 3,
+    "meanConfidence": 0.45,
+    "accuracy": 1
+   },
+   {
+    "lo": 0.5,
+    "hi": 0.6,
+    "count": 12,
+    "meanConfidence": 0.525,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "count": 12,
+    "meanConfidence": 0.6375000000000001,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "count": 123,
+    "meanConfidence": 0.7341463414634152,
+    "accuracy": 0.8292682926829268
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "count": 156,
+    "meanConfidence": 0.8449999999999976,
+    "accuracy": 0.9230769230769231
+   },
+   {
+    "lo": 0.9,
+    "hi": 1,
+    "count": 270,
+    "meanConfidence": 0.959962962962961,
+    "accuracy": 1
+   }
+  ],
+  "latency": {
+   "p50": 2077.723629,
+   "p95": 2184.211614999993,
+   "mean": 2080.0509758611115
+  },
+  "cost": {
+   "totalUsd": 0.3560900000000002,
+   "perCallUsd": 0.0024728472222222235,
+   "per100Usd": 0.24728472222222236,
+   "per1000Usd": 2.4728472222222235
+  },
+  "tokens": {
+   "inputMean": 1604.1666666666667,
+   "outputMean": 173.73611111111111
+  },
+  "coverage": [
+   {
+    "threshold": 0.5,
+    "coverage": 1,
+    "accuracy": 0.8958333333333334
+   },
+   {
+    "threshold": 0.51,
+    "coverage": 0.9583333333333334,
+    "accuracy": 0.9130434782608695
+   },
+   {
+    "threshold": 0.52,
+    "coverage": 0.9583333333333334,
+    "accuracy": 0.9130434782608695
+   },
+   {
+    "threshold": 0.53,
+    "coverage": 0.9583333333333334,
+    "accuracy": 0.9130434782608695
+   },
+   {
+    "threshold": 0.54,
+    "coverage": 0.9583333333333334,
+    "accuracy": 0.9130434782608695
+   },
+   {
+    "threshold": 0.55,
+    "coverage": 0.9583333333333334,
+    "accuracy": 0.9130434782608695
+   },
+   {
+    "threshold": 0.56,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.57,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.58,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.59,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.6,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.61,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.62,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.63,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.64,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.65,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.66,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.67,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.68,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.69,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.7,
+    "coverage": 0.9375,
+    "accuracy": 0.9333333333333333
+   },
+   {
+    "threshold": 0.71,
+    "coverage": 0.8958333333333334,
+    "accuracy": 0.9534883720930233
+   },
+   {
+    "threshold": 0.72,
+    "coverage": 0.8958333333333334,
+    "accuracy": 0.9534883720930233
+   },
+   {
+    "threshold": 0.73,
+    "coverage": 0.8958333333333334,
+    "accuracy": 0.9534883720930233
+   },
+   {
+    "threshold": 0.74,
+    "coverage": 0.8958333333333334,
+    "accuracy": 0.9534883720930233
+   },
+   {
+    "threshold": 0.75,
+    "coverage": 0.875,
+    "accuracy": 0.9761904761904762
+   },
+   {
+    "threshold": 0.76,
+    "coverage": 0.7291666666666666,
+    "accuracy": 0.9714285714285714
+   },
+   {
+    "threshold": 0.77,
+    "coverage": 0.7291666666666666,
+    "accuracy": 0.9714285714285714
+   },
+   {
+    "threshold": 0.78,
+    "coverage": 0.7291666666666666,
+    "accuracy": 0.9714285714285714
+   },
+   {
+    "threshold": 0.79,
+    "coverage": 0.7291666666666666,
+    "accuracy": 0.9714285714285714
+   },
+   {
+    "threshold": 0.8,
+    "coverage": 0.7291666666666666,
+    "accuracy": 0.9714285714285714
+   },
+   {
+    "threshold": 0.81,
+    "coverage": 0.7083333333333334,
+    "accuracy": 0.9705882352941176
+   },
+   {
+    "threshold": 0.82,
+    "coverage": 0.7083333333333334,
+    "accuracy": 0.9705882352941176
+   },
+   {
+    "threshold": 0.83,
+    "coverage": 0.7083333333333334,
+    "accuracy": 0.9705882352941176
+   },
+   {
+    "threshold": 0.84,
+    "coverage": 0.7083333333333334,
+    "accuracy": 0.9705882352941176
+   },
+   {
+    "threshold": 0.85,
+    "coverage": 0.7083333333333334,
+    "accuracy": 0.9705882352941176
+   },
+   {
+    "threshold": 0.86,
+    "coverage": 0.3125,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.87,
+    "coverage": 0.3125,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.88,
+    "coverage": 0.3125,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.89,
+    "coverage": 0.3125,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.9,
+    "coverage": 0.3125,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.91,
+    "coverage": 0.25,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.92,
+    "coverage": 0.25,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.93,
+    "coverage": 0.25,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.94,
+    "coverage": 0.25,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.95,
+    "coverage": 0.25,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.96,
+    "coverage": 0.05555555555555555,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.97,
+    "coverage": 0.041666666666666664,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.98,
+    "coverage": 0.041666666666666664,
+    "accuracy": 1
+   },
+   {
+    "threshold": 0.99,
+    "coverage": 0.041666666666666664,
+    "accuracy": 1
+   }
+  ],
+  "teamAccuracyByDifficulty": {
+   "clear": 0.9655172413793104,
+   "ambiguous": 0.75,
+   "adversarial": 0.8571428571428571
+  }
+ }
+}
