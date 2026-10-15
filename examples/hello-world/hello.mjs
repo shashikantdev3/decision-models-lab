@@ -27,7 +27,11 @@ const body = {
     team: {
       type: "choice",
       instructions: "Which team should own this?",
-      criteria: { payments: "Checkout and billing", auth: "Login and access", infra: "Servers, network and outages" },
+      criteria: {
+        payments: "Checkout and billing",
+        auth: "Login and access",
+        infra: "Servers, network and outages",
+      },
     },
     severity: { type: "score", instructions: "How severe is the impact?", criteria: levels },
   },
@@ -59,7 +63,11 @@ const others = Object.entries(team.probabilities)
 const [topIdx, topP] = Object.entries(severity.probabilities).sort((a, b) => b[1] - a[1])[0];
 console.log(`model     ${data.model}`);
 console.log(`urgent    yes ${f(urgent.noul)}`);
-console.log(`team      ${team.choice} ${f(team.probabilities[team.choice])}   confidence ${f(team.confidence)}   (${others})`);
+console.log(
+  `team      ${team.choice} ${f(team.probabilities[team.choice])}   confidence ${f(team.confidence)}   (${others})`,
+);
 console.log(`severity  ${levels[Number(topIdx)]} ${f(topP)}   position ${f(severity.score)} on 0 to 3`);
-console.log(`cost      $${Number(data.usage.cost).toFixed(7)} for ${data.usage.input_tokens} input tokens (output is free)`);
+console.log(
+  `cost      $${Number(data.usage.cost).toFixed(7)} for ${data.usage.input_tokens} input tokens (output is free)`,
+);
 console.log(`time      ${ms} ms`);

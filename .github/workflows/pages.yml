@@ -1,11 +1,11 @@
 name: Deploy site to GitHub Pages
 
-# Runs only when started by hand until the owner turns Pages on (Settings > Pages > Source: GitHub Actions).
-# After that, uncomment the push trigger to deploy on every merge to main.
+# Deploys on every push to main, and can be started by hand from the Actions tab.
+# Needs Settings > Pages > Source set to "GitHub Actions".
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [main]
+  push:
+    branches: [main]
 
 permissions:
   contents: read
